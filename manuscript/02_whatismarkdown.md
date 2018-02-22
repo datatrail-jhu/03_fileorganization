@@ -22,10 +22,10 @@ Here's a small example of what Markdown can do!
 
 What you type:
 
-![](https://github.com/jtleek/cds/blob/master/markdownbasics/img/00_markdownbefore.png)
+![](./img/00_markdownbefore.png)
 
 How it appears:
-![](https://github.com/jtleek/cds/blob/master/markdownbasics/img/01_markdownafter.png)
+![](./img/01_markdownafter.png)
 
 ## Main commands
 
@@ -33,7 +33,7 @@ Three major formatting basics of Markdown are headers, bold and italicized text,
 
 ### Headers
 
-Headers are straightforward, you simply add a # sign right before the text you want to make a header. Keep in mind the # must be on the beginning of a new line (no text before it). The more #'s you add before the text, the smaller the header will be. For example here are a list of headers you can use ordered from largest to smallest.
+Headers are straightforward, you simply add a # sign right before the text you want to make a header. Keep in mind the # must be on the beginning of a new line (no text on the line before it). The more #'s you add before the text, the smaller the header will be. For example here are a list of headers you can use ordered from largest to smallest.
 
 ```
 # Largest
@@ -44,7 +44,7 @@ Headers are straightforward, you simply add a # sign right before the text you w
 ###### Smallest shown here (but you can go smaller!)
 ```
 
-The reason why this did not register as a header is because I formatted it as a comment. By inserting three quotation marks before and after the block of text you wish to comment, it will not execute any formatting. Without the quotation marks here is what we get!
+The reason why this did not register as a header is because it is formatted it as a comment. By inserting three quotation marks before and after the block of text you wish to comment, it will not execute any formatting. Without the quotation marks here is what we get!
 
 # Largest
 ## Slightly less large
@@ -55,7 +55,7 @@ The reason why this did not register as a header is because I formatted it as a 
 
 ### Bolded and italicized text
 
-Creating bolded and italicized text is also very straightforward.  Use a double asterisk (**) before and after the text you want to be bold and a single asterisk (*) before and after text you want to italicize.
+Creating bolded and italicized text is also very straightforward.  Use a double asterisk (`**`) before and after the text you want to be bold and a single asterisk (`*`) before and after text you want to italicize.
 
 ```
 So in this sentence **what you want to bold** is shown **bolded** and *what you want to italicize* is shown in *italics*.
@@ -67,9 +67,84 @@ So in this sentence **what you want to bold** is shown **bolded** and *what you 
 
 ### Lists
 
+Lists are a useful way to organize your ideas or tasks.  In Markdown, you can make your lists numbered or non-numbered.  To make a numbered list, just put the number and a period in front of the item.  As with headers, you do need to make sure your first number is on a new line (no text on the line before it!)
+
+```
+1. First item
+2. Second item
+3. Third item
+```
+This becomes:
+
+1. First item
+2. Second item
+3. Third item
+
+For non-numbered lists, you can use your choice of asterisks (`*`), pluses (`+`), or minuses (`-`) to indicate list items:
+
+```
+* First item
+* Second item
+```
+ OR
+ 
+ ```
++ First item
++ Second item
+```
+
+OR
+```
+- First item
+- Second item
+```
+
+All become:
+
+* First item
+* Second item
+
+
+You can create sub-items for your list by indenting (using multiple spaces) before the number or the asterisk/plus/minus.  Make the number or symbol of the sub-item line up with the text of the item above it!
+
+```
+1. First item
+2. Second item
+   1. Sub-item
+   2. Sub-item
+3. Third item
+   * Sub-item
+   * Sub-item
+```
+
+This becomes:
+
+1. First item
+2. Second item
+   1. Sub-item
+   2. Sub-item
+3. Third item
+   * Sub-item
+   * Sub-item
+
+If you want to cross off items on your list (as you do them, perhaps) you can create a strike-through using double tildas (`~~`).
+
+```
+1. ~~First item~~
+2. Second item
+   1. ~~Sub-item~~
+   2. Sub-item
+```
+
+This becomes:
+
+1. ~~First item~~
+2. Second item
+   1. ~~Sub-item~~
+   2. Sub-item
 
 ### More complicated editing
 
 There are many more text modifiers you can use for Markdown. A long form instructional guide can be found [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) while a shorter straight to the point version can be found [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
-You will see some more of these commandsm later in this module, but you might want to bookmark the above links now for future reference!
+You will see some more of these commands later in this module, but you might want to bookmark the above links now for future reference!
