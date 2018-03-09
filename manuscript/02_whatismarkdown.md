@@ -22,10 +22,11 @@ Here's a small example of what Markdown can do!
 
 What you type:
 
-![](./img/00_markdownbefore.png)
+![An example markdown file](images/02_whatismarkdown/03_fileorganization_whatismarkdown-1.png)
 
 How it appears:
-![](./img/01_markdownafter.png)
+
+![A rendered markdown file](images/02_whatismarkdown/04_fileorganization_whatismarkdown-2.png)
 
 ## Main commands
 
@@ -44,7 +45,7 @@ Headers are straightforward, you simply add a # sign right before the text you w
 ###### Smallest shown here (but you can go smaller!)
 ```
 
-The reason why this did not register as a header is because it is formatted it as a comment. By inserting three quotation marks before and after the block of text you wish to comment, it will not execute any formatting. Without the quotation marks here is what we get!
+The reason why this did not register as a header is because it is formatted it as a comment. By inserting three tick marks before and after the block of text you wish to comment, it will not execute any formatting. Without the quotation marks here is what we get!
 
 # Largest
 ## Slightly less large
