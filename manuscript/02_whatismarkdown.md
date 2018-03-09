@@ -87,7 +87,6 @@ For non-numbered lists, you can use your choice of asterisks (`*`), pluses (`+`)
 ```
 
 OR
-
 ```
 - First item
 - Second item
@@ -139,9 +138,36 @@ This becomes:
 
 ### More complicated editing
 
-There are many more text modifiers you can use for Markdown. A long form instructional guide can be found [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) while a shorter straight to the point version can be found [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+There are many more text modifiers you can use for Markdown. A short instructional guide can be found [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
-You will see some more of these commands later in this module, but you might want to bookmark the above links now for future reference!
+You will see some more of these commands later in this module, but you might want to bookmark the above link now for future reference!
+
+### Links
+
+Links to content on the internet can be included in a Markdown document as well.  The format for a link is to put what you want your link to say in square brackets followed immediately by the web addess where the link should go inside of parentheses, like this: 
+
+```
+[What you want your link to say](Web address where the link should go)
+```
+
+For example if you want the link to go to www.google.com when clicked, then you'd replace the text in the parentheses and write:
+
+```
+[What you want your link to say](www.google.com)
+```
+This is what it would look like in your rendered Markdown file: 
+
+[What you want your link to say](www.google.com)
+
+If you want to change the text of the link itself, you just change what's in the square brackets. For example, you might want the sentence: If you don't know the answer, you should look it up on Google, where the word Google would be a link to www.google.com.  You could do that by putting Google into square brackets, with the web address www.google.com following immediately in parentheses, like this:
+
+```
+If you don't know the answer, you should look it up on [Google](www.google.com).
+```
+This would be shown as:
+
+If you don't know the answer, you should look it up on [Google](www.google.com).
+
 
 ### Slides and Video
 
@@ -151,11 +177,20 @@ This lesson's video can be found [here]()
 ### Quiz
 
 {quiz, id: quiz_02_whatismarkdown}
-? Need to add?  
 
-a) XX
-b) XX
-C) XX  
+? How would you produce bolded text like **some text**? 
+
+a) `~~some text~~`
+b) `--some text--`
+c) `**some text**`
+d) `~some text~`
+
+? Which of the following would give you the smallest header? 
+
+a) `## My header`
+b) `### My header`
+c) `#### My header`
+d) `# My header`
 
 {/quiz}}
 
