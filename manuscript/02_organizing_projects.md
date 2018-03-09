@@ -105,6 +105,15 @@ We need to create the folders *raw_code* and *final_code* inside of the *code* f
 Using the same steps we did for creating the folders inside of the *data* folder, you can create the rest of the folders you will need to organize your data science project. Every time you start a new project you will need to do these steps to set up the folders you will need to store all the files you will be creating. In the next lesson we will talk about how to name the files that will go in these folders. 
 
 
+This lesson's slides can be found [here](https://docs.google.com/presentation/d/1jNeIkKjyVenNF5AEqNpspnLuKXSiXbg-I6VC_uy-b70/edit?usp=sharing)  
+This lesson's video can be found [here]()
+
+### Quiz
+
+{quiz, id: quiz_02_organizing_projects}
+
+
+{/quiz}}
 
 
 
