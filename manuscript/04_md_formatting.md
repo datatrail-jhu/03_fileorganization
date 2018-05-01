@@ -2,7 +2,7 @@
 
 To get you started, we'll practice some of the formatting that is inherent to R Markdown documents. 
 
-To start, let's look at bolding and italicising text. To bold text, you surround it by two asterisks on either side. Similarly, to italicise text, you surround the word with a single asterisk on either side. `**bold**` and `*italics*` respectively. 
+To start, let's look at bolding and italicizing text. To bold text, you surround it by two asterisks on either side. Similarly, to italicize text, you surround the word with a single asterisk on either side. `**bold**` and `*italics*` respectively. 
 
 We've also seen from the default document that you can make section headers. To do this, you put a series of hashtags/octothorpes/pound signs/whatever you want to call this (#) mark. The number of hash marks determines what level of heading it is. One hash is the highest level and will make the largest text (see the first line of this lecture), two hashes is the next highest level and so on. Play around with this formatting and make a series of headers, like so:
 
