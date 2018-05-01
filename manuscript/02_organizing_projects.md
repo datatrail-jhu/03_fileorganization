@@ -76,7 +76,7 @@ Now that we have these folders in place the next thing you need to create is a R
 
 To create the README file click _File_ at the top left hand part of Rstudio. 
 
-![Click on File toc reate a new file.](images/02_organizing_projects/02_fileorganization_organizing_projects_12.png)
+![Click on File to create a new file.](images/02_organizing_projects/02_fileorganization_organizing_projects_12.png)
 
 then over over _New File_ to show the types of new files you can create. Move the cursor down and click on _Text File_. 
 

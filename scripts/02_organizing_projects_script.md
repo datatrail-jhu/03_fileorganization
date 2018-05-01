@@ -21,7 +21,7 @@ Then you can type in the name of the folder you want to create. First let's crea
 After clicking OK you should now see a folder called data in the file window on the lower right hand side of the screen.
 
 Next we will create a few more folders. For each one click the New Folder button, enter the name and click ok. The folders we need to create will be called figures, code, and text. Once you have created the folders you should see something like this. These folders represent the four parts of any data science project. Data is the folder where you will put all the data you have collected or been given to analyze. Figures is where you will put plots, data pictures, and other images you have created to show data to other people. 
-Code is where you will create code files for collecting, cleaning up, or analyzing data. Prodcuts is the place where you will place any reports, presentations, or products you create for sharing with other people. 
+Code is where you will create code files for collecting, cleaning up, or analyzing data. Products is the place where you will place any reports, presentations, or products you create for sharing with other people. 
 
 Now that we have these folders in place the next thing you need to create is a README file. This is a file where you will describe all of the data and projects you will be doing. You will add to this README as your project expands. To create the README file click File at the top left hand part of Rstudio
 
@@ -45,7 +45,7 @@ Create one folder called raw underscore data and another called tidy underscore 
 
 You can now click on the word project at the top of the file window and it will take you back up one level.
 
-Now you will see the folders for data, code, figures, and products. We need to create the rest of the folders you will need. In the code folder you need to create folders called raw underscore code and final underscore code. In the figures folder you need to create the folers exploratory underscore figures and explanatory underscore figures. Inside of writing create a folder called projects. Once you have done this you will have finished setting up the folder structure for a new data science project. Every time you start a new project you will need to do these steps to set up the folders you will need to store all the files you will be creating. In the next lesson we will talk about how to name the files that will go in these folders. 
+Now you will see the folders for data, code, figures, and products. We need to create the rest of the folders you will need. In the code folder you need to create folders called raw underscore code and final underscore code. In the figures folder you need to create the folders exploratory underscore figures and explanatory underscore figures. Inside of writing create a folder called projects. Once you have done this you will have finished setting up the folder structure for a new data science project. Every time you start a new project you will need to do these steps to set up the folders you will need to store all the files you will be creating. In the next lesson we will talk about how to name the files that will go in these folders. 
 
 
 

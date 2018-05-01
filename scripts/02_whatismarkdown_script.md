@@ -18,7 +18,7 @@ If you want to cross off items on your list (as you do them, perhaps) you can cr
 
 If you would like to do more complicated editing, there are many more text modifiers you can use for Markdown. A short instructional guide can be found at w w w dot github dot com slash adam dash p slash markdown dash here slash wiki slash Markdown dash Cheatsheet.  You will see some more of these commands later in this module, but you might want to bookmark this page now for future reference!
 
-Links to content on the internet can be included in a Markdown document as well.  The format for a link is to put what you want your link to say in square brackets followed immediately by the web addess where the link should go inside of parentheses.  For example if you want the link to go to www.google.com when clicked, then you'd replace the text in the parentheses and with www.google.com.
+Links to content on the internet can be included in a Markdown document as well.  The format for a link is to put what you want your link to say in square brackets followed immediately by the web address where the link should go inside of parentheses.  For example if you want the link to go to www.google.com when clicked, then you'd replace the text in the parentheses and with www.google.com.
 
 If you want to change the text of the link itself, you just change what's in the square brackets.  For example, you might want the sentence If you don't know the answer, you should look it up on Google, where the word Google would be a link to www.google.com.  You could do that by putting Google into square brackets, with the web address www.google.com following immediately in parentheses.
 
