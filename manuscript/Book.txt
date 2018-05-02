@@ -1,6 +1,10 @@
-01_rstudio.md
-02_organizing_projects.md
-02_whatisrmarkdown.md
-03_rstudiomd.md
-04_md_formatting.md
-05_projects_in_r.md
+01_motivation.md
+02_rstudio_projects.md
+03_project_folders.md
+04_file_naming.md
+07_markdown.md
+08_markdown_in_rstudio.md
+09_markdown_formatting.md
+10_navigating_files_terminal.md
+11_navigating_files_R.md
+12_using_here.md
