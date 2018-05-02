@@ -28,7 +28,7 @@ In the rest of this lesson we will cover one standard system for how to set up t
 
 ### A project organization framework
 
-We will set up data science projects on rstudio.cloud. Open your web browser and navigate to the website [https://rstudio.cloud/](https://rstudio.cloud/).
+We will set up data science projects on rstudio.cloud. This is how you should set up every new data science project before you start doing any work. It will be much harder to set up after the project has started and files are scattered everywhere.  Open your web browser and navigate to the website [https://rstudio.cloud/](https://rstudio.cloud/).
 
 ![Go to rstudio.cloud](images/02_organizing_projects/02_fileorganization_organizing_projects_05.png)
 
@@ -72,7 +72,7 @@ These folders represent the four parts of any data science project.
 * _code_ - is where you will create code files for collecting, cleaning up, or analyzing data. 
 * _products_ - this is the place where you will place any reports, presentations, or products you create for sharing with other people. 
 
-Now that we have these folders in place the next thing you need to create is a README file. This is a file where you will describe all of the data and projects you will be doing. You will add to this README as your project expands. 
+Now that we have these folders in place the next thing you need to create is a README file. This is a file where you will describe all of the data and projects you will be doing. Every project should have a README file so that you can keep notes on what you have done during your project. You will add to this README as your project expands. 
 
 To create the README file click _File_ at the top left hand part of Rstudio. 
 
@@ -95,7 +95,6 @@ To save the file click on the disk icon in the top left hand corner of the scree
 
 Then you can title the file _README.md_ and click _Save_ to save it. 
 ![Name the file README.md. ](images/02_organizing_projects/02_fileorganization_organizing_projects_16.png)
-
 
 
 You should now see the README.md file in your file list on the bottom right of the screen. 
@@ -183,8 +182,37 @@ This lesson's video can be found [here]()
 
 {quiz, id: quiz_02_organizing_projects}
 
+? What of the following is not a step in Karl Broman's suggestions for project organization?
 
-{/quiz}}
+a) Slow down and make lots of notes for yourself
+b) Have sympathy for your future self
+c) Have a standard system that you understand
+D) Create a set of folders at the beginning of every project
+
+? What are the top level of folders in a data science project?
+
+A) data, code, figures, and products
+b) data, code, figures, and writing
+c) data, writing, products, and figures
+d) data, figures, writing, and products
+
+
+? What are the two sub-folders in the data folder?
+
+a) big data, small_data
+b) metadata, data
+C) raw data, tidy_data
+d) data, tidy_data
+
+
+? When should you set up the project file structure?
+
+a) After you have done your analysis
+B) Before starting any new project
+c) After you have cleaned the data 
+d) When you start to create code files
+
+{/quiz}
 
 
 

@@ -94,4 +94,6 @@ A) Click on the project name at the top left and type in the new name.
 b) Click on Your Workspace and type in the new name
 c) Click on File, then New File, then R script, then type in the new name
 d) Click on the menu button at the top left and type in the new name. 
-{/quiz}}
+
+
+{/quiz}
