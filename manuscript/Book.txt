@@ -8,3 +8,4 @@
 10_navigating_files_terminal.md
 11_navigating_files_R.md
 12_using_here.md
+13_how_to_work.md
