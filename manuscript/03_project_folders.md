@@ -176,12 +176,6 @@ This lesson's video can be found [here]()
 
 {quiz, id: quiz_02_organizing_projects}
 
-? What of the following is not a step in Karl Broman's suggestions for project organization?
-
-a) Slow down and make lots of notes for yourself
-b) Have sympathy for your future self
-c) Have a standard system that you understand
-D) Create a set of folders at the beginning of every project
 
 ? What are the top level of folders in a data science project?
 

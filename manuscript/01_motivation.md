@@ -57,4 +57,34 @@ Another famous data scientist, Karl Broman, [suggests](http://kbroman.org/Tools4
 * _Step 2_ have sympathy for your future self. 
 * _Step 3_ have a standard system that you understand
 
+A key challenge is that its sometimes hard to feel like file organization is "real work". It isn't coding, or making plots, or writing final documents. Sometimes, when working under a deadline, you will feel pressure to skip file organization in favor of quickly producing results and handing them off. But this never pays off in the long run, the results of poorly organized work almost always fail at some point further down the line. As a general rule of thumb it makes sense to budget 10-20% of the time you will be working on a data science project just to organizing and documenting your work. 
+
 In the rest of this course we will cover one standard system for how to set up, organize, and navigate projects. Once you learn this system you can adapt it to work better for you, or try other ways of organizing your projects. 
+
+
+{quiz, id: quiz_01_motivation}
+
+? What is the reason file organization caused a problem in the Duke scandal? 
+
+A) It took a long time to discover the problems in the data analysis
+b) The disorganized files led to a wrong analysis
+c) The files were organized but the researchers wouldn't share them
+d) The disorganized files led to people using the wrong data
+
+? What of the following is not a step in Karl Broman's suggestions for project organization?
+
+a) Slow down and make lots of notes for yourself
+b) Have sympathy for your future self
+c) Have a standard system that you understand
+D) Create a set of folders at the beginning of every project
+
+
+? Which of the following is not a target audience of a data science project?
+
+a) Your coworkers in six months
+b) Your coworkers in six months
+C) You right now
+d) You in six months
+
+
+{/quiz}
