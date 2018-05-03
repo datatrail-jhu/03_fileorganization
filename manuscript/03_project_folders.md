@@ -1,4 +1,4 @@
-# Organizing projects
+# Setting up data science project folders
 
 Once you have created a new project the next step is to organize and name the folders and files in that project. Naming and organizing files seems very boring, but it one of the most important parts of any data science project! Not having the files or the data available is one of the most common reasons that errors are missed in data science projects. 
 
@@ -17,14 +17,8 @@ It isn't just because of errors that you'd want to have organized files and proj
 
 ![Jenny Byran says "File organization and naming are powerful weapons against chaos."](images/02_organizing_projects/02_fileorganization_organizing_projects_04.png)
 
-Another famous data scientist, Karl Broman, [suggests](http://kbroman.org/Tools4RR/assets/lectures/06_org_eda.pdf) that the best way to end up with a good file organization system has three steps.  
-
-* _Step 1_ slow down and make lots of notes for yourself. 
-* _Step 2_ have sympathy for your future self. 
-* _Step 3_ have a standard system that you understand
 
 
-In the rest of this lesson we will cover one standard system for how to set up the folders you will need to organize a project. Once you learn this system you can adapt it to work better for you, or try other ways of organizing your projects. 
 
 ### A project organization framework
 
