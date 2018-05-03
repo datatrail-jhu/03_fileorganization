@@ -1,5 +1,9 @@
 # File naming
 
+This is going to seem like a silly topic to have a whole lecture on. But one of the most frustrating things when looking at someone's data science project is to see a set of files that are completely scattered with names that don't make any sense. It also makes it harder to search for files if they don't have a consistent naming scheme. 
+
+
+
 - three principles (jenny bryan)
   - machine readable
   - human readable
