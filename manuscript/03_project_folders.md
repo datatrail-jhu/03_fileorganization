@@ -2,23 +2,6 @@
 
 Once you have created a new project the next step is to organize and name the folders and files in that project. Naming and organizing files seems very boring, but it one of the most important parts of any data science project! Not having the files or the data available is one of the most common reasons that errors are missed in data science projects. 
 
-One really famous example where file organization caused problems was with the scientific paper "Growth in a time of debt". This paper was written by two Harvard economists and suggested that countries with a high level of debt have slow economic growth. 
-
-![Growth in the time of debt scientific paper.](images/02_organizing_projects/02_fileorganization_organizing_projects_02.png)
-
-Unlike most academic papers this paper had a big impact! Many countries used this research to justify austerity measures that impacted social and healthcare programs around the world. 
-
-But it turns out there were some choices the authors made that were questionable or changed their results. This mistake was so important that it was covered by popular shows like The Colbert Show on Comedy Central. The error was actually discovered by a student, but not until much much later. One reason it took so long is the data and analysis files weren't easily available to everyone and organized in a way that the error could be easily identified. 
-
-![The errors in the analysis were discussed on the Colbert Report](images/02_organizing_projects/02_fileorganization_organizing_projects_03.png)
-
-
-It isn't just because of errors that you'd want to have organized files and projects. One of the most common things to happen is that you do a data science project, give the results to someone else, then move on to a new project. But sometimes people will have questions about your old projects. If you have a system you will be able to find the project and the exact files you need. As Jenny Bryan, one of the most famous data scientists in the world, [says](https://github.com/kbroman/datasciquotes), "File organization and naming are powerful weapons against chaos."
-
-![Jenny Byran says "File organization and naming are powerful weapons against chaos."](images/02_organizing_projects/02_fileorganization_organizing_projects_04.png)
-
-
-
 
 ### A project organization framework
 
@@ -105,8 +88,10 @@ The folders in this project are:
 * _data_ - is the folder where you will put all the data you have collected or been given to analyze. 
 * _figures_ - is where you will put plots, data pictures, and other images you have created to show data to other people. 
 * _code_ - is where you will create code files for collecting, cleaning up, or analyzing data. 
-* _products_ - this is the place where you will place any reports, presentations, or products you create for sharing with other people. 
-`
+* _products_ - this is the place where you will place any reports, presentations, or products you create for sharing with other people. `
+
+The README file can be used to describe both the high level organization as well as any important special cases about your project. It may be helpful to create additional README files in each subfolder to provide information specific to the files in that subfolder. You would want to link to them from the global README file you have just created. 
+
 
 ### The next level of organization
 
@@ -138,7 +123,6 @@ One way to write the folders we have now created is like this.
 * code/
 * figures/
 * products/
-
 
 Here you can see that the *raw_data* folder is inside of the *data* folder. You can now click on the word *project* at the top of the file window and it will take you back up one level so you will see the folders for data, code, figures, and products. 
 
