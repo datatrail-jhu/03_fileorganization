@@ -16,27 +16,47 @@ When you open a project in RStudio Cloud, you will see a Console pane that is im
 
 ![Locating the Console in RStudio Cloud](images/10_fileorganization_nav_R/10_fileorganization_nav_R-1.png)
 
-### Outline
+### File system setup
 
-- What is R
-  - Why navigate files in R?
-  - Point out we'll learn a ton more later
-- Show where to get to R
-- Point out main navigation commands
-  - setwd()
-  - getwd()
-  - list.files()
-  - file.rename()
-  - file.create()
-  - file.remove()
-  - file.copy()
-  - file.exists()
+We're going to be using the same file system setup as in the previous lesson. The file system is shown below. Only the `raw_data` and `raw_code` folders contain files. In this lesson, we will be working within this file system to illustrate useful file manipulation functions within R.
 
+### Important functions
 
+#### What is my working directory?
 
-### Additional Resources
+Recall from the previous lesson that a **working directory** is the folder that you are currently in within a file system. We discussed that the working directory within the Terminal may be different from the working directory within R, and both of these may be different from the Files pane in RStudio. To determine your working directory in R, you can use the `getwd()` function, which stands for "get working directory." When you type `getwd()` at the R prompt and hit enter, you will see the absolute path to your working directory displayed in quotes on a new line. As with working in the Terminal, knowing the working directory in R is important because when you run code that refers to other files, R will search for those files relative to this directory. `getwd()` is analogous to `pwd` in the Terminal.
 
+#### Set the working directory
 
+In Terminal you learned about the `cd` command to change the current (working) directory. In R, use the `setwd()` function, which stands for "set working directory." Inside the parentheses, type an absolute or relative path in quotes. Just as in the Terminal, tab completion can save typing time and help prevent incorrect spelling. When you hit tab after typing part of a path, RStudio provide a drop down menu of files and folders that fit what you have typed. You can select between them with the arrow keys or your mouse and hit enter to autocomplete. Note also that the absolute path to the current working directory is displayed in the status bar beneath the Console tab. The working directory is not automatically updated or reflected in the Files pane however.
+
+#### What is in this folder?
+
+In Terminal you learned about the `ls` command for listing the contents of a directory. In R, use the `list.files()` function. Without anything in the parentheses, R will list the files in the current working directory. Otherwise, you can include a relative or absolute path in quotes. In the example we see that using no path gives the same result as specifying the current directory with a period. When we list the files in the `raw_code` directory, four files are listed. The numbers in the square brackets just help us count in the displayed output. An option when using `list.files()` is to type `full.names = TRUE` after the initial path and a comma. Doing this displays the full relative paths to those files. Note that if the path ends in a forward slash, there will be two forward slashes before the filename in the output. This is not a problem, but if you prefer to not have two forward slashes, omit the trailing forward slash when you type the path.
+
+#### Create a file
+
+In Terminal you learned about the `touch` command to create a blank file. In R, use the `file.create()` function. In parentheses, provide a path to the file to create. If this is successful, R will display `TRUE` and `FALSE` otherwise. You can verify that the file has been created by using `list.files()`. As in Terminal, you can quickly cycle through recent commands using the up and down arrow keys.
+
+#### Moving and renaming a file
+
+In Terminal you learned about the `mv` command for moving and renaming files. In R, use the `file.rename()` function. In the parentheses, you provide two paths separated by a comma. The first path is the path to the origin file. The second path is the path to the destination file. In the first example, we move the `data3.txt` file and keep the same name by specifying a different sequence of folders at the beginning of the second path and keeping the same file name. In the second example, we move and rename simultaneously by specifying a different sequence of folders and a different file name. If the renaming is successful, R will display `TRUE` and `FALSE` otherwise.
+
+#### Copy a file
+
+In Terminal you learned about the `cp` command for copying and renaming files. In R, use the `file.copy()` function. This function works similarly to `file.rename()` in that you have to supply the path to the original file first and the path to the destination second. If the copy is successful, R will display `TRUE` and `FALSE` otherwise. The first example copies the `data3_renamed.txt` file to the `data3.txt` file. In the second example, we try to do this again but fail because `data3.txt` already exists, and R will not overwrite a file by default. In example 3, we specify `overwrite = TRUE` after the two paths and a comma to explicitly overwrite the `data3.txt` file.
+
+#### Remove a file
+
+In Terminal you learned about the `rm` command for deleting files. In R, use the `file.remove()` function. In the parentheses, provide a path to the file you want to delete in quotes. If the deletion is successful, R will display `TRUE` and `FALSE` otherwise.
+
+#### Does a file exist?
+
+In Terminal you used the `ls` command to list the contents of a directory for verifying what files and folders are present. If you want to check whether a particular file exists, you can use the `file.exists()` function in R. In the parentheses, provide a path to the file of interest. In the first example, we show the usage for a single file. For `data1.txt`, R displays `TRUE` because this file exists. In the second example, we show the usage if you want to check the existence of multiple files. The multiple files are specified in what is called a **character vector**. The two paths are separated by a comma in the `c()` function which is the concantenation function. In this case, R displays `TRUE` then `FALSE` because `data2.txt` exists but `data4.txt` does not. You will learn much more about character vectors and the `c()` function in later courses devoted to R. Note that the other functions we covered in this lesson can be used on multiple files by supplying **character vectors** of paths instead of single paths. You will have a chance to try these out when you learn more about R and begin working on projects.
+
+### Summary
+
+In this lesson, you learned about R functions that are analogous to Terminal commands for managing files. As you work on projects, you'll gain an appreciation for the benefits of managing files using a programming language.
 
 ### Slides and Video
 
@@ -45,7 +65,7 @@ When you open a project in RStudio Cloud, you will see a Console pane that is im
 * [Slides](https://docs.google.com/presentation/d/1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc/edit?usp=sharing)
 
 
-{quiz, id: quiz_10_nav_terminal}
+{quiz, id: quiz_11_nav_R}
 
 ### Managing files in R quiz
 
