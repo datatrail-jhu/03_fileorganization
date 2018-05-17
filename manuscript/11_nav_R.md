@@ -68,7 +68,7 @@ In Terminal you learned about the `rm` command for deleting files. In R, use the
 
 #### Does a file exist?
 
-In Terminal you used the `ls` command to list the contents of a directory for verifying what files and folders are present. If you want to check whether a particular file exists, you can use the `file.exists()` function in R. In the parentheses, provide a path to the file of interest. In the first example, we show the usage for a single file. For `data1.txt`, R displays `TRUE` because this file exists. In the second example, we show the usage if you want to check the existence of multiple files. The multiple files are specified in what is called a **character vector**. The two paths are separated by a comma in the `c()` function which is the concantenation function. In this case, R displays `TRUE` then `FALSE` because `data2.txt` exists but `data4.txt` does not. You will learn much more about character vectors and the `c()` function in later courses devoted to R. Note that the other functions we covered in this lesson can be used on multiple files by supplying **character vectors** of paths instead of single paths. You will have a chance to try these out when you learn more about R and begin working on projects.
+In Terminal you used the `ls` command to list the contents of a directory for verifying what files and folders are present. If you want to check whether a particular file exists, you can use the `file.exists()` function in R. In the parentheses, provide a path to the file of interest. In the first example, we show the usage for a single file. For `data1.txt`, R displays `TRUE` because this file exists. In the second example, we show the usage if you want to check the existence of multiple files. The multiple files are specified in what is called a **character vector**. The two paths are separated by a comma in the `c()` function which is the concantenation function. In this case, R displays `TRUE` then `FALSE` because `data2.txt` exists but `data4.txt` does not. You will learn much more about character vectors and the `c()` function in later courses devoted to R. Note that the other functions we covered in this lesson (except `getwd()` and `setwd()`) can also be used on multiple files by supplying **character vectors** of paths instead of single paths. You will have a chance to try these out when you learn more about R and begin working on projects.
 
 ![file.exists()](images/11_fileorganization_nav_R/11_fileorganization_nav_R-13.png)
 
@@ -87,5 +87,50 @@ In this lesson, you learned about R functions that are analogous to Terminal com
 
 ### Managing files in R quiz
 
+{choose-answers: 3}
+? Which of the following functions displays `TRUE` or `FALSE` after completion?
+
+C) `file.create()`
+C) `file.rename()`
+C) `file.copy()`
+C) `file.remove()`
+C) `file.exists()`
+o) `getwd()`
+o) `setwd()`
+o) `list.files()`
+
+{choose-answers: 4}
+? Which of the following R function and Terminal command pairs perform the same function?
+
+C) `getwd()` and `pwd`
+C) `setwd()` and `cd`
+C) `list.files()` and `ls`
+C) `file.create()` and `touch`
+C) `file.rename()` and `mv`
+C) `file.copy()` and `cp`
+C) `file.remove()` and `rm`
+o) `getwd()` and `cd`
+o) `setwd()` and `pwd`
+o) `file.rename()` and `rnm`
+o) `file.rename()` and `cp`
+o) `file.copy()` and `mv`
+o) `file.remove()` and `del`
+
+{choose-answers: 4}
+? Refer to the file system diagram below. The current working directory is `code`. Which of the following Terminal commands and/or R functions will move the `tidy_data1.R` file in the `raw_code` directory to the `final_code` directory?
+
+![Example file system](images/11_fileorganization_nav_R/11_fileorganization_nav_R-4.png)
+
+C) `mv raw_code/tidy_data1.R final_code/`
+C) `mv ../code/raw_code/tidy_data1.R ../code/final_code/`
+C) `file.rename("raw_code/tidy_data1.R", "final_code/tidy_data1.R")`
+C) `file.rename("../code/raw_code/tidy_data1.R", "../code/final_code/tidy_data1.R")`
+o) `cp raw_code/tidy_data1.R final_code/`
+o) `cp tidy_data1.R ../final_code/`
+o) `mv tidy_data1.R ../final_code/`
+o) `cp ../code/raw_code/tidy_data1.R ../code/final_code/`
+o) `file.copy("raw_code/tidy_data1.R", "final_code/tidy_data1.R")`
+o) `file.rename("tidy_data1.R", "../final_code/tidy_data1.R")`
+o) `file.copy("../code/raw_code/tidy_data1.R", "../code/final_code/tidy_data1.R")`
 
 {/quiz}
