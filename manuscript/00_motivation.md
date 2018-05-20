@@ -34,13 +34,13 @@ Once they actually managed to get all of the files together and organized, they 
 
 Another famous example where file organization caused problems was with the scientific paper "Growth in a time of debt". This paper was written by two Harvard economists and suggested that countries with a high level of debt have slow economic growth. 
 
-![Growth in the time of debt scientific paper.](images/02_organizing_projects/02_fileorganization_organizing_projects_02.png)
+![Growth in the time of debt scientific paper.](images/00_motivation/00_fileorganization_motivation_02.png)
 
 Unlike most academic papers this paper had a big impact! Many countries used this research to justify austerity measures that impacted social and healthcare programs around the world. 
 
 But it turns out there were some choices the authors made that were questionable or changed their results. This mistake was so important that it was covered by popular shows like The Colbert Show on Comedy Central. The error was actually discovered by a student, but not until much much later. One reason it took so long is the data and analysis files weren't easily available to everyone and organized in a way that the error could be easily identified. 
 
-![The errors in the analysis were discussed on the Colbert Report](images/02_organizing_projects/02_fileorganization_organizing_projects_03.png)
+![The errors in the analysis were discussed on the Colbert Report](images/00_motivation/00_fileorganization_motivation_03.png)
 
 
 It isn't just because of errors that you'd want to have organized files and projects. Whether its helping your future self, communicating a data science idea, or simply reducing your cognitive load, organizing projects from the start can save you a huge amount of time and hassle.
@@ -49,7 +49,7 @@ As Jenny Bryan, one of the most famous data scientists in the world, [says](http
 
 > File organization and naming are powerful weapons against chaos.
 
-![Jenny Byran says "File organization and naming are powerful weapons against chaos."](images/02_organizing_projects/02_fileorganization_organizing_projects_04.png)
+![Jenny Byran says "File organization and naming are powerful weapons against chaos."](images/00_motivation/00_fileorganization_motivation_04.png)
 
 Another famous data scientist, Karl Broman, [suggests](http://kbroman.org/Tools4RR/assets/lectures/06_org_eda.pdf) that the best way to end up with a good file organization system has three steps.  
 
@@ -70,7 +70,7 @@ In the rest of this course we will cover one standard system for how to set up, 
 
 
 
-{quiz, id: quiz_01_motivation}
+{quiz, id: quiz_00_motivation}
 
 ? What is the reason file organization caused a problem in the Duke scandal? 
 

@@ -23,7 +23,7 @@ The machine we are talking about when we say "machine readable" is a computer. T
 
 So to wrap up, spaces, punctuations, and periods should be avoided but underscores and dashes are recommended. You should always use lowercase since you don't have to later remember if the name of the file contained lowercase or uppercase letters. Another suggestion is the use of delimeters instead of combining all words together. The use of delimeters make it easier to look for files on your computer or in R and make it easier to extract information from file names.
 
-![Extracting information from properly named files](04_fileorganization_file_naming_03.png)
+![Extracting information from properly named files](images/03_file_naming/03_fileorganization_file_naming_03.png)
 
 ### Human readable files
 
@@ -36,12 +36,12 @@ By using dates, you can sort your files based on chronological order. However, d
 
 If dates are not relevant for your file naming, put something numeric first. For instance if you're dealing with multiple reports, you can use add a reportxxx to the beginning of the file name so you can easly sort files by the report number.
 
-![Using numbers for ordering files](04_fileorganization_file_naming_06.png)
+![Using numbers for ordering files](images/03_file_naming/03_fileorganization_file_naming_06.png)
 
 In addition to making sure your files can be nicely ordered, always left pad numbers bu zeros. That is first set a max number of digits for your numbers determined by how many files you will potentially have. So if you may not have more than 1000 files you can choose three digits. If not more than a hundred you can choose two digits and so on. Once you know the number of digits, left pad numbers with zeros to satisfy the number of digits you determined in the first step. In other words, if you're using three digits, instead of writing 1 write 001 and instead of writing 17 write 017.
 
 
-![Left padding numbers with zeros](04_fileorganization_file_naming_07.png)
+![Left padding numbers with zeros](images/03_file_naming/03_fileorganization_file_naming_07.png)
 
   
 ### Slides and Video
@@ -50,7 +50,7 @@ In addition to making sure your files can be nicely ordered, always left pad num
 
 * [Slides](https://docs.google.com/presentation/d/1vQEUA7UqgEWrCUZv25t6qpwbLwrZo9oC0y0zUjLRUT4/edit?usp=sharing)
 
-{quiz, id: quiz_04_file_naming}
+{quiz, id: quiz_03_file_naming}
 
 ### File Naming quiz
 

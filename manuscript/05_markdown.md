@@ -31,17 +31,33 @@ In this lesson we've delved into R Markdown, starting with what it is and why yo
 
 ### Slides and Video
 
-This lesson's slides can be found [here](https://docs.google.com/presentation/d/1vMEbcs-jih32ORJpQduKjDx9cMxjJs9TBjXiUGXwpY8/edit?usp=sharing)  
-The lesson's video can be found [here]()  
+![Formatting in R Markdown]()
+
+* [Slides](https://docs.google.com/presentation/d/1vMEbcs-jih32ORJpQduKjDx9cMxjJs9TBjXiUGXwpY8/edit?usp=sharing)
+
 
 ### Quiz
 
-{quiz, id: quiz15}  
+{quiz, id: quiz_05_markdown}  
 ? How would you strike through some text?  
 
 A) `~~strikethrough~~`   
 b) `--strikethrough--`  
 c) `\strikethrough\`  
 d) None of the above 
- 
+
+? How would you produce bolded text like **some text**? 
+
+a) `~~some text~~`
+b) `--some text--`
+c) `**some text**`
+d) `~some text~`
+
+? Which of the following would give you the smallest header? 
+
+a) `## My header`
+b) `### My header`
+c) `#### My header`
+d) `# My header`
+
 {/quiz}}

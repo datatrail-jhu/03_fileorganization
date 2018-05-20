@@ -64,7 +64,7 @@ This lesson's video can be found [here]()
 
 ### How to Work Quiz
 
-{quiz, id: quiz_13_how_to_work}
+{quiz, id: quiz_09_how_to_work}
 
 ? Why is file organization important?
 A) All answers are correct.

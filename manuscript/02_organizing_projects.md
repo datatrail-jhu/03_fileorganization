@@ -153,8 +153,10 @@ Using the same steps we did for creating the folders inside of the *data* folder
 
 ### Slides and Video
 
-This lesson's slides can be found [here](https://docs.google.com/presentation/d/1jNeIkKjyVenNF5AEqNpspnLuKXSiXbg-I6VC_uy-b70/edit?usp=sharing)  
-This lesson's video can be found [here]()
+![Setting up data science project folders]()
+
+* [Slides](https://docs.google.com/presentation/d/1jNeIkKjyVenNF5AEqNpspnLuKXSiXbg-I6VC_uy-b70/edit?usp=sharing)
+
 
 ### Quiz
 
