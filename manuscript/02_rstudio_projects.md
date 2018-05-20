@@ -1,4 +1,4 @@
-# RStudio and projects
+# RStudio and Projects
 
 You've seen Rstudio in the first class in the sequence. Remember [R](https://www.r-project.org/) is the main software that we are going to use to analyze data in this class. R is one of the two most popular languages for data science. We will learn a lot more about it throughout the courses, but here we are just going to use it to take a peak at the data you have created. R is a piece of software that is used for running computer code. [RStudio](https://www.rstudio.com/) is a company that makes a piece of software that works with R. RStudio makes it easier to create, save, share, and work with R code and data sets. Rstudio is also useful for organizing projects and writing, organizing, and sharing your data science work.  
 
@@ -67,8 +67,10 @@ Now that you know how to create and navigate projects in the next lecture we wil
 
 ### Slides and Video
 
-This lesson's slides can be found [here](https://docs.google.com/presentation/d/1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig/edit?usp=sharing)  
-This lesson's video can be found [here]()
+![RStudio and Projects]()
+
+* [Slides](https://docs.google.com/presentation/d/1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig/edit?usp=sharing)
+
 
 ### Quiz
 

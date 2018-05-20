@@ -62,6 +62,14 @@ A key challenge is that its sometimes hard to feel like file organization is "re
 In the rest of this course we will cover one standard system for how to set up, organize, and navigate projects. Once you learn this system you can adapt it to work better for you, or try other ways of organizing your projects. 
 
 
+### Slides and Video
+
+![Motivation]()
+
+* [Slides]()
+
+
+
 {quiz, id: quiz_01_motivation}
 
 ? What is the reason file organization caused a problem in the Duke scandal? 
