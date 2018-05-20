@@ -190,7 +190,7 @@ The Terminal is an interface to the operating system of a computer that you will
 
 ### Slides and Video
 
-![Managing files in the Terminal](Update Link)
+![Managing files in the Terminal](https://www.youtube.com/watch?v=f2BuN_tcXps)
 
 * [Slides](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/edit?usp=sharing)
 
