@@ -46,7 +46,7 @@ In addition to making sure your files can be nicely ordered, always left pad num
   
 ### Slides and Video
 
-![File Naming]()
+![File Naming](https://www.youtube.com/watch?v=H2AZ27LgW_U)
 
 * [Slides](https://docs.google.com/presentation/d/1vQEUA7UqgEWrCUZv25t6qpwbLwrZo9oC0y0zUjLRUT4/edit?usp=sharing)
 
