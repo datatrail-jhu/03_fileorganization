@@ -14,7 +14,7 @@ In the previous lessons we learned about how to organize our files into folders 
 
 Using the *raw_data* folder for keeping the raw data untouched is important especially if you don't have a second copy of the raw data. If you make changes to and tidy up the raw data within your analysis, make sure you do not overwrite your raw data. It is important that you keep the raw data intact and instead add the tidied data to the *tidy_data* folder. 
 
-Next is using the *raw_code* folder for keeping the preliminary code. Let's see what we mean by that. When you are doing the preliminary part of your analysis, code with not constraint, that is do not worry much about how nice your code looks or whether they are self explanatory. Don't devote much of your braint power to commenting or tidying at first. Save this kind of code in the *raw_code* folder since it's raw and most of the time no one but you understands it. Later on, when you clean your code and make it more understandable, you can save bits and pieces of it in your final code file in the *final_code* folder.
+Next is using the *raw_code* folder for keeping the preliminary code. Let's see what we mean by that. When you are doing the preliminary part of your analysis, code with not constraint, that is do not worry much about how nice your code looks or whether they are self explanatory. Don't devote much of your brain power to commenting or tidying at first. Save this kind of code in the *raw_code* folder since it's raw and most of the time no one but you understands it. Later on, when you clean your code and make it more understandable, you can save bits and pieces of it in your final code file in the *final_code* folder.
 
 ### The README File
 
@@ -47,7 +47,7 @@ Always make sure your changes are saved and even more importantly that all your 
 
 ### Write in a Modular Way
 
-One mistake in writing code is to have everthing in one file. This is bad practice since fixing bugs and replicating the analysis would be much harder. Therefore, it is recommended that you write code in a modular way so that each group of code that do similar things can be put in a single file and the master file calls these individual files. The result is a much cleaner and shorter master file.
+One mistake in writing code is to have everything in one file. This is bad practice since fixing bugs and replicating the analysis would be much harder. Therefore, it is recommended that you write code in a modular way so that each group of code that do similar things can be put in a single file and the master file calls these individual files. The result is a much cleaner and shorter master file.
 
 ### Moving to the final version
 
@@ -58,9 +58,11 @@ Budget about 20% of your time keeping track of a bulleted list of the things tha
   
 ### Slides and Video
 
-This lesson's slides can be found [here](https://docs.google.com/presentation/d/1vn8Lb8YNvo1zha7GmJMlQSBRSAryRms6xy5HUtafH2A/edit?usp=sharing)  
+[How To Work]()
 
-This lesson's video can be found [here]()
+* [Slides](https://docs.google.com/presentation/d/1vn8Lb8YNvo1zha7GmJMlQSBRSAryRms6xy5HUtafH2A/edit?usp=sharing)  
+
+
 
 ### How to Work Quiz
 
@@ -82,7 +84,7 @@ D) All answers are correct.
 a) It is concise.
 b) It is informative.
 C) It mentions who wrote the chunk of code that follows.
-d) It follows the puound key.
+d) It follows the pound key.
 
 {/quiz}}
 
