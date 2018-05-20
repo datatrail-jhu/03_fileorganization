@@ -1,18 +1,20 @@
-# Formatting in R Markdown
+# Formatting in Markdown
 
-To get you started, we'll practice some of the formatting that is inherent to R Markdown documents. 
+To get you started, we'll practice some of the formatting that is inherent to Markdown documents. 
 
 To start, let's look at bolding and italicizing text. To bold text, you surround it by two asterisks on either side. Similarly, to italicize text, you surround the word with a single asterisk on either side. `**bold**` and `*italics*` respectively. 
 
 We've also seen from the default document that you can make section headers. To do this, you put a series of hashtags/octothorpes/pound signs/whatever you want to call this (#) mark. The number of hash marks determines what level of heading it is. One hash is the highest level and will make the largest text (see the first line of this lecture), two hashes is the next highest level and so on. Play around with this formatting and make a series of headers, like so:
 
-# Header level 1
-## Header level 2
-### Header level 3... 
+`# Header level 1`
+`## Header level 2`
+`### Header level 3...` 
 
-The other thing we've seen so far is code chunks. To make an R code chunk, you can type the three backticks, followed by the curly brackets surrounding a lower case R, put your code on a new line and end the chunk with three more backticks. Thankfully, RStudio recognized you'd be doing this a lot and there are short cuts, namely Ctrl+Alt+I (Windows) or Cmd + Option + I (Mac). Additionally, along the top of the source quadrant, there is the "Insert" button, that will also produce an empty code chunk. Try making an empty code chunk. Inside it, type the code `print("Hello world")`. When you knit your document, you will see this code chunk and the (admittedly simplistic) output of that chunk. 
+The other thing we've seen so far is code chunks. To make an R code chunk, you can type the three backticks, followed by the curly brackets surrounding a lower case R, put your code on a new line and end the chunk with three more backticks. Thankfully, RStudio recognized you'd be doing this a lot and there are short cuts, namely Ctrl+Alt+I (Windows) or Cmd + Option + I (Mac).
 
-If you aren't ready to knit your document yet, but want to see the output of your code, select the line of code you want to run and use Ctrl+Enter or hit the "Run" button along the top of your source window. The text "Hello world" should be output in your console window. If you have multiple lines of code in a chunk and you want to run them all in one go, you can run the entire chunk by using Ctrl+Shift+Enter OR hitting the green arrow button the right side of the chunk OR going to the Run menu and selecting Run current chunk. 
+Along the top of the source quadrant, there is the "Insert" button, that will also produce an empty code chunk. Try making an empty code chunk. Inside it, type the code `print("Hello world")`. When you knit your document, you will see this code chunk and the (admittedly simplistic) output of that chunk. 
+
+If you aren't ready to knit your document yet, but want to see the output of your code, select the line of code you want to run and use `ctrl+enter` or hit the "Run" button along the top of your source window. The text "Hello world" should be output in your console window. If you have multiple lines of code in a chunk and you want to run them all in one go, you can run the entire chunk by using `ctrl+shift+enter` OR hitting the green arrow button the right side of the chunk OR going to the Run menu and selecting Run current chunk. 
 
 One final thing we will go into detail on is making bulleted lists, like the one at the top of this lesson. Lists are easily created by preceding each prospective bullet point by a single dash, followed by a space. Importantly, at the end of each bullet's line, end with TWO spaces. This is a quirk of R Markdown that will cause spacing problems if not included.  
 
