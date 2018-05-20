@@ -4,8 +4,7 @@ We can create Markdown files in R Studio by going to the File menu and creating 
 
 This opens up a blank file in which you can type your notes in Markdown syntax.
 
-When you are finished editing this document and wish to save, you can go to the File menu and select
-Save As to save your file.
+When you are finished editing this document and wish to save, you can go to the File menu and select Save As to save your file.
 
 Enter the name of your file, but be sure to include the file extension dot MD at the end.
 

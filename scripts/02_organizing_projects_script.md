@@ -8,9 +8,7 @@ It isn't just because of errors that you'd want to have organized files and proj
 
 In the rest of this lesson we will cover one standard system for how to set up the folders you will need to organize a project. Once you learn this system you can adapt it to work better for you, or try other ways of organizing your projects. We will set up data science projects on rstudio.cloud. This is how you should set up every new data science project before you start doing any work. It will be much harder to set up after the project has started and files are scattered everywhere. To start, open your web browser and navigate to the website https://rstudio.cloud/.
 
-
 Then log in and click on the project titled my_first_project that we created in the last lesson. 
-
 
 You should now see a screen that looks like this where there are three windows. The window in the lower right hand corner of the screen is the part that shows all the files you have in your project. Right now there shouldn't be any files since we just created this project in the last lesson but didn't do anything in the project.  
 
@@ -20,8 +18,7 @@ Then you can type in the name of the folder you want to create. First let's crea
 
 After clicking OK you should now see a folder called data in the file window on the lower right hand side of the screen.
 
-Next we will create a few more folders. For each one click the New Folder button, enter the name and click ok. The folders we need to create will be called figures, code, and text. Once you have created the folders you should see something like this. These folders represent the four parts of any data science project. Data is the folder where you will put all the data you have collected or been given to analyze. Figures is where you will put plots, data pictures, and other images you have created to show data to other people. 
-Code is where you will create code files for collecting, cleaning up, or analyzing data. Products is the place where you will place any reports, presentations, or products you create for sharing with other people. 
+Next we will create a few more folders. For each one click the New Folder button, enter the name and click ok. The folders we need to create will be called figures, code, and text. Once you have created the folders you should see something like this. These folders represent the four parts of any data science project. Data is the folder where you will put all the data you have collected or been given to analyze. Figures is where you will put plots, data pictures, and other images you have created to show data to other people. Code is where you will create code files for collecting, cleaning up, or analyzing data. Products is the place where you will place any reports, presentations, or products you create for sharing with other people. 
 
 Now that we have these folders in place the next thing you need to create is a README file. This is a file where you will describe all of the data and projects you will be doing. You will add to this README as your project expands. To create the README file click File at the top left hand part of Rstudio
 

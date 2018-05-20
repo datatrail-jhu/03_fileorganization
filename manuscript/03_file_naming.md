@@ -21,9 +21,9 @@ The machine we are talking about when we say "machine readable" is a computer. T
 - Avoid case sensitivity: *AdamHooverReport.md* is not a good name but *adam-hoover-report.md* is.
 - Use delimeters: *executivereportpepsiv1.md* is not a good name but *executive_report_pepsi_v1.md* is.
 
-So to wrap up, spaces, punctuations, and periods should be avoided but underscores and dashes are recommended. You should always use lowercase since you don't have to later remember if the name of the file contained lowercase or uppercase letters. Another suggestion is the use of delimeters instead of combining all words together. The use of delimeters make it easier to look for files on your computer or in R and make it easier to extract information from file names.
+So to wrap up, spaces, punctuations, and periods should be avoided but underscores and dashes are recommended. You should always use lowercase since you don't have to later remember if the name of the file contained lowercase or uppercase letters. Another suggestion is the use of delimiters instead of combining all words together. The use of delimiters make it easier to look for files on your computer or in R and make it easier to extract information from file names.
 
-![Extracting information from properly named files](images/03_file_naming/03_fileorganization_file_naming_03.png)
+![Extracting information from properly named files](images/03_file_naming/03_fileorganization_file_naming-3.png)
 
 ### Human readable files
 
@@ -34,14 +34,14 @@ What does it mean for a file to be human readable? A file name is human readable
 
 By using dates, you can sort your files based on chronological order. However, dates are preferred to be in the ISO8601 format. In the United States we mainly use the mm-dd-yyyy format. If we use this format for naming files, files will be first sorted first based on month, then day, then year. However for browsing purposes it is better to sort files based on year, then month, and then day and, therefore, the yyyy-mm-dd format the is called the ISO8601 format is better. Therefore, `2017-05-21-analysis-cust001.R` is preferred to `05-21-2017-analysis-cust001.R`.
 
-If dates are not relevant for your file naming, put something numeric first. For instance if you're dealing with multiple reports, you can use add a reportxxx to the beginning of the file name so you can easly sort files by the report number.
+If dates are not relevant for your file naming, put something numeric first. For instance if you're dealing with multiple reports, you can use add a reportxxx to the beginning of the file name so you can easily sort files by the report number.
 
-![Using numbers for ordering files](images/03_file_naming/03_fileorganization_file_naming_06.png)
+![Using numbers for ordering files](images/03_file_naming/03_fileorganization_file_naming-6.png)
 
 In addition to making sure your files can be nicely ordered, always left pad numbers bu zeros. That is first set a max number of digits for your numbers determined by how many files you will potentially have. So if you may not have more than 1000 files you can choose three digits. If not more than a hundred you can choose two digits and so on. Once you know the number of digits, left pad numbers with zeros to satisfy the number of digits you determined in the first step. In other words, if you're using three digits, instead of writing 1 write 001 and instead of writing 17 write 017.
 
 
-![Left padding numbers with zeros](images/03_file_naming/03_fileorganization_file_naming_07.png)
+![Left padding numbers with zeros](images/03_file_naming/03_fileorganization_file_naming-7.png)
 
   
 ### Slides and Video
@@ -54,16 +54,16 @@ In addition to making sure your files can be nicely ordered, always left pad num
 
 ### File Naming quiz
 
-? What are the three elements of best file nameing practices
+? What are the three elements of best file naming practices
 A) Human readability, machine readability, and proper ordering
-b) Abreviation, Having numbers at the end of the name, and proper ordering
+b) Abbreviation, Having numbers at the end of the name, and proper ordering
 c) Human readability, machine readability, and only using letters and spaces
-d) Abreviation, machine readability, and proper ordering
+d) Abbreviation, machine readability, and proper ordering
 
 
 ? Which one is not a good practice for naming files?
 
-a) Use delimteres such as underscores
+a) Use delimiters such as underscores
 B) Always use commas
 c) Do not use accented letters
 d) Avoide spaces
