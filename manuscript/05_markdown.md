@@ -171,7 +171,7 @@ If you don't know the answer, you should look it up on [Google](www.google.com).
 
 ### Slides and Video
 
-![Markdown]()
+![Markdown](https://www.youtube.com/watch?v=5jS03AbmTi4)
 
 * [Slides](https://docs.google.com/presentation/d/1eHhYKegVodplOm9MajA3OaWReEMo7YRER-IRWBivWJM/edit?usp=sharing)
 
