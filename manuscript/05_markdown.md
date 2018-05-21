@@ -178,7 +178,7 @@ For instance, if you type `![Yosemite National Park](https://commons.wikimedia.o
 
 ### Slides and Video
 
-![Markdown]()
+![Markdown](https://www.youtube.com/watch?v=5jS03AbmTi4)
 
 * [Slides](https://docs.google.com/presentation/d/1eHhYKegVodplOm9MajA3OaWReEMo7YRER-IRWBivWJM/edit?usp=sharing)
 
