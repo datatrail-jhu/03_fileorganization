@@ -1,52 +1,183 @@
-# Formatting in Markdown
+# Introduction to Markdown
 
-To get you started, we'll practice some of the formatting that is inherent to Markdown documents. 
+Markdown is a basic markup language designed to be displayed on the web.  With a few basic commands, you can create polished documents that can be used to:
 
-To start, let's look at bolding and italicizing text. To bold text, you surround it by two asterisks on either side. Similarly, to italicize text, you surround the word with a single asterisk on either side. `**bold**` and `*italics*` respectively. 
+* Communicate your results to others
+* Provide daily/weekly reports of your employer
 
-We've also seen from the default document that you can make section headers. To do this, you put a series of hashtags/octothorpes/pound signs/whatever you want to call this (#) mark. The number of hash marks determines what level of heading it is. One hash is the highest level and will make the largest text (see the first line of this lecture), two hashes is the next highest level and so on. Play around with this formatting and make a series of headers, like so:
+### How do you use Markdown?
 
-`# Header level 1`
-`## Header level 2`
-`### Header level 3...` 
+If you know how to type you know how to use Markdown! Writing with Markdown is the exact same task as writing in a text editor like Microsoft Word. The only difference is that all the fancy buttons and options are removed and instead replaced with a series of commands that you can type to format your text.
 
-The other thing we've seen so far is code chunks. To make an R code chunk, you can type the three backticks, followed by the curly brackets surrounding a lower case R, put your code on a new line and end the chunk with three more backticks. Thankfully, RStudio recognized you'd be doing this a lot and there are short cuts, namely Ctrl+Alt+I (Windows) or Cmd + Option + I (Mac).
+### Markdown Example
 
-Along the top of the source quadrant, there is the "Insert" button, that will also produce an empty code chunk. Try making an empty code chunk. Inside it, type the code `print("Hello world")`. When you knit your document, you will see this code chunk and the (admittedly simplistic) output of that chunk. 
+Here's a small example of what Markdown can do!  You can see everything in this document is written as plain text, with just letters and basic symbols.
 
-If you aren't ready to knit your document yet, but want to see the output of your code, select the line of code you want to run and use `ctrl+enter` or hit the "Run" button along the top of your source window. The text "Hello world" should be output in your console window. If you have multiple lines of code in a chunk and you want to run them all in one go, you can run the entire chunk by using `ctrl+shift+enter` OR hitting the green arrow button the right side of the chunk OR going to the Run menu and selecting Run current chunk. 
+![An example markdown file](resources/images/02_whatismarkdown/03_fileorganization_whatismarkdown-1.png)
 
-One final thing we will go into detail on is making bulleted lists, like the one at the top of this lesson. Lists are easily created by preceding each prospective bullet point by a single dash, followed by a space. Importantly, at the end of each bullet's line, end with TWO spaces. This is a quirk of R Markdown that will cause spacing problems if not included.  
+Now you can see how that text appears when it is rendered in Markdown.  Even though it was created with plain text, it appears with italics, bolding, different sized text, and even an image!
 
-- Try  
-- Making 
-- Your  
-- Own  
-- Bullet  
-- List!
+![A rendered markdown file](resources/images/02_whatismarkdown/03_fileorganization_whatismarkdown-2.png)
 
-This is a great starting point and there is so much more you can do with R Markdown. Thankfully, RStudio developers have produced an ["R Markdown cheatsheet"](http://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf) that we urge you to go check out and see everything you can do with R Markdown! The sky is the limit! 
+### Main commands
 
-### Summary
+Three major formatting basics of Markdown are headers, bold and italicized text, and lists. Headers help you separate sections of your document, bold or italicized format allows you to emphasize important points in your document, and lists help you orderly arrange your ideas.
 
-In this lesson we've delved into R Markdown, starting with what it is and why you might want to use it. We hopefully got you started with R Markdown, first by installing it, and then by generating and knitting our first R Markdown document. We then looked at some of the various formatting options available to you and practiced generating code and running it within the R Studio interface. 
+#### Headers
+
+Headers are straightforward, you simply add a # sign right before the text you want to make a header. Keep in mind the # must be on the beginning of a new line (no text on the line before it). The more #'s you add before the text, the smaller the header will be. For example here is a list of headers you can use ordered from largest to smallest.
+
+```
+# Largest
+## Slightly less large
+### Even less large
+#### Even smaller
+##### Smaller still
+###### Smallest shown here (but you can go smaller!)
+```
+
+The reason why this did not register as a header is because it is formatted it as a comment. By inserting three tick marks before and after the block of text you wish to comment, it will not execute any formatting. Without the quotation marks here is what we get!
+
+# Largest
+## Slightly less large
+### Even less large
+#### Even smaller
+##### Smaller still
+###### Smallest shown here (but you can go smaller!)
+
+#### Bolded and italicized text
+
+Creating bolded and italicized text is also very straightforward.  Use a double asterisk (`**`) before and after the text you want to be bold and a single asterisk (`*`) before and after text you want to italicize.
+
+```
+So in this sentence **what you want to bold** is shown **bolded** and *what you want to italicize* is shown in *italics*.
+```
+
+See the results here:
+
+So in this sentence **what you want to bold** is shown **bolded** and *what you want to italicize* is shown in *italics*.
+
+#### Lists
+
+Lists are a useful way to organize your ideas or tasks.  In Markdown, you can make your lists numbered or non-numbered.  To make a numbered list, just put the number and a period in front of the item.  As with headers, you do need to make sure your first number is on a new line (no text on the line before it!)
+
+```
+1. First item
+2. Second item
+3. Third item
+```
+This becomes:
+
+1. First item
+2. Second item
+3. Third item
+
+For non-numbered lists, you can use your choice of asterisks (`*`), pluses (`+`), or minuses (`-`) to indicate list items:
+
+```
+* First item
+* Second item
+```
+
+ OR
+ 
+ ```
++ First item
++ Second item
+```
+
+OR
+```
+- First item
+- Second item
+```
+
+All become:
+
++ First item
++ Second item
+
+
+You can create sub-items for your list by indenting (using multiple spaces) before the number or the asterisk/plus/minus.  Make the number or symbol of the sub-item line up with the text of the item above it!
+
+```
+1. First item
+2. Second item
+   1. Sub-item
+   2. Sub-item
+3. Third item
+   * Sub-item
+   * Sub-item
+```
+
+This becomes:
+
+1. First item
+2. Second item
+   1. Sub-item
+   2. Sub-item
+3. Third item
+   * Sub-item
+   * Sub-item
+
+If you want to cross off items on your list (as you do them, perhaps) you can create a strike-through using double tildas (`~~`).
+
+```
+1. ~~First item~~
+2. Second item
+   1. ~~Sub-item~~
+   2. Sub-item
+```
+
+This becomes:
+
+1. ~~First item~~
+2. Second item
+   1. ~~Sub-item~~
+   2. Sub-item
+
+### More complicated editing
+
+There are many more text modifiers you can use for Markdown. A short instructional guide can be found [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+
+You will see some more of these commands later in this module, but you might want to bookmark the above link now for future reference!
+
+### Links
+
+Links to content on the internet can be included in a Markdown document as well.  The format for a link is to put what you want your link to say in square brackets followed immediately by the web addess where the link should go inside of parentheses, like this: 
+
+```
+[What you want your link to say](Web address where the link should go)
+```
+
+For example if you want the link to go to www.google.com when clicked, then you'd replace the text in the parentheses and write:
+
+```
+[What you want your link to say](www.google.com)
+```
+This is what it would look like in your rendered Markdown file: 
+
+[What you want your link to say](www.google.com)
+
+If you want to change the text of the link itself, you just change what's in the square brackets. For example, you might want the sentence: If you don't know the answer, you should look it up on Google, where the word Google would be a link to www.google.com.  You could do that by putting Google into square brackets, with the web address www.google.com following immediately in parentheses, like this:
+
+```
+If you don't know the answer, you should look it up on [Google](www.google.com).
+```
+This would be shown as:
+
+If you don't know the answer, you should look it up on [Google](www.google.com).
+
 
 ### Slides and Video
 
-![Formatting in R Markdown]()
+![Markdown]()
 
-* [Slides](https://docs.google.com/presentation/d/1vMEbcs-jih32ORJpQduKjDx9cMxjJs9TBjXiUGXwpY8/edit?usp=sharing)
-
+* [Slides](https://docs.google.com/presentation/d/1eHhYKegVodplOm9MajA3OaWReEMo7YRER-IRWBivWJM/edit?usp=sharing)
 
 ### Quiz
 
-{quiz, id: quiz_05_markdown}  
-? How would you strike through some text?  
-
-A) `~~strikethrough~~`   
-b) `--strikethrough--`  
-c) `\strikethrough\`  
-d) None of the above 
+{quiz, id: quiz_05_markdown}
 
 ? How would you produce bolded text like **some text**? 
 
