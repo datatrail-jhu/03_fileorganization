@@ -168,7 +168,7 @@ This would be shown as:
 
 If you don't know the answer, you should look it up on [Google](www.google.com).
 
-You can insert images in a Markdown document as well. This is done in a simialr manner to links. For images you can add `![Image Caption](Image Link)`. The link can be the web location of an image or the local address of an image.
+You can insert images in a Markdown document as well. This is done in a similar manner to links. For images you can add `![Image Caption](Image Link)`. The link can be the web location of an image or the local address of an image.
 
 For instance, if you type `![Yosemite National Park](https://commons.wikimedia.org/wiki/Yosemite_National_Park#/media/File:Half_Dome_from_Glacier_Point,_Yosemite_NP_-_Diliff.jpg)` will show this.
 
