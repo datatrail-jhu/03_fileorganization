@@ -121,7 +121,7 @@ You should use `here()` to set the base project directory for each data science 
 
 ### Slides and Video
 
-![Using Paths in Code](Update Link)
+![Using Paths in Code](https://www.youtube.com/watch?v=3Mrol2FUY-0)
 
 * [Slides](https://docs.google.com/presentation/d/18hkG4zMtlD5c6RUC2yzKG90sl1_zMT3b6D84qGvR1mQ/edit?usp=sharing)
 
