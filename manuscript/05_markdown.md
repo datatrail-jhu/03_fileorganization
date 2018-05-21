@@ -1,17 +1,17 @@
 # Introduction to Markdown
 
-Markdown is a basic markup language designed to be displayed on the web.  With a few basic commands, you can create polished documents that can be used to:
+We learned briefly about Markdown and RMarkdown documents in the previous lesson. Markdown is a basic markup language designed to be displayed on the web.  With a few basic commands, you can create polished documents that can be used to:
 
 * Communicate your results to others
 * Provide daily/weekly reports of your employer
 
-### How do you use Markdown?
+### How to use Markdown
 
 If you know how to type you know how to use Markdown! Writing with Markdown is the exact same task as writing in a text editor like Microsoft Word. The only difference is that all the fancy buttons and options are removed and instead replaced with a series of commands that you can type to format your text.
 
 ### Markdown Example
 
-Here's a small example of what Markdown can do!  You can see everything in this document is written as plain text, with just letters and basic symbols.
+Here's a small example of what Markdown can do! You can see everything in this document is written as plain text, with just letters and basic symbols.
 
 ![An example markdown file](resources/images/02_whatismarkdown/03_fileorganization_whatismarkdown-1.png)
 
@@ -55,7 +55,7 @@ So in this sentence **what you want to bold** is shown **bolded** and *what you 
 
 See the results here:
 
-So in this sentence **what you want to bold** is shown **bolded** and *what you want to italicize* is shown in *italics*.
+So in this sentence `**what you want to bold**` will be shown **what you want to bold** and `*what you want to italicize*` will be shown *what you want to italicize*.
 
 #### Lists
 
@@ -98,7 +98,7 @@ All become:
 + Second item
 
 
-You can create sub-items for your list by indenting (using multiple spaces) before the number or the asterisk/plus/minus.  Make the number or symbol of the sub-item line up with the text of the item above it!
+You can create sub-items for your list by indenting (using multiple spaces or Tab) before the number or the asterisk/plus/minus.  Make the number or symbol of the sub-item line up with the text of the item above it!
 
 ```
 1. First item
@@ -144,7 +144,7 @@ You will see some more of these commands later in this module, but you might wan
 
 ### Links
 
-Links to content on the internet can be included in a Markdown document as well.  The format for a link is to put what you want your link to say in square brackets followed immediately by the web addess where the link should go inside of parentheses, like this: 
+Links to content on the internet can be included in a Markdown document as well.  The format for a link is to put what you want your link to say in square brackets followed immediately by the web address where the link should go inside of parentheses, like this: 
 
 ```
 [What you want your link to say](Web address where the link should go)
@@ -168,6 +168,13 @@ This would be shown as:
 
 If you don't know the answer, you should look it up on [Google](www.google.com).
 
+You can insert images in a Markdown document as well. This is done in a simialr manner to links. For images you can add `![Image Caption](Image Link)`. The link can be the web location of an image or the local address of an image.
+
+For instance, if you type `![Yosemite National Park](https://commons.wikimedia.org/wiki/Yosemite_National_Park#/media/File:Half_Dome_from_Glacier_Point,_Yosemite_NP_-_Diliff.jpg)` will show this.
+
+![Yosemite National Park](https://commons.wikimedia.org/wiki/Yosemite_National_Park#/media/File:Half_Dome_from_Glacier_Point,_Yosemite_NP_-_Diliff.jpg)
+
+
 
 ### Slides and Video
 
@@ -183,14 +190,14 @@ If you don't know the answer, you should look it up on [Google](www.google.com).
 
 a) `~~some text~~`
 b) `--some text--`
-c) `**some text**`
+C) `**some text**`
 d) `~some text~`
 
 ? Which of the following would give you the smallest header? 
 
 a) `## My header`
 b) `### My header`
-c) `#### My header`
+C) `#### My header`
 d) `# My header`
 
-{/quiz}}
+{/quiz}

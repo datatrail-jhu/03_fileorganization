@@ -41,7 +41,7 @@ You can also view and download the PDF by clicking the file in the Files pane in
 
 ### Working with RMarkdown files
 
-RMarkdown files will be the main file type you'll be using when working with data. To create an RMarkdown document in RStudio, go to the File menu and create a new RMarkdown document:
+To create an RMarkdown document in RStudio, go to the File menu and create a new RMarkdown document:
 
 ![Creating a new RMarkdown document](images/04_rstudiomd/04_fileorganization_rstudiomd-8.png)
 
@@ -53,7 +53,7 @@ Then a new, partially filled-in RMarkdown document will open:
 
 ![Editing the new RMarkdown document](images/04_rstudiomd/04_fileorganization_rstudiomd-10.png)
 
-You can edit the document by removing the default sections and adding your own notes and code. When you are ready to save, go to the File menu and click "Save As". In the dialog box, you don't need to worry about typing a file extension as we had done for Markdown files. RStudio will automatically add the .Rmd extension.
+You can edit the document by removing the default sections and adding your own notes and code. When you are ready to save, go to the File menu and click "Save As". In the dialog box, you don't need to worry about typing a file extension. RStudio will automatically add the .Rmd extension.
 
 ![Saving the RMarkdown document](images/04_rstudiomd/04_fileorganization_rstudiomd-11.png)
 
@@ -70,5 +70,17 @@ In order to convert this document into a PDF document containing your code, plot
 * [Slides](https://docs.google.com/presentation/d/1BnIEO63i6bo1ZY9HCD9dilG7FgRRzXo1zn1S-c4B8C0/edit?usp=sharing)
 
 {quiz, id: quiz_04_studiomd}
+
+? What is the file extension of RMarkdown documents?
+a) .md
+b) .txt
+c) .R
+D) .Rmd
+
+? Determine whether the following statement True or False: You can send commands from an RMarkdown document to the console to be run.
+
+A) True
+b) False
+
 
 {/quiz}

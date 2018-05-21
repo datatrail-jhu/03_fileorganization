@@ -22,3 +22,4 @@ Links to content on the internet can be included in a Markdown document as well.
 
 If you want to change the text of the link itself, you just change what's in the square brackets. For example, you might want the sentence If you don't know the answer, you should look it up on Google, where the word Google would be a link to www.google.com. You could do that by putting Google into square brackets, with the web address www.google.com following immediately in parentheses.
 
+You can insert images in a Markdown document as well. This is done in a simialr manner to links. The link can be the web location of an image or the local address of an image.
