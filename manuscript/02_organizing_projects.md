@@ -81,14 +81,15 @@ You should now see the README.md file in your file list on the bottom right of t
 
 The next thing to do is fill in the README file with the initial description of your project. For now you can copy this text and paste it into your README file, then click the save button.  
 
-`
+```text
 # This is the README file for my_first_project
 The folders in this project are: 
 
 * _data_ - is the folder where you will put all the data you have collected or been given to analyze. 
 * _figures_ - is where you will put plots, data pictures, and other images you have created to show data to other people. 
 * _code_ - is where you will create code files for collecting, cleaning up, or analyzing data. 
-* _products_ - this is the place where you will place any reports, presentations, or products you create for sharing with other people. `
+* _products_ - this is the place where you will place any reports, presentations, or products you create for sharing with other people.
+```
 
 The README file can be used to describe both the high level organization as well as any important special cases about your project. It may be helpful to create additional README files in each subfolder to provide information specific to the files in that subfolder. You would want to link to them from the global README file you have just created. 
 

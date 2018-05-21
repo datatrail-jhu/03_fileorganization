@@ -14,7 +14,7 @@ You can continue editing the document and saving with the Save option under the 
 
 If you are prompted to install packages in a dialog box that pops up, click Yes. After a few seconds a new browser window should pop up containing a preview of the resulting PDF document. If you wish to download this document, you can click the button at the top right. Note that when you preview a Markdown file in this way, R Studio will add some header text to the top of your file. You don't need to worry about this or delete this text. It just provides some useful setup information for the next time you use the Preview functionality. You can also view and download the PDF by clicking the file in the Files pane in R Studio. This will open the PDF in a new tab or window in your web browser.
 
-Let's move now to R Markdown files. R Markdown files will be the main file type you'll be using when working with data. To create an R Markdown document in R Studio, go to the File menu and create a new R Markdown document.
+Let's move now to R Markdown files. To create an R Markdown document in R Studio, go to the File menu and create a new R Markdown document.
 
 If you are prompted to install packages in a dialog box that pops up, click Yes to proceed. You will see the following dialog box appear on your screen. Here you can enter the title of your document as well as your name. For the Default Output Format, we recommend choosing either the HTML or PDF option. After choosing your desired settings, click OK.
 
