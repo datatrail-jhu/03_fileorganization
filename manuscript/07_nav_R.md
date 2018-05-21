@@ -78,7 +78,7 @@ In this lesson, you learned about R functions that are analogous to Terminal com
 
 ### Slides and Video
 
-![Managing files in R](Update Link)
+![Managing files in R](https://www.youtube.com/watch?v=maSo_Byarvw)
 
 * [Slides](https://docs.google.com/presentation/d/1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc/edit?usp=sharing)
 

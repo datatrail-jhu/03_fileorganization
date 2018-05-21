@@ -75,7 +75,7 @@ In the rest of this course we will cover one standard system for how to set up, 
 
 ### Slides and Video
 
-![Motivation]()
+![Motivation](https://www.youtube.com/watch?v=FocmtNmUX9E)
 
 * [Slides](https://docs.google.com/presentation/d/1DJ7dlj8HEWdX9EL0dbNpl-gwAhI01JXSL8REAzmuQjw/edit?usp=sharing)
 

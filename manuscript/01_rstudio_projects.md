@@ -67,7 +67,7 @@ Now that you know how to create and navigate projects in the next lecture we wil
 
 ### Slides and Video
 
-![RStudio and Projects]()
+![RStudio and Projects](https://www.youtube.com/watch?v=-NUquXt-oAM)
 
 * [Slides](https://docs.google.com/presentation/d/1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig/edit?usp=sharing)
 
