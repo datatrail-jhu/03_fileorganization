@@ -1,6 +1,6 @@
 Now that you know what a file path is and how to navigate to different directories using both the Terminal and the R Console, we'll discuss how to include file paths when coding.
 
-Relative and absolute paths were discussed in an earlier lesson in this course. To review very briefly here:
+Relative and absolute paths were discussed in an earlier lesson in this course. This is a very brief review
 
 Relative paths give a path to the destination folder based on where you are right now, which is also known as your current working directory. 
 
