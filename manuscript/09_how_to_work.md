@@ -20,7 +20,9 @@ Next is using the *raw_code* folder for keeping your preliminary code. Let's see
 
 Once you have a file structure in place, write a README file that explains how code and are organized and how they are related. In other words, what is what. For each filename, we recommend to have a short description of what the file is for. You can also have a description of how the data were obtained or collected including links or references to publication or other documentation. Mention people involved with the project, and provide contact information of at least one of the collaborators.
 
-A more detailed README file includes a list of variables, units of measurement of each variable, definition of code and symbols used to deal with missing data, Licenses or restrictions on the content of the project including the data, and information about how others should cite your analysis.
+A good idea is to update the README file as you work. As you create new files and folders, add their descriptions to the README file so you can keep track of what you are working on. 
+
+You might also make a more detailed README file, which includes a list of variables, units of measurement of each variable, definition of code and symbols used to deal with missing data, Licenses or restrictions on the content of the project including the data, and information about how others should cite your analysis.
 
 
 ### Using comments
@@ -43,17 +45,23 @@ Note that the first line describes what the function does. Commenting is helpful
 
 ### Version control
 
-Always make sure your changes are saved and even more importantly that all your files are version controlled. Version control is common practice in data science. Don't worry if you don't know much about it. In the course that follows, we'll learn everything version control. 
+Always make sure your changes are saved and even more importantly that all your files are version controlled. Version control is common practice in data science. Don't worry if you don't know much about it. In a future course we'll cover version control in much more detail. 
 
 ### Write in a Modular Way
 
 One mistake in writing code is to have everything in one file. This is bad practice since fixing bugs and replicating the analysis would be much harder. Therefore, it is recommended that you write code in a modular way so that each group of code that do similar things can be put in a single file and the master file calls these individual files. The result is a much cleaner and shorter master file.
 
-### Moving to the final version
+### Draft and final versions
 
-Within a folder, have your file numbering system to distinguish the files. You could use something like `data_cleaning_v001.R`. Write a final report in Rmarkdown that you can send to others. As we saw, rmd files are great tools for having a combination of code and text that you can share with others and can be run to reproduce your results. As you move along to the final version, make sure you keep updating the README file for any changes to your files and filenames. 
+When working on a data science project you will start with data in the `data/raw_data` folder and you will start with code in the `code/raw_code` folder. Most of your early analysis will be done within the `code/raw_code` folder. When you are first starting out on a project it makes sense to work quickly, exploring a data set or a problem and figuring out what is going on. Don't worry about the details at this stage! The goal is to just try to figure out what is going on with the data you are working on. 
 
-Budget about 20% of your time keeping track of a bulleted list of the things that you need to do and the things that you do day to day across all your data science projects. This is to help you organize and remember what you did when for future references. There are various tools for keeping track of your projects. One of them is [Benchling](https://benchling.com/). Benchling can be used for workflow management and tracking your project in a collaborative way. Check it out and give it a try.
+Within your `code/raw_code` folder you can try to have a numbering system as we described in the file naming section. You might create a file called `00_first_analysis.R` and start doing some analysis that might be messy or incomplete. You would keep track of what you working on in your README file or in a lab notebook at regular intervals. 
+
+Once you have figured things out and know what analysis you want to do you will go back through and take pieces of the analysis and code you created in the `code/raw_code` folder, clean it up, and put it into final documents that go into the `code/final_code` and `products/writing` folders. That way you have a record of every messy analysis you did, but you also have a nice cleaned up version that you can share with other people. 
+
+The key take home message is that you should start fast, trying out things and not being afraid to make mistakes. This is what will go in your raw folders. Then, once you have figured out what you want to do more clearly, you will make final versions that are clear and easier to communicate. 
+
+Budget about 20% of your time keeping track of a bulleted list of the things that you need to do and the things that you do day to day across all your data science projects. This is to help you organize and remember what you did when for future references. There are various tools for keeping track of your projects. One of them is [Benchling](https://benchling.com/). Benchling can be used for workflow management and tracking your project in a collaborative way. 
 
   
 ### Slides and Video
