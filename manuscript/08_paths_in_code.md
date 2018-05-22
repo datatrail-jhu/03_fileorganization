@@ -4,26 +4,24 @@ Now that you know what a file path is and how to navigate to different directori
 
 ### Relative and absolute paths 
 
-Relative and absolute paths were discussed in an earlier lesson in this course. To review *very* briefly here:
+Relative and absolute paths were discussed in an earlier lesson in this course. This is a *very* brief review:
 
 #### Relative paths
 
 **Relative paths** give a path to the destination folder based on where you are right now (your current working directory). 
 
-![relative paths](images/08_paths_in_code/08_fileorganization_paths_in_code-2.png)
+![Relative paths](images/08_paths_in_code/08_fileorganization_paths_in_code-2.png)
 
 #### Absolute paths
 
 **Absolute paths** give a path to the destination folder based on the root directory of a file system. 
 
-![absolute paths](images/08_paths_in_code/08_fileorganization_paths_in_code-3.png)
+![Absolute paths](images/08_paths_in_code/08_fileorganization_paths_in_code-3.png)
 
 
-#### Directions analogy
+### Directions analogy
 
-So, to return to analogy of giving someone directions. Imagine that your friend plans to go from the town square, then to the library, and finally to the bakery. In this analogy, the town square represents the root directory, a universal starting location.
-
-If your friend is *currently* at the library and asks you for directions, you would likely tell them how to go from the library (where they are) to the bakery (where they want to go). This represents a **relative path** -- taking you from where you are currently to where you want to be. Alternatively, you could give them directions from the Town square, to the library, and then to the bakery. This represents an **absolute path**, directions that will always work in this town, no matter where you are currently, but that contain extra information given where your friend is currently.
+So, to return to analogy of giving someone directions. Imagine that your friend plans to go from the town square, then to the library, and finally to the bakery. In this analogy, the town square represents the root directory, a universal starting location. If your friend is currently at the library and asks you for directions, you would likely tell them how to go from the library (where they are) to the bakery (where they want to go). This represents a **relative path** -- taking you from where you are currently to where you want to be. Alternatively, you could give them directions from the Town square, to the library, and then to the bakery. This represents an **absolute path**, directions that will always work in this town, no matter where you are currently, but that contain extra information given where your friend is currently.
 
 ![Directions and paths analogy](images/08_paths_in_code/08_fileorganization_paths_in_code-4.png)
 
@@ -47,7 +45,7 @@ The reason relative paths for each project are the correct approach is because i
 
 ![Using relative paths enables sharing](images/08_paths_in_code/08_fileorganization_paths_in_code-7.png)
 
-However, you are *not* likely to (and shouldn't!) share all the contents of your entire computer with another person. If you had used absolute paths that work for your computer, rather than relative paths, none of the paths will make any sense on the person you've shared with's computer. To enable sharing with someone else, you should always use relative paths in your code that are relative to the project folder. Thankfully, there's an easy way in R to make that happen! 
+However, you are *not* likely to (and shouldn't!) share all the contents of your entire computer with another person. If you had used absolute paths that work for your computer, rather than relative paths, none of the paths will make any sense on the person's computer whom you've shared your content with. To enable sharing with someone else, you should always use relative paths in your code that are relative to the project folder. Thankfully, there's an easy way in R to make that happen! 
 
 ![Absolute paths prohibit sharing](images/08_paths_in_code/08_fileorganization_paths_in_code-8.png)
 
@@ -59,7 +57,7 @@ While we'll define in more depth what packages are, at this point, think of pack
 
 We're going to discuss using a single R package now, called [`here`](https://github.com/r-lib/here). 
 
-To get started using the `here` package (or any R package!), it first has to be installed (using the `install.packages()` function) and then loaded in (using the `library()` function). The code to copy and paste into your R console is below:
+To get started using the `here` package (or any R package!), it first has to be installed (using the `install.packages()` function) and then loaded in (using the `library()` function). Note that the package name in the `install.packages()` function has to be in quotes but for `library()` it doesn't have to. The code to copy and paste into your R console is below:
 
 ```r
 install.packages("here")
@@ -76,10 +74,10 @@ This package allows you to define in which folder all your relative paths should
 
 After installing and loading the `here` package, to set your project directory using `here()`, you'll simply type the command `here()`. You'll notice that the output of `here()` and `getwd()` in this case is the same; however, what they're doing behind the scenes is different. 
 
-* `getwd()` - takes you to the directory you are in currently
+* `getwd()` - shows the directory you are in currently
 * `here()` - sets the directory to use for all future relative paths
 
-The `here()` function is what you want to use to set your project directory so that you can use it for future relative paths in your code. While in this case it *also* happened to be in the same directory you were in, it doesn't have to be. The here() function looks to see if you have a .Rproj file in your project. If then sets your base directory to whichever directory that file is located. 
+The `here()` function is what you want to use to set your project directory so that you can use it for future relative paths in your code. While in this case it *also* happened to be in the same directory you were in, it doesn't have to be this way. The here() function looks to see if you have a .Rproj file in your project. If then sets your base directory to whichever directory that file is located. 
 
 ![here() sets your project directory for future reference using here()](images/08_paths_in_code/08_fileorganization_paths_in_code-10.png)
 
@@ -149,7 +147,7 @@ o) suggestive path that directs you to the folder tidy_data
 
 {choose-answers: 4}
 
-?  How would you use the here() function to specify the path to a script called "script.R" in final_code file?
+?  How would you use the here() function to specify the path to a script called "script.R" in the final_code folder that is itself in a folder called code?
 
 C) here("code", "final_code", "script.R")
 o) here("code", "/" , "final_code", "/", "script.R")
@@ -164,7 +162,7 @@ o) "code/code/script.R"
 
 {choose-answers: 4}
 
-?  Assuming your current working direcotry is "/cloud/project", hich of the following is an example of a relative path directing you to the folder "data/tidy_data"?
+?  Assuming your current working direcotry is "/cloud/project", which of the following is an example of a relative path directing you to the folder "data/tidy_data"?
 
 C) data/tidy_data
 m) /cloud/project/data/tidy_data
