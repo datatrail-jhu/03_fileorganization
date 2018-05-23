@@ -133,7 +133,6 @@ Refer to this diagram to answer the quiz questions below. Assume "cloud" is the 
 ![Directory structure](images/08_paths_in_code/08_fileorganization_paths_in_code-1.png)
 
 {choose-answers: 4}
-
 ?  "/cloud/project/data/tidy_data"" is an example of a(n):
 
 C) absolute path that directs you to the folder tidy_data
@@ -146,7 +145,6 @@ o) distinct path that directs you to the folder tidy_data
 o) suggestive path that directs you to the folder tidy_data
 
 {choose-answers: 4}
-
 ?  How would you use the here() function to specify the path to a script called "script.R" in the final_code folder that is itself in a folder called code?
 
 C) here("code", "final_code", "script.R")
@@ -161,7 +159,6 @@ o) here("code", "code")
 o) "code/code/script.R"
 
 {choose-answers: 4}
-
 ?  Assuming your current working direcotry is "/cloud/project", which of the following is an example of a relative path directing you to the folder "data/tidy_data"?
 
 C) data/tidy_data
