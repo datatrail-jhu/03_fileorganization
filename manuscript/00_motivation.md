@@ -83,6 +83,8 @@ In the rest of this course we will cover one standard system for how to set up, 
 
 {quiz, id: quiz_00_motivation}
 
+### Motivation quiz
+
 ? What is the reason file organization caused a problem in the Duke scandal? 
 
 A) It took a long time to discover the problems in the data analysis
