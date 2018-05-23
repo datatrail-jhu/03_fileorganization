@@ -28,7 +28,7 @@ This is because it is really common for you to work on a data science project, p
 
 ![The reason you 6 months from now is one of your audience members.](images/00_motivation/00_fileorganization_motivation-3.png)
 
-Whenver I teach this topic people are surprised I spend so much time on how to organize the setup of your projects or how to name your files. While this all seems like something very simple and common sense, this is where the biggest problems in data science often happen. Let me give you two quick examples. 
+Whenever I teach this topic people are surprised I spend so much time on how to organize the setup of your projects or how to name your files. While this all seems like something very simple and common sense, this is where the biggest problems in data science often happen. Let me give you two quick examples. 
 
 The first happened a few years ago. A research group from Duke university analyzed data about human genomes to try to develop a way to predict what chemotherapy each person should get based on their genetic code. They came up with what they thought was a good predictor and published it, then proceeded to start testing it in clinical studies. 
 

@@ -159,10 +159,10 @@ Using the same steps we did for creating the folders inside of the *data* folder
 * [Slides](https://docs.google.com/presentation/d/1jNeIkKjyVenNF5AEqNpspnLuKXSiXbg-I6VC_uy-b70/edit?usp=sharing)
 
 
-### Quiz
 
 {quiz, id: quiz_02_organizing_projects}
 
+### Setting up data science project folders quiz
 
 ? What are the top level of folders in a data science project?
 

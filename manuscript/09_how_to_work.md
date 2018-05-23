@@ -71,24 +71,26 @@ Budget about 20% of your time keeping track of a bulleted list of the things tha
 * [Slides](https://docs.google.com/presentation/d/1vn8Lb8YNvo1zha7GmJMlQSBRSAryRms6xy5HUtafH2A/edit?usp=sharing)  
 
 
-
-### How to Work Quiz
-
 {quiz, id: quiz_09_how_to_work}
 
+### How to Work quiz
+
 ? Why is file organization important?
+
 A) All answers are correct.
 b) It will be easier to replicate an analysis.
 c) It will be easier to redo the analysis in future.
 d) It will be easier to collaborate with others.
 
 ? What kind of information is recommended to be included in the README file of your data science project?
+
 a) How to cite your analysis.
 b) Name of the collaborators on the project.
 c) File structure and how files are related.
 D) All answers are correct.
 
 ? What is NOT a characteristic of a good comment within a code file in R?
+
 a) It is concise.
 b) It is informative.
 C) It mentions who wrote the chunk of code that follows.
