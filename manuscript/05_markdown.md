@@ -169,7 +169,7 @@ You can insert images in a Markdown document as well. This is done in a similar 
 
 For instance, if you type `![Yosemite National Park](https://commons.wikimedia.org/wiki/Yosemite_National_Park#/media/File:Half_Dome_from_Glacier_Point,_Yosemite_NP_-_Diliff.jpg)` will show this.
 
-![Yosemite National Park](https://commons.wikimedia.org/wiki/Yosemite_National_Park#/media/File:Half_Dome_from_Glacier_Point,_Yosemite_NP_-_Diliff.jpg)
+![Yosemite National Park](images/05_markdown/05_fileorganization_markdown-12.png)
 
 
 
