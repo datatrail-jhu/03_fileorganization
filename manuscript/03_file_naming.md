@@ -54,7 +54,8 @@ In addition to making sure your files can be nicely ordered, always left-pad num
 
 ### File Naming quiz
 
-? What are the three elements of best file naming practices
+? What are the three elements of best file naming practices?
+
 A) Human readability, machine readability, and proper ordering
 b) Abbreviation, Having numbers at the end of the name, and proper ordering
 c) Human readability, machine readability, and only using letters and spaces

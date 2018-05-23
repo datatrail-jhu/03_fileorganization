@@ -72,9 +72,10 @@ Now that you know how to create and navigate projects in the next lecture we wil
 * [Slides](https://docs.google.com/presentation/d/1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig/edit?usp=sharing)
 
 
-### Quiz
 
 {quiz, id: quiz_01_rstudio}
+
+### RStudio and Projects quiz
 
 ? What is a "Space" in the Rstudio program? 
 

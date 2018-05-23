@@ -179,9 +179,10 @@ For instance, if you type `![Yosemite National Park](https://commons.wikimedia.o
 
 * [Slides](https://docs.google.com/presentation/d/1eHhYKegVodplOm9MajA3OaWReEMo7YRER-IRWBivWJM/edit?usp=sharing)
 
-### Quiz
 
 {quiz, id: quiz_05_markdown}
+
+### Markdown quiz
 
 ? How would you produce bolded text like **some text**? 
 

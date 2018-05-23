@@ -130,7 +130,7 @@ You should use `here()` to set the base project directory for each data science 
 
 Refer to this diagram to answer the quiz questions below. Assume "cloud" is the root directory for your computer.
 
-![Directory structure](images/08_paths_in_code/08_fileorganization_paths_in_code-1.png)
+![Directory structure](https://docs.google.com/presentation/d/18hkG4zMtlD5c6RUC2yzKG90sl1_zMT3b6D84qGvR1mQ/export/png?pageid=g3aa9ae33ea_0_305)
 
 {choose-answers: 4}
 ?  "/cloud/project/data/tidy_data"" is an example of a(n):
@@ -159,7 +159,7 @@ o) here("code", "code")
 o) "code/code/script.R"
 
 {choose-answers: 4}
-?  Assuming your current working direcotry is "/cloud/project", which of the following is an example of a relative path directing you to the folder "data/tidy_data"?
+?  Assuming your current working directory is "/cloud/project", which of the following is an example of a relative path directing you to the folder "data/tidy_data"?
 
 C) data/tidy_data
 m) /cloud/project/data/tidy_data

@@ -71,7 +71,10 @@ In order to convert this document into a PDF document containing your code, plot
 
 {quiz, id: quiz_04_studiomd}
 
+### Creating and Previewing Markdown Files in RStudio quiz
+
 ? What is the file extension of RMarkdown documents?
+
 a) .md
 b) .txt
 c) .R
