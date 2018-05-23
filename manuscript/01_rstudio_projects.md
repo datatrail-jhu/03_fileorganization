@@ -87,7 +87,7 @@ d) A place to store plots
 
 a) MySpace
 B) Your Workspace
-b) myfirstproject
+c) myfirstproject
 d) Workspace
 
 ? When you create a new project how do you rename the project?
