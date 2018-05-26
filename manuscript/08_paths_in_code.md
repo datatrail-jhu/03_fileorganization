@@ -130,7 +130,7 @@ You should use `here()` to set the base project directory for each data science 
 
 Refer to this diagram to answer the quiz questions below. Assume "cloud" is the root directory for your computer.
 
-![Directory structure](https://docs.google.com/presentation/d/18hkG4zMtlD5c6RUC2yzKG90sl1_zMT3b6D84qGvR1mQ/export/png?pageid=g3aa9ae33ea_0_305)
+![Directory structure](images/08_paths_in_code/08_fileorganization_paths_in_code-1.png)
 
 {choose-answers: 4}
 ?  "/cloud/project/data/tidy_data"" is an example of a(n):

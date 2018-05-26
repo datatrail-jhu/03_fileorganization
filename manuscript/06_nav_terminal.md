@@ -201,7 +201,7 @@ The Terminal is an interface to the operating system of a computer that you will
 
 The following diagram of a file system will be used for some of the quiz questions.
 
-![Directory structure](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?pageid=g39e98c7b77_0_8)
+![Directory structure](images/06_nav_terminal/06_fileorganization_nav_terminal-4.png)
 
 {choose-answers: 4}
 ? Refer to the above diagram of a file system for this question. The current working directory is the `final_code` directory. Which of the following is a correct relative path to the `explanatory` directory?
