@@ -27,7 +27,7 @@ Three major formatting basics of Markdown are headers, bold and italicized text,
 
 Headers are straightforward. To create a header, you simply add a # sign right before the text you want to make a header. Keep in mind the # must be on the beginning of a new line (no text on the line before it). The more #'s you add before the text, the smaller the header will be. For example here is a list of headers you can use ordered from largest to smallest.
 
-```
+```r
 # Largest
 ## Slightly less large
 ### Even less large
@@ -46,7 +46,7 @@ The headers look as we wanted them too.  Thus headers should *not* be included i
 
 Creating bolded and italicized text is also very straightforward.  Use a double asterisk (`**`) before and after the text you want to be bold and a single asterisk (`*`) before and after text you want to italicize.
 
-```
+```r
 So in this sentence **what you want to bold** is shown **bolded** and *what you want to italicize* is shown in *italics*.
 ```
 
@@ -58,7 +58,7 @@ So in this sentence `**what you want to bold**` will be shown **what you want to
 
 Lists are a useful way to organize your ideas or tasks.  In Markdown, you can make your lists numbered or non-numbered.  To make a numbered list, just put the number and a period in front of the item.  As with headers, you do need to make sure your first number is on a new line (no text on the line before it!)
 
-```
+```r
 1. First item
 2. Second item
 3. Third item
@@ -71,20 +71,21 @@ This becomes:
 
 For non-numbered lists, you can use your choice of asterisks (`*`), pluses (`+`), or minuses (`-`) to indicate list items:
 
-```
+```r
 * First item
 * Second item
 ```
 
  OR
  
- ```
+ ```r
 + First item
 + Second item
 ```
 
 OR
-```
+
+```r
 - First item
 - Second item
 ```
@@ -97,7 +98,7 @@ All become:
 
 You can create sub-items for your list by indenting (using multiple spaces or Tab) before the number or the asterisk/plus/minus.  Make the number or symbol of the sub-item line up with the text of the item above it!
 
-```
+```r
 1. First item
 2. Second item
    1. Sub-item
@@ -119,7 +120,7 @@ This becomes:
 
 If you want to cross off items on your list (as you do them, perhaps) you can create a strike-through using double tildas (`~~`).
 
-```
+```r
 1. ~~First item~~
 2. Second item
    1. ~~Sub-item~~
@@ -143,13 +144,13 @@ You will see some more of these commands later in this module, but you might wan
 
 Links to content on the internet can be included in a Markdown document as well.  The format for a link is to put what you want your link to say in square brackets followed immediately by the web address where the link should go inside of parentheses, like this: 
 
-```
+```r
 [What you want your link to say](Web address where the link should go)
 ```
 
 For example if you want the link to go to www.google.com when clicked, then you'd replace the text in the parentheses and write:
 
-```
+```r
 [What you want your link to say](www.google.com)
 ```
 This is what it would look like in your rendered Markdown file: 
@@ -158,7 +159,7 @@ This is what it would look like in your rendered Markdown file:
 
 If you want to change the text of the link itself, you just change what's in the square brackets. For example, you might want the sentence: If you don't know the answer, you should look it up on Google, where the word Google would be a link to www.google.com.  You could do that by putting Google into square brackets, with the web address www.google.com following immediately in parentheses, like this:
 
-```
+```r
 If you don't know the answer, you should look it up on [Google](www.google.com).
 ```
 This would be shown as:
