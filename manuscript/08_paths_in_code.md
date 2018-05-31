@@ -133,7 +133,7 @@ Refer to this diagram to answer the quiz questions below. Assume "cloud" is the 
 ![Directory structure](images/08_paths_in_code/08_fileorganization_paths_in_code-1.png)
 
 {choose-answers: 4}
-?  "/cloud/project/data/tidy_data"" is an example of a(n):
+?  "/cloud/project/data/tidy_data" is an example of a(n):
 
 C) absolute path that directs you to the folder tidy_data
 m) relative path that directs you to the folder tidy_data
