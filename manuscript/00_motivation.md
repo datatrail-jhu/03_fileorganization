@@ -100,12 +100,12 @@ c) Have a standard system that you understand
 D) Create a set of folders at the beginning of every project
 
 
-? Which of the following is not a target audience of a data science project?
+? Which of the following is NOT a target audience of a data science project?
 
 a) Your coworkers in six months
-b) Your coworkers in six months
-C) You right now
-d) You in six months
+B) You right now
+c) You in six months
+d) Your boss in six months
 
 
 {/quiz}
