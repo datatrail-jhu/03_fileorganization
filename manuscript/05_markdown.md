@@ -198,6 +198,7 @@ o) `~some text~`
 o) `* some text`
 o) `_bold_some text_\bold`
 
+{choose-answers:4}
 ?1 How would you produce italicized text like *some text*? 
 
 C) `*some text*`
