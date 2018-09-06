@@ -77,26 +77,37 @@ Now that you know how to create and navigate projects in the next lecture we wil
 
 ### RStudio and Projects quiz
 
+{choose-answers:4}
 ? What is a "Space" in the Rstudio program? 
 
-a) A place to write
-b) A place to store files
 C) A place to store multiple projects
-d) A place to store plots
+C) Where all your projects will be saved
+o) A place to write
+o) A place to store files
+o) A place to store plots
+o) A place to store code
 
+{choose-answers:4}
 ? What is the name of your main "Space"?
 
-a) MySpace
-B) Your Workspace
-c) myfirstproject
-d) Workspace
+C) Your Workspace
+o) MySpace
+o) myfirstproject
+o) Workspace
+o) Untitled
+o) project
+o) Untitled Workspace
+o) Untitled Project
 
+{choose-answers:4}
 ? When you create a new project how do you rename the project?
 
-A) Click on the project name at the top left and type in the new name. 
-b) Click on Your Workspace and type in the new name
-c) Click on File, then New File, then R script, then type in the new name
-d) Click on the menu button at the top left and type in the new name. 
-
+C) Click on the project name at the top left and type in the new name. 
+C) Click on the current project name and type in the new name
+o) Click on Your Workspace and type in the new name
+o) Click on File, then New File, then R script, then type in the new name
+o) Click on the menu button at the top left and type in the new name. 
+o) Click on File and select "change project name"
+o) Click on file and select "Rename project"
 
 {/quiz}

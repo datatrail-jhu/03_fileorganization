@@ -38,7 +38,7 @@ Researchers at MD Anderson got so excited about the result that they tried to fi
 
 ![Two statisticians helped organize all the data and code from the project](images/00_motivation/00_fileorganization_motivation-5.png)
 
- Ultimately this discovery shut down the clinical studies and led to a major lawsuit. While there were a lot of problems with the original analysis, the reason there was so much trouble was that the files and code weren't organized so it took a _long_ time to figure out the problems that would put patients at risk. 
+Ultimately this discovery shut down the clinical studies and led to a major lawsuit. While there were a lot of problems with the original analysis, the reason there was so much trouble was that the files and code weren't organized so it took a _long_ time to figure out the problems that would put patients at risk. 
  
 ![It took a long time to do this organization and the delay meant erroneous clinical studies were carried out.](images/00_motivation/00_fileorganization_motivation-6.png)
 
@@ -85,27 +85,36 @@ In the rest of this course we will cover one standard system for how to set up, 
 
 ### Motivation quiz
 
+{choose-answers:4}
 ? What is the reason file organization caused a problem in the Duke scandal? 
 
-A) It took a long time to discover the problems in the data analysis
-b) The disorganized files led to a wrong analysis
-c) The files were organized but the researchers wouldn't share them
-d) The disorganized files led to people using the wrong data
+C) It took a long time to discover the problems in the data analysis
+C) The problems in the data analysis took a long time to find
+C) Lack of organization led to a delay in discovering the problems in the anlaysis
+o) The disorganized files led to a wrong analysis
+o) The files were organized but the researchers wouldn't share them
+o) The disorganized files led to people using the wrong data
+o) The files were altered to deceive others before being shared
 
-? What of the following is not a step in Karl Broman's suggestions for project organization?
+{choose-answers:4}
+? What of the following is *not* a step in Karl Broman's suggestions for project organization?
 
-a) Slow down and make lots of notes for yourself
-b) Have sympathy for your future self
-c) Have a standard system that you understand
-D) Create a set of folders at the beginning of every project
+C) Create a set of folders at the beginning of every project
+C) Put all files for each project in a single folder
+C) Minimize the number of directories on your computer
+o) Slow down and make lots of notes for yourself
+o) Have sympathy for your future self
+o) Have a standard system that you understand
 
-
+{choose-answers:4}
 ? Which of the following is NOT a target audience of a data science project?
 
-a) Your coworkers in six months
-B) You right now
-c) You in six months
-d) Your boss in six months
+C) You right now
+C) You at this moment
+C) You at the start of your project
+o) Your co-workers in six months
+o) You in six months
+o) Your boss in six months
 
 
 {/quiz}

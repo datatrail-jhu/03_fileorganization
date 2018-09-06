@@ -176,27 +176,82 @@ For instance, if you type `![Yosemite National Park](https://commons.wikimedia.o
 
 ### Slides and Video
 
-![Markdown](https://www.youtube.com/watch?v=JB9ppcfbYaU)
+![Introduction to Markdown](https://www.youtube.com/watch?v=JB9ppcfbYaU)
 
 * [Slides](https://docs.google.com/presentation/d/1eHhYKegVodplOm9MajA3OaWReEMo7YRER-IRWBivWJM/edit?usp=sharing)
 
 
 {quiz, id: quiz_05_markdown}
 
-### Markdown quiz
+### Introduction to Markdown quiz
 
-? How would you produce bolded text like **some text**? 
+{choose-answers: 4}
+?1 How would you produce bolded text like **some text**? 
 
-a) `~~some text~~`
-b) `--some text--`
 C) `**some text**`
-d) `~some text~`
+C) `__some text__`
+o) `*some text*`
+o) `_some text_`
+o) `~~some text~~`
+o) `--some text--`
+o) `~some text~`
+o) `* some text`
+o) `_bold_some text_\bold`
 
-? Which of the following would give you the smallest header? 
+?1 How would you produce italicized text like *some text*? 
 
-a) `## My header`
-b) `### My header`
+C) `*some text*`
+C) `_some text_`
+o) `**some text**`
+o) `__some text__`
+o) `~~some text~~`
+o) `--some text--`
+o) `~some text~`
+o) `* some text`
+o) `_bold_some text_\bold`
+
+{choose-answers: 4}
+?2 Which of the following would give you the smallest header (an H4 header)? 
+
 C) `#### My header`
-d) `# My header`
+o) `## My header`
+o) `### My header`
+o) `# My header`
+o) `_H4_My header_\H4`
+o) `#H4 My header`
+o) `####H4 My header`
+
+{choose-answers: 4}
+?2 Which of the following would give you the largest header (an H1 header)? 
+
+C) `# My header`
+o) `#### My header`
+o) `## My header`
+o) `### My header`
+o) `_H4_My header_\H4`
+o) `#H4 My header`
+o) `####H4 My header`
+
+{choose-answers: 4}
+?3 Which of the following is a correctly formatted hyperlink?
+
+C) [Google](www.google.com)
+m) ![Google](www.google.com)
+o) ###www.google.com
+o) *www.google.com*
+o) **www.google.com**
+o) _www.google.com_
+o) __www.google.com__
+
+{choose-answers: 4}
+?3 Which of the following demonstrates how you would include the image `impage.png` in your Markdown document?
+
+C) ![Google](image.png)
+m) [Google](image.png)
+o) ###image.png
+o) *image.png*
+o) **image.png**
+o) _image.png_
+o) __image.png__
 
 {/quiz}

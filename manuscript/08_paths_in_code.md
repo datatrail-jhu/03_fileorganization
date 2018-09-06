@@ -133,9 +133,10 @@ Refer to this diagram to answer the quiz questions below. Assume "cloud" is the 
 ![Directory structure](images/08_paths_in_code/08_fileorganization_paths_in_code-1.png)
 
 {choose-answers: 4}
-?  "/cloud/project/data/tidy_data" is an example of a(n):
+?1  `/cloud/project/data/tidy_data` is an example of a(n):
 
 C) absolute path that directs you to the folder tidy_data
+C) absolute path that leads you to the tidy_data directory
 m) relative path that directs you to the folder tidy_data
 o) absolute path that directs you to the folder raw_data
 o) relative path that directs you to the folder raw_data
@@ -145,9 +146,25 @@ o) distinct path that directs you to the folder tidy_data
 o) suggestive path that directs you to the folder tidy_data
 
 {choose-answers: 4}
-?  How would you use the here() function to specify the path to a script called "script.R" in the final_code folder that is itself in a folder called code?
+?1  `/cloud/project/data/raw_data` is an example of a(n):
+
+C) absolute path that directs you to the folder raw_data
+C) absolute path that leads you to the raw_data directory
+o) absolute path that directs you to the folder tidy_data
+o) absolute path that leads you to the tidy_data directory
+m) relative path that directs you to the folder raw_data
+o) absolute path that directs you to the folder raw_data
+o) relative path that directs you to the folder raw_data
+o) absolute path that directs you to the folder data
+o) relative path that directs you to the folder data
+o) distinct path that directs you to the folder raw_data
+o) suggestive path that directs you to the folder raw_data
+
+{choose-answers: 4}
+?2  How would you use the `here()` function to specify the path to a script called `script.R` in the `final_code` folder that is itself in a folder called code?
 
 C) here("code", "final_code", "script.R")
+m) here("code", "raw_code", "script.R")
 o) here("code", "/" , "final_code", "/", "script.R")
 o) here("code", "/" , "final_code", "/")
 o) here("code", "final_code")
@@ -159,15 +176,53 @@ o) here("code", "code")
 o) "code/code/script.R"
 
 {choose-answers: 4}
-?  Assuming your current working directory is "/cloud/project", which of the following is an example of a relative path directing you to the folder "data/tidy_data"?
+?2  How would you use the `here()` function to specify the path to a script called `script.R` in the `raw_code` folder that is itself in a folder called code?
+
+C) here("code", "raw_code", "script.R")
+m) here("code", "final_code", "script.R")
+o) here("code", "/" , "raw_code", "/", "script.R")
+o) here("code", "/" , "raw_code", "/")
+o) here("code", "raw_code")
+o) "code/raw_code/script.R"
+o) here("code", "code", "script.R")
+o) here("code", "/" , "code", "/", "script.R")
+o) here("code", "/" , "code", "/")
+o) here("code", "code")
+o) "code/code/script.R"
+
+{choose-answers: 4}
+?3  Assuming your current working directory is `cloud/project`, which of the following is an example of a relative path directing you to the folder `data/tidy_data`?
 
 C) data/tidy_data
 m) /cloud/project/data/tidy_data
-o) data/raw_data
+m) data/raw_data
 o) here(tidy_data)
 o) here("tidy_data")
 o) tidy_data
 o) /cloud/data/tidy_data
+
+{choose-answers: 4}
+?3  Assuming your current working directory is `/cloud/project`, which of the following is an example of a relative path directing you to the folder `data/raw_data`?
+
+C) data/raw_data
+m) /cloud/project/data/raw_data
+m) data/tidy_data
+o) here(raw_data)
+o) here("raw_data")
+o) raw_data
+o) /cloud/data/raw_data
+
+{choose-answers: 4}
+?3  Assuming your current working directory is `cloud/project`, which of the following is an example of a relative path directing you to the folder `figures/exploratory`?
+
+C) figures/exploratory
+o) /cloud/project/figures/exploratory
+o) data/raw_data
+o) data/tidy_data
+o) here(exploratory)
+o) here("exploratory")
+o) exploratory
+o) /cloud/figures/exploratory
 
 
 {/quiz}
