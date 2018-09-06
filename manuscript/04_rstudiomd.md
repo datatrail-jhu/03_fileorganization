@@ -73,17 +73,27 @@ In order to convert this document into a PDF document containing your code, plot
 
 ### Creating and Previewing Markdown Files in RStudio quiz
 
-? What is the file extension of RMarkdown documents?
+{choose-answers:4}
+?1 What is the file extension of RMarkdown documents?
 
-a) .md
-b) .txt
-c) .R
-D) .Rmd
+C) .Rmd
+o) .md
+o) .txt
+o) .R
+o) .Rmarkdown
+o) .r
+o) .csv
+o) .xlsx
 
-? Determine whether the following statement True or False: You can send commands from an RMarkdown document to the console to be run.
 
-A) True
-b) False
+?2 TRUE or FALSE: You can send commands from an RMarkdown document to the console to be run.
 
+A) TRUE
+b) FALSE
+
+?2 TRUE or FALSE: You *cannot* send commands from an RMarkdown document to the console to be run.
+
+a) TRUE
+B) FALSE
 
 {/quiz}

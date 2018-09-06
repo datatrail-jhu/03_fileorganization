@@ -164,28 +164,49 @@ Using the same steps we did for creating the folders inside of the *data* folder
 
 ### Setting up data science project folders quiz
 
-? What are the top level of folders in a data science project?
+{choose-answers:4}
+?1 What are the top level of folders in a data science project?
 
-A) data, code, figures, and products
-b) data, code, figures, and writing
-c) data, writing, products, and figures
-d) data, figures, writing, and products
+C) data, code, figures, and products
+o) data, code, figures, and writing
+o) data, writing, products, and figures
+o) data, figures, writing, and products
+o) raw_code, final_code, explanatory_fitures, exploratory_figures
+o) raw_data, final_code, final_data, raw_code
 
+{choose-answers:4}
+?2 What are the two sub-folders in the `data` folder?
 
-? What are the two sub-folders in the data folder?
+C) raw_data, tidy_data
+o) raw_data, final_data
+o) big data, small_data
+o) raw data, tidy data
+o) metadata, data
+o) data, tidy_data
+o) data1, data2
 
-a) big data, small_data
-b) metadata, data
-C) raw data, tidy_data
-d) data, tidy_data
+{choose-answers:4}
+?2 What are the two sub-folders in the `code` folder?
 
+C) raw_code, final_code
+o) raw_code, tidy_code
+o) big code, small_code
+o) metacode, code
+o) code, tidy_code
+o) raw code, final code
+o) code1, code2
 
-? When should you set up the project file structure?
+{choose-answers:4}
+?3 When should you set up the project file structure?
 
-a) After you have done your analysis
-B) Before starting any new project
-c) After you have cleaned the data 
-d) When you start to create code files
+C) Before starting any new project
+C) At the start of a new project
+C) At the beginning of each project
+o) After you have done your analysis
+o) After you have cleaned the data 
+o) When you start to create code files
+o) Right after you create your first plot
+o) At the very end of your project
 
 {/quiz}
 

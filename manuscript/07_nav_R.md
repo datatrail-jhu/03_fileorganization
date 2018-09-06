@@ -1,4 +1,4 @@
-# Managing files in R
+# Managing Files in R
 
 In this lesson, we will continue our tour of ways in which you will be managing files as a data scientist. In the previous lesson, you learned about the Terminal and its command-based interface to the file system on RStudio Cloud. In this lesson, you will learn in small part about the R programming language and in large part about specfic tools within R to manage files. You will learn much more about R for its capabilities in data science work in future courses.
 
@@ -72,17 +72,17 @@ In this lesson, you learned about R functions that are analogous to Terminal com
 
 ### Slides and Video
 
-![Managing files in R](https://www.youtube.com/watch?v=maSo_Byarvw)
+![Managing Files in R](https://www.youtube.com/watch?v=maSo_Byarvw)
 
 * [Slides](https://docs.google.com/presentation/d/1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc/edit?usp=sharing)
 
 
 {quiz, id: quiz_07_nav_R}
 
-### Managing files in R quiz
+### Managing Files in R quiz
 
-{choose-answers: 3}
-? Which of the following functions displays `TRUE` or `FALSE` after completion?
+{choose-answers: 4}
+?1 Which of the following functions displays `TRUE` or `FALSE` after completion?
 
 C) `file.create()`
 C) `file.rename()`
@@ -92,9 +92,11 @@ C) `file.exists()`
 o) `getwd()`
 o) `setwd()`
 o) `list.files()`
+o) `ls()`
+o) `dir.create()`
 
 {choose-answers: 4}
-? Which of the following R function and Terminal command pairs perform the same function?
+?2 Which of the following R function and Terminal command pairs perform the same function? (Note: The R fucntion is represented by `function()`, where the Terminal command does not have the parentheses `function`.)
 
 C) `getwd()` and `pwd`
 C) `setwd()` and `cd`
@@ -109,9 +111,12 @@ o) `file.rename()` and `rnm`
 o) `file.rename()` and `cp`
 o) `file.copy()` and `mv`
 o) `file.remove()` and `del`
+o) `cd()` and `setwd`
+o) `pwd()` and `getwd`
+o) `ls()` and `list.files`
 
 {choose-answers: 4}
-? Refer to the file system diagram below. The current working directory is `code`. Which of the following Terminal commands and/or R functions will move the `tidy_data1.R` file in the `raw_code` directory to the `final_code` directory?
+?3 Refer to the file system diagram below. The current working directory is `code`. Which of the following Terminal commands and/or R functions will move the `tidy_data1.R` file in the `raw_code` directory to the `final_code` directory?
 
 ![Example file system](images/07_nav_R/07_fileorganization_nav_R-4.png)
 
@@ -127,4 +132,18 @@ o) `file.copy("raw_code/tidy_data1.R", "final_code/tidy_data1.R")`
 o) `file.rename("tidy_data1.R", "../final_code/tidy_data1.R")`
 o) `file.copy("../code/raw_code/tidy_data1.R", "../code/final_code/tidy_data1.R")`
 
+?4 TRUE or FALSE: Files in your current working directory can only be listed from the Terminal (and not the R Console).
+
+a) TRUE
+B) FALSE
+
+?4 TRUE or FALSE: Files in your current working directory can only be listed from the R Console (and not the Terminal)
+
+a) TRUE
+B) FALSE
+
+?4 TRUE or FALSE: Files in your current working directory can be listed from both the Terminal and the R Console.
+
+A) TRUE
+b) FALSE
 {/quiz}

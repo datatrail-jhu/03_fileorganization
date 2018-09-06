@@ -54,41 +54,63 @@ In addition to making sure your files can be nicely ordered, always left-pad num
 
 ### File Naming quiz
 
+{choose-answers:4}
 ? What are the three elements of best file naming practices?
 
-A) Human readability, machine readability, and proper ordering
-b) Abbreviation, Having numbers at the end of the name, and proper ordering
-c) Human readability, machine readability, and only using letters and spaces
-d) Abbreviation, machine readability, and proper ordering
+C) Human readability, machine readability, and proper ordering
+C) Proper ordering, human readability, and machine readability
+C) Machine readability, [roper ordering, and human readability
+o) Abbreviation, having numbers at the end of the name, and proper ordering
+o) Human readability, machine readability, and only using letters and spaces
+o) Abbreviation, machine readability, and proper ordering
+o) Having numbers at the end of the name, human readability,and proper ordering
 
+{choose-answers:4}
+? Which one is *not* considered good practice in file naming?
 
-? Which one is not considered good practice in file naming?
+C) Always use commas
+C) Always use the longest possible name
+C) Ensure that it cannot be understood by humans
+o) Use delimiters such as underscores
+o) Do not use accented letters
+o) Avoid spaces
+o) Avoid case sensitivity
+o) Avoid punctuation 
 
-a) Use delimiters such as underscores
-B) Always use commas
-c) Do not use accented letters
-d) Avoide spaces
-
+{choose-answers:4}
 ? Which one of the following file names does NOT follow best file naming practices?
 
-a) 2015-06-23_baltimore_school_001.txt
-b) 2015_baltimore_school_001.txt
-c) 2015-06_baltimore_school_001.txt
-D) 06-23-2015_baltimore_school_001.txt
+C) 06-23-2015_baltimore_school_001.txt
+C) 09-29-2015_baltimore_school_007.txt
+o) 2015-06-23_baltimore_school_001.txt
+o) 2015-09-29_baltimore_school_020.txt
+o) 2015_baltimore_school_001.txt
+o) 2015_baltimore_school_001.txt
+o) 2015-06_baltimore_school_001.txt
+o) 2015-09_baltimore_school_001.txt
 
+{choose-answers:4}
 ? Which one of the following file names follows best file naming practices?
 
-A) helper01_analysis_gender.R
-b) helper 1 analysis gender.R
-c) helper_analysis_gender_01.R
-d) helper01_analysis_gender$.R
+C) helper01_analysis_gender.R
+C) helper02_analysis_gender.R
+o) Helper1AnalysisGender.R
+o) helper 1 analysis gender.R
+o) helper 3 analysis g.R
+o) helper_analysis_gender_01.R
+o) helper01_analysis_gender$.R
+o) helper01,analysis_gender.R
 
+{choose-answers:4}
 ? Which one of the following file names follows best file naming practices?
 
-a) fig 7.png
-B) fig_007_analysis_subway_delays.png
-c) fig_analysis_subway_delays_007.png
-d) FIG_007_Analysis_Subway_Delays.png
+C) fig_007_analysis_subway_delays.png
+o) fig 7.png
+o) finalfigure.png
+o) fig_analysis_subway_delays_007.png
+o) FIG_007_Analysis_Subway_Delays.png
+o) Delays,Figures.png
+o) analysis subway delays.png
 
 
 {/quiz}

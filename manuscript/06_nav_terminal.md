@@ -204,7 +204,7 @@ The following diagram of a file system will be used for some of the quiz questio
 ![Directory structure](images/06_nav_terminal/06_fileorganization_nav_terminal-4.png)
 
 {choose-answers: 4}
-? Refer to the above diagram of a file system for this question. The current working directory is the `final_code` directory. Which of the following is a correct relative path to the `explanatory` directory?
+?1 Refer to the above diagram of a file system for this question. The current working directory is the `final_code` directory. Which of the following is a correct relative path to the `explanatory` directory?
 
 C) `../../figures/explanatory`
 C) `../../../project/figures/explanatory`
@@ -217,7 +217,7 @@ o) `../project/figures/explanatory`
 o) `project/figures/explanatory`
 
 {choose-answers: 4}
-? Refer to the above diagram of a file system for this question. The current working directory is the `final_code` directory. Which of the following is a correct absolute path to the `explanatory` directory?
+?2 Refer to the above diagram of a file system for this question. The current working directory is the `final_code` directory. Which of the following is a correct absolute path to the `explanatory` directory?
 
 C) `/cloud/project/figures/explanatory/`
 o) `../../figures/explanatory`
@@ -230,7 +230,7 @@ o) `../project/figures/explanatory`
 o) `project/figures/explanatory`
 
 {choose-answers: 4}
-? How can you determine the current working directory in the Terminal in RStudio?
+?3 How can you determine the current working directory in the Terminal in RStudio?
 
 C) Look at the path displayed before the dollar sign at the prompt
 C) `pwd`
@@ -239,14 +239,14 @@ o) `ls -lh`
 o) `cd`
 o) `cd /`
 
-{choose-answers: 7}
-? In my current working directory, I have two folders called `explanatory` and `exploratory`. I want to change my working directory to the `exploratory` folder. What is the earliest point in the typing of my command where I can hit the tab key to automatically complete the file name?
+{choose-answers: 4}
+?4 In my current working directory, I have two folders called `explanatory` and `exploratory`. I want to change my working directory to the `exploratory` folder. What is the earliest point in the typing of my command where I can hit the tab key to automatically complete the file name?
 
 C) `cd explo`, then hit tab key
 m) `cd e`, then hit tab key
-m) `cd ex`, then hit tab key
-m) `cd exp`, then hit tab key
-m) `cd expl`, then hit tab key
+o) `cd ex`, then hit tab key
+o) `cd exp`, then hit tab key
+o) `cd expl`, then hit tab key
 o) `cd explor`, then hit tab key
 o) `cd explora`, then hit tab key
 o) `cd explorat`, then hit tab key
@@ -255,7 +255,7 @@ o) `cd explorator`, then hit tab key
 o) `cd exploratory`; tab completion won't save time here.
 
 {choose-answers: 4}
-? Which of the following commands displays only the files in the current working directory that have a `.txt` extension?
+?5 Which of the following commands displays only the files in the current working directory that have a `.txt` extension?
 
 C) `ls *.txt`
 C) `ls -lh *.txt`
@@ -265,7 +265,7 @@ o) `ls .txt*`
 o) `ls -lh .txt*`
 
 {choose-answers: 4}
-? Refer to the above diagram of a file system for this question. The current working directory is the `raw_data` directory. Which of the following commands will copy a file called `data.txt` in the `tidy_data` directory to the current working directory?
+?6 Refer to the above diagram of a file system for this question. The current working directory is the `raw_data` directory. Which of the following commands will copy a file called `data.txt` in the `tidy_data` directory to the current working directory?
 
 C) `cp ../tidy_data/data.txt .`
 o) `cp ../tidy_data/data.txt`
@@ -275,7 +275,7 @@ o) `mv ../tidy_data/data.txt .`
 o) `mv ../tidy_data/data.txt`
 
 {choose-answers: 4}
-? Refer to the above diagram of a file system for this question. The current working directory is the `raw_data` directory. Which of the following commands will delete the `writing` directory?
+?7 Refer to the above diagram of a file system for this question. The current working directory is the `raw_data` directory. Which of the following commands will delete the `writing` directory?
 
 C) `rm -r ../../products/writing`
 o) `rm ../products/writing`
@@ -285,7 +285,19 @@ o) `rm -r ../products/writing`
 o) `rm -r ../../../products/writing`
 
 {choose-answers: 4}
-? Refer to the above diagram of a file system for this question. The current working directory is the `raw_code` directory. This directory contains 4 files: `tidy1.R`, `tidy2.R`, `trim1.R`, `trim2.R`. Which of the following commands will move only the `tidy1.R` and `tidy2.R` files out of this directory and into the `final_code` directory?
+?7 Refer to the above diagram of a file system for this question. The current working directory is the `raw_data` directory. Which of the following commands will delete the `exploratory` directory?
+
+C) `rm -r ../../figures/exploratory`
+o) `rm ../figures/exploratory`
+o) `rm ../../figures/exploratory`
+o) `rm ../../../figures/exploratory`
+o) `rm -r ../figures/exploratory`
+o) `rm -r ../../../figures/exploratory`
+o) `rm /figures/exploratory`
+
+
+{choose-answers: 4}
+?8 Refer to the above diagram of a file system for this question. The current working directory is the `raw_code` directory. This directory contains 4 files: `tidy1.R`, `tidy2.R`, `trim1.R`, `trim2.R`. Which of the following commands will move only the `tidy1.R` and `tidy2.R` files out of this directory and into the `final_code` directory?
 
 C) `mv tidy1.R tidy2.R ../final_code/`
 C) `mv tidy*.R ../final_code/`

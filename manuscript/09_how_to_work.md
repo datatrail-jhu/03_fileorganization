@@ -1,6 +1,6 @@
 # How to Work
 
-### Why organize?
+### Why Organize?
 
 In the previous lessons we learned about how to organize our files into folders and how to name our files and folders. Doing this has the following benefits:
 
@@ -25,9 +25,9 @@ A good idea is to update the README file as you work. As you create new files an
 You might also make a more detailed README file, which includes a list of variables, units of measurement of each variable, definition of code and symbols used to deal with missing data, Licenses or restrictions on the content of the project including the data, and information about how others should cite your analysis.
 
 
-### Using comments
+### Using Comments
 
-Our next piece of advise is that use comments within your code. Commenting in R is done by adding the pound sign (#). If you add the pound sign in the beginning of each file, R will not read that line as code and will instead skip it. So you can add your explanations about each chunk of code using the pound sign. This is an example of commenting:
+Our next piece of advice is that use comments within your code. Commenting in R is done by adding the pound sign (#). If you add the pound sign in the beginning of each file, R will not read that line as code and will instead skip it. So you can add your explanations about each chunk of code using the pound sign. This is an example of commenting:
 
 ```r
 # calculates the products of a vector and a matrix
@@ -51,7 +51,7 @@ Always make sure your changes are saved and even more importantly that all your 
 
 One mistake in writing code is to have everything in one file. This is bad practice since fixing bugs and replicating the analysis would be much harder. Therefore, it is recommended that you write code in a modular way so that each group of code that do similar things can be put in a single file and the master file calls these individual files. The result is a much cleaner and shorter master file.
 
-### Draft and final versions
+### Draft and Final Versions
 
 When working on a data science project you will start with data in the `data/raw_data` folder and you will start with code in the `code/raw_code` folder. Most of your early analysis will be done within the `code/raw_code` folder. When you are first starting out on a project it makes sense to work quickly, exploring a data set or a problem and figuring out what is going on. Don't worry about the details at this stage! The goal is to just try to figure out what is going on with the data you are working on. 
 
@@ -75,26 +75,59 @@ Budget about 20% of your time keeping track of a bulleted list of the things tha
 
 ### How to Work quiz
 
-? Why is file organization important?
+?1 Why is file organization important?
 
 A) All answers are correct.
 b) It will be easier to replicate an analysis.
 c) It will be easier to redo the analysis in future.
 d) It will be easier to collaborate with others.
 
-? What kind of information is recommended to be included in the README file of your data science project?
+{choose-answers:4}
+?1 Which of the following explains why file organization is important?
+
+C) It will be easier for someone else to replicate your analysis.
+m) All answers are correct.
+o) It makes it more difficult for others to steal your analysis.
+o) It makes it more difficult for others to figure out your mistakes.
+o) It increases security of your data.
+o) It allows data to be anonymized. 
+
+{choose-answers:4}
+?1 Which of the following explains why file organization is important?
+
+C) It will be easier for you to redo the analysis in future.
+m) All answers are correct.
+o) It makes it more difficult for others to steal your analysis.
+o) It makes it more difficult for others to figure out your mistakes.
+o) It increases security of your data.
+o) It allows data to be anonymized. 
+
+{choose-answers:4}
+?1 Which of the following explains why file organization is important?
+
+C) It will be easier to collaborate with others.
+m) All answers are correct.
+o) It makes it more difficult for others to steal your analysis.
+o) It makes it more difficult for others to figure out your mistakes.
+o) It increases security of your data.
+o) It allows data to be anonymized. 
+
+?2 What kind of information is recommended to be included in the README file of your data science project?
 
 a) How to cite your analysis.
 b) Name of the collaborators on the project.
 c) File structure and how files are related.
 D) All answers are correct.
 
+{choose-answers: 4}
 ? What is NOT a characteristic of a good comment within a code file in R?
 
-a) It is concise.
-b) It is informative.
 C) It mentions who wrote the chunk of code that follows.
-d) It follows the pound key.
+C) The comment includes code that must run.
+o) It is concise.
+o) It is informative.
+o) It follows the pound key.
+o) It helps explain what the code is doing
 
 {/quiz}}
 
