@@ -120,7 +120,7 @@ c) File structure and how files are related.
 D) All answers are correct.
 
 {choose-answers: 4}
-? What is NOT a characteristic of a good comment within a code file in R?
+?3 What is NOT a characteristic of a good comment within a code file in R?
 
 C) It mentions who wrote the chunk of code that follows.
 C) The comment includes code that must run.
