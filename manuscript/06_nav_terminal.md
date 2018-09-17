@@ -1,4 +1,4 @@
-# Managing files in the Terminal
+# Managing Files in the Terminal
 
 As was discussed in the first lesson of this course, one of the most important aspects of being a productive data scientist is staying organized. And a big part of staying organized is in managing your files: knowing where they are located and manipulating them with ease. In these next few lessons, we will be getting you fluent in orienting yourself in file systems in two areas: the Terminal and R/RStudio. In this lesson, we will focus on working with the Terminal.
 
@@ -190,14 +190,14 @@ The Terminal is an interface to the operating system of a computer that you will
 
 ### Slides and Video
 
-![Managing files in the Terminal](https://www.youtube.com/watch?v=f2BuN_tcXps)
+![Managing Files in the Terminal](https://www.youtube.com/watch?v=f2BuN_tcXps)
 
 * [Slides](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/edit?usp=sharing)
 
 
 {quiz, id: quiz_06_nav_terminal}
 
-### Managing files in the Terminal quiz
+### Managing Files in the Terminal quiz
 
 The following diagram of a file system will be used for some of the quiz questions.
 
