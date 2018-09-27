@@ -5,9 +5,9 @@ Once you have created a new project the next step is to organize and name the fo
 
 ### A project organization framework
 
-We will set up data science projects on rstudio.cloud. This is how you should set up every new data science project before you start doing any work. It will be much harder to set up after the project has started and files are scattered everywhere.  Open your web browser and navigate to the website [https://rstudio.cloud/](https://rstudio.cloud/).
+We will set up data science projects on RStudio Cloud. This is how you should set up every new data science project before you start doing any work. It will be much harder to set up after the project has started and files are scattered everywhere.  Open your web browser and navigate to the website [https://RStudio Cloud/](https://RStudio Cloud/).
 
-![Go to rstudio.cloud](images/02_organizing_projects/02_fileorganization_organizing_projects-4.png)
+![Go to RStudio Cloud](images/02_organizing_projects/02_fileorganization_organizing_projects-4.png)
 
 
 Then log in and click on the project *my_first_project*.
@@ -18,7 +18,7 @@ Then log in and click on the project *my_first_project*.
 
 You should now see a screen that looks like this where there are three windows. The window in the lower right hand corner of the screen is the part that shows all the files you have in your project. Right now there shouldn't be any files since we just created this project in the last lesson but didn't do anything in the project. 
 
-![The rstudio.cloud interface showing the empty my_first_project](images/02_organizing_projects/02_fileorganization_organizing_projects-6.png)
+![The RStudio Cloud interface showing the empty my_first_project](images/02_organizing_projects/02_fileorganization_organizing_projects-6.png)
 
 
 
@@ -154,7 +154,7 @@ Using the same steps we did for creating the folders inside of the *data* folder
 
 ### Slides and Video
 
-![Setting up data science project folders](https://www.youtube.com/watch?v=UbyXBcQgT9A)
+![Setting up data science project folders](https://www.youtube.com/watch?v=uk9Pvmv-l4E)
 
 * [Slides](https://docs.google.com/presentation/d/1jNeIkKjyVenNF5AEqNpspnLuKXSiXbg-I6VC_uy-b70/edit?usp=sharing)
 

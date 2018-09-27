@@ -6,7 +6,7 @@ But it turns out there were some choices the authors made that were questionable
 
 It isn't just because of errors that you'd want to have organized files and projects. One of the most common things to happen is that you do a data science project, hand it off to someone else, then move on to a new project. But sometimes people will have questions about your old projects. If you have a system you and others will be able to find the project and the exact files you need. As Jenny Bryan, one of the most famous data scientists in the world, says File organization and naming are powerful weapons against chaos. Another famous data scientist, Karl Broman, suggests that the best way to end up with a good file organization system has three steps. Step one is  slow down and make lots of notes for yourself. Step two is have sympathy for your future self. Step three is have a standard system that you understand
 
-In the rest of this lesson we will cover one standard system for how to set up the folders you will need to organize a project. Once you learn this system you can adapt it to work better for you, or try other ways of organizing your projects. We will set up data science projects on rstudio.cloud. This is how you should set up every new data science project before you start doing any work. It will be much harder to set up after the project has started and files are scattered everywhere. To start, open your web browser and navigate to the website https://rstudio.cloud/.
+In the rest of this lesson we will cover one standard system for how to set up the folders you will need to organize a project. Once you learn this system you can adapt it to work better for you, or try other ways of organizing your projects. We will set up data science projects on R Studio Cloud. This is how you should set up every new data science project before you start doing any work. It will be much harder to set up after the project has started and files are scattered everywhere. To start, open your web browser and navigate to the website https://rstudio.cloud/.
 
 Then log in and click on the project titled my_first_project that we created in the last lesson. 
 
@@ -20,9 +20,9 @@ After clicking OK you should now see a folder called data in the file window on 
 
 Next we will create a few more folders. For each one click the New Folder button, enter the name and click ok. The folders we need to create will be called figures, code, and text. Once you have created the folders you should see something like this. These folders represent the four parts of any data science project. Data is the folder where you will put all the data you have collected or been given to analyze. Figures is where you will put plots, data pictures, and other images you have created to show data to other people. Code is where you will create code files for collecting, cleaning up, or analyzing data. Products is the place where you will place any reports, presentations, or products you create for sharing with other people. 
 
-Now that we have these folders in place the next thing you need to create is a README file. This is a file where you will describe all of the data and projects you will be doing. You will add to this README as your project expands. To create the README file click File at the top left hand part of Rstudio
+Now that we have these folders in place the next thing you need to create is a README file. This is a file where you will describe all of the data and projects you will be doing. You will add to this README as your project expands. To create the README file click File at the top left hand part of R Studio.
 
-Then over over New File to show the types of new files you can create. Move the cursor down and click on _Text File_. 
+Then over over New File to show the types of new files you can create. Move the cursor down and click on Text File. 
 
 You should see a new screen open with the title Untitled like this in the upper left hand side of the screen. 
 

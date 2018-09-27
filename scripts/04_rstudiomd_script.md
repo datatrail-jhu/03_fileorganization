@@ -6,7 +6,7 @@ This opens up a blank file in which you can type your notes in Markdown syntax.
 
 When you are finished editing this document and wish to save, you can go to the File menu and select Save As to save your file.
 
-Enter the name of your file, but be sure to include the file extension dot MD at the end.
+Enter the name of your file, but be sure to include the file extension dot m d at the end.
 
 When you press Enter, the file will be saved and any Markdown syntax used in your document will show up as color coded.
 

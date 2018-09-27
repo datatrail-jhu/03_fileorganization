@@ -16,7 +16,7 @@ You will always see a string of text at the beginning of the line. This is calle
 
 ### Why manage files in the Terminal?
 
-As we've discussed, the Terminal is a command-based interface to a computer operating system. This turns out to be a very flexible and fast way to manage your files once you become comfortable with a few commands. Let's say that you wanted to make a copy of a folder. Whether on RStudio Cloud or on Google Drive, you would need to go through a series of clicks and typing to find that folder, copy it, and rename it. Within the Terminal, this can all be acheived with a single command.
+As we've discussed, the Terminal is a command-based interface to a computer operating system. This turns out to be a very flexible and fast way to manage your files once you become comfortable with a few commands. Let's say that you wanted to make a copy of a folder. Whether on RStudio Cloud or on Google Drive, you would need to go through a series of clicks and typing to find that folder, copy it, and rename it. Within the Terminal, this can all be achieved with a single command.
 
 ### File system example and vocabulary
 
@@ -84,7 +84,7 @@ Rather than using an absolute path, a robust way to specify the path to the `exp
 
 ![Relative vs absolute paths](images/06_nav_terminal/06_fileorganization_nav_terminal-17.png)
 
-Let's look at one more example to reinforce these ideas. Our current working directory is the `raw_code` directory. We want to specify a path to the `final_code` directory. There are several ways to do acheive this, but the first listed below is the most straightforward.
+Let's look at one more example to reinforce these ideas. Our current working directory is the `raw_code` directory. We want to specify a path to the `final_code` directory. There are several ways to do achieve this, but the first listed below is the most straightforward.
 
 - `../final_code/`
 - `../../code/final_code/`
@@ -190,7 +190,7 @@ The Terminal is an interface to the operating system of a computer that you will
 
 ### Slides and Video
 
-![Managing Files in the Terminal](https://www.youtube.com/watch?v=f2BuN_tcXps)
+![Managing Files in the Terminal](https://www.youtube.com/watch?v=R7bhQW8-gHg)
 
 * [Slides](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/edit?usp=sharing)
 

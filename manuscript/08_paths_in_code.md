@@ -53,7 +53,7 @@ However, you are *not* likely to (and shouldn't!) share all the contents of your
 
 We haven't yet discussed what an R package is or what the basic commands in R are. However, we have covered file organization at this point *and* how to navigate within R. With that knowledge, we're now going to discuss how to use the here package. 
 
-While we'll define in more depth what packages are, at this point, think of packages as something that allows you to accomplish something that you wouldn't have been able to otherwise or that wouldn't have been as easy to accmomplish without the package. 
+While we'll define in more depth what packages are, at this point, think of packages as something that allows you to accomplish something that you wouldn't have been able to otherwise or that wouldn't have been as easy to accomplish without the package. 
 
 We're going to discuss using a single R package now, called [`here`](https://github.com/r-lib/here). 
 
@@ -68,7 +68,7 @@ library(here)
 
 Okay, so if we're discussing packages later, why discuss this *one* package now? Well, `here` is a package specifically designed to help you deal with file organization when you're coding.  
 
-This package allows you to define in which folder all your relative paths should beging within a project.
+This package allows you to define in which folder all your relative paths should begin within a project.
 
 #### Setting your project directory
 
@@ -119,7 +119,7 @@ You should use `here()` to set the base project directory for each data science 
 
 ### Slides and Video
 
-![Using Paths in Code](https://www.youtube.com/watch?v=0cUXv4bMcds)
+![Using Paths in Code](https://www.youtube.com/watch?v=Z5DvS7TLuEg)
 
 * [Slides](https://docs.google.com/presentation/d/18hkG4zMtlD5c6RUC2yzKG90sl1_zMT3b6D84qGvR1mQ/edit?usp=sharing)
 
