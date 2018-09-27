@@ -1,4 +1,4 @@
-# Setting up data science project folders
+# Setting Up Data Science Project Folders
 
 Once you have created a new project the next step is to organize and name the folders and files in that project. Naming and organizing files seems very boring, but it one of the most important parts of any data science project! Not having the files or the data available is one of the most common reasons that errors are missed in data science projects. 
 
@@ -162,7 +162,7 @@ Using the same steps we did for creating the folders inside of the *data* folder
 
 {quiz, id: quiz_02_organizing_projects}
 
-### Setting up data science project folders quiz
+### Setting Up Data Science Project Folders quiz
 
 {choose-answers:4}
 ?1 What are the top level of folders in a data science project?
