@@ -1,16 +1,16 @@
 # RStudio and Projects
 
-You've seen Rstudio in the first class in the sequence. Remember [R](https://www.r-project.org/) is the main software that we are going to use to analyze data in this class. R is one of the two most popular languages for data science. We will learn a lot more about it throughout the courses, but here we are just going to use it to take a peak at the data you have created. R is a piece of software that is used for running computer code. [RStudio](https://www.rstudio.com/) is a company that makes a piece of software that works with R. RStudio makes it easier to create, save, share, and work with R code and data sets. Rstudio is also useful for organizing projects and writing, organizing, and sharing your data science work.  
+You've seen RStudio in the first class in the sequence. Remember [R](https://www.r-project.org/) is the main software that we are going to use to analyze data in this class. R is one of the two most popular languages for data science. We will learn a lot more about it throughout the courses, but here we are just going to use it to take a peak at the data you have created. R is a piece of software that is used for running computer code. [RStudio](https://www.rstudio.com/) is a company that makes a piece of software that works with R. RStudio makes it easier to create, save, share, and work with R code and data sets. RStudio is also useful for organizing projects and writing, organizing, and sharing your data science work.  
 
-If you have a more traditional laptop you can download and install R and RStudio on your laptop. But this class is part of our Chromebook Data Science program where we will be teaching you how to do everything through a web browser. Fortunately RStudio also offers a web-based version of their software called rstudio.cloud.
-
-
-### Logging in to rstudio.cloud
-
-To use this software, open your web browser and navigate to the website [https://rstudio.cloud/](https://rstudio.cloud/).
+If you have a more traditional laptop you can download and install R and RStudio on your laptop. But this class is part of our Chromebook Data Science program where we will be teaching you how to do everything through a web browser. Fortunately RStudio also offers a web-based version of their software called RStudio Cloud.
 
 
-![Navigate to rstudio.cloud in your web browser](images/01_rstudio_projects/01_fileorganization_rstudio_projects-1.png)
+### Logging in to RStudio Cloud
+
+To use this software, open your web browser and navigate to the website [https://RStudio Cloud/](https://RStudio Cloud/).
+
+
+![Navigate to RStudio Cloud in your web browser](images/01_rstudio_projects/01_fileorganization_rstudio_projects-1.png)
 
 You should see a screen that looks like this. You can click the button in the top right to log in. 
 
@@ -67,7 +67,7 @@ Now that you know how to create and navigate projects in the next lecture we wil
 
 ### Slides and Video
 
-![RStudio and Projects](https://www.youtube.com/watch?v=-NUquXt-oAM)
+![RStudio and Projects](https://www.youtube.com/watch?v=a6AtpTcmT90)
 
 * [Slides](https://docs.google.com/presentation/d/1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig/edit?usp=sharing)
 
@@ -78,7 +78,7 @@ Now that you know how to create and navigate projects in the next lecture we wil
 ### RStudio and Projects quiz
 
 {choose-answers:4}
-? What is a "Space" in the Rstudio program? 
+? What is a "Space" in the RStudio program? 
 
 C) A place to store multiple projects
 C) Where all your projects will be saved

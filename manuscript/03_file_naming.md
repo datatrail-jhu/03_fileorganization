@@ -2,11 +2,11 @@
 
 This is going to seem like a silly topic to have a whole lecture on. But one of the most frustrating things when looking at someone's data science project is to see a set of files that are completely scattered with names that don't make any sense. It also makes it harder to search for files if they don't have a consistent naming scheme. 
 
-One of the best organized file naming systems is due to [Jenny Bryan](http://www2.stat.duke.edu/~rcs46/lectures_2015/01-markdown-git/slides/naming-slides/naming-slides.pdf) who gives three key principles of file naming for data science projects. Files should be
+One of the best organized file naming systems is due to [Jenny Bryan](http://www2.stat.duke.edu/~rcs46/lectures_2015/01-markdown-git/slides/naming-slides/naming-slides.pdf) who gives three key principles of file naming for data science projects. Files should be:
 
 * Machine readable
 * Human readable
-* Be nicely ordered
+* Nicely ordered
 
 If your files have these three characteristics, then it will be easy for you to search for them (machine readable), easy for you to understand what is in the files (human readable), and easy for you to glance at a whole folder and understand the organization (be nicely ordered). We'll now discuss some concrete rules that will help you achieve these goals. 
 
@@ -46,7 +46,7 @@ In addition to making sure your files can be nicely ordered, always left-pad num
   
 ### Slides and Video
 
-![File Naming](https://www.youtube.com/watch?v=H2AZ27LgW_U)
+![File Naming](https://www.youtube.com/watch?v=D0cclX2YUxU)
 
 * [Slides](https://docs.google.com/presentation/d/1vQEUA7UqgEWrCUZv25t6qpwbLwrZo9oC0y0zUjLRUT4/edit?usp=sharing)
 
@@ -63,7 +63,7 @@ C) Machine readability, [roper ordering, and human readability
 o) Abbreviation, having numbers at the end of the name, and proper ordering
 o) Human readability, machine readability, and only using letters and spaces
 o) Abbreviation, machine readability, and proper ordering
-o) Having numbers at the end of the name, human readability,and proper ordering
+o) Having numbers at the end of the name, human readability, and proper ordering
 
 {choose-answers:4}
 ? Which one is *not* considered good practice in file naming?

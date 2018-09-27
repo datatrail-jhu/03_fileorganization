@@ -176,7 +176,7 @@ For instance, if you type `![Yosemite National Park](https://commons.wikimedia.o
 
 ### Slides and Video
 
-![Introduction to Markdown](https://www.youtube.com/watch?v=JB9ppcfbYaU)
+![Introduction to Markdown](https://www.youtube.com/watch?v=0mc0DfoqN5A)
 
 * [Slides](https://docs.google.com/presentation/d/1eHhYKegVodplOm9MajA3OaWReEMo7YRER-IRWBivWJM/edit?usp=sharing)
 
@@ -241,7 +241,7 @@ m) ![Google](www.google.com)
 o) ###www.google.com
 o) *www.google.com*
 o) **www.google.com**
-o) _www.google.com_
+o) _www.google.com
 o) __www.google.com__
 
 {choose-answers: 4}

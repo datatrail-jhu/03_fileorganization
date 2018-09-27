@@ -31,7 +31,7 @@ Our next piece of advice is that use comments within your code. Commenting in R 
 
 ```r
 # calculates the products of a vector and a matrix
-# checks if they can be multipled first
+# checks if they can be multiplied first
 function (x, y){
     if (dim(x)[2] != length(y)) {
         stop("Can't multiply matrix%*%vector because the dimensions are wrong")
@@ -66,7 +66,7 @@ Budget about 20% of your time keeping track of a bulleted list of the things tha
   
 ### Slides and Video
 
-![How To Work](https://www.youtube.com/watch?v=8LoTfbuDKEo)
+![How To Work](https://www.youtube.com/watch?v=kKXOHJRZGdE)
 
 * [Slides](https://docs.google.com/presentation/d/1vn8Lb8YNvo1zha7GmJMlQSBRSAryRms6xy5HUtafH2A/edit?usp=sharing)  
 

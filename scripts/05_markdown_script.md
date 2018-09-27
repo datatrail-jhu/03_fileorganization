@@ -14,9 +14,9 @@ For non-numbered lists, you can use your choice of asterisks, pluses, or minuses
 
 You can create sub-items for your list by indenting (using multiple spaces) before the number or the asterisk or plus or minus. Make the number or symbol of the sub-item line up with the text of the item above it. Here's an example of a list with sub-items and a combination of numbered and non-numbered items.
 
-If you want to cross off items on your list (as you do them, perhaps) you can create a strike-through using double tildas. Here's an example of crossing two items from your list.
+If you want to cross off items on your list (as you do them, perhaps) you can create a strike-through using double tildes. Here's an example of crossing two items from your list.
 
-If you would like to do more complicated editing, there are many more text modifiers you can use for Markdown. A short instructional guide can be found at w w w dot github dot com slash adam dash p slash markdown dash here slash wiki slash Markdown dash Cheatsheet. You will see some more of these commands later in this module, but you might want to bookmark this page now for future reference!
+If you would like to do more complicated editing, there are many more text modifiers you can use for Markdown. A short instructional guide can be found at www.github.com/adam-p/markdown-here/wiki/markdown-cheatseet. You will see some more of these commands later in this module, but you might want to bookmark this page now for future reference!
 
 Links to content on the internet can be included in a Markdown document as well. The format for a link is to put what you want your link to say in square brackets followed immediately by the web address where the link should go inside of parentheses. For example if you want the link to go to www.google.com when clicked, then you'd replace the text in the parentheses and with www.google.com.
 
