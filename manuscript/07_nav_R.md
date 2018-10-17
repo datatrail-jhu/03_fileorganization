@@ -28,7 +28,7 @@ Recall from the previous lesson that a **working directory** is the folder that 
 
 #### Set the working directory
 
-In Terminal you learned about the `cd` command to change the current (working) directory. In R, use the `setwd()` function, which stands for "set working directory." Inside the parentheses, type an absolute or relative path in quotes. Just as in the Terminal, tab completion can save typing time and help prevent incorrect spelling. When you hit tab after typing part of a path, RStudio provide a drop down menu of files and folders that fit what you have typed. You can select between them with the arrow keys or your mouse and hit enter to autocomplete. Note also that the absolute path to the current working directory is displayed in the status bar beneath the Console tab. The working directory is not automatically updated or reflected in the Files pane however.
+In Terminal you learned about the `cd` command to change the current (working) directory. In R, use the `setwd()` function, which stands for "set working directory." Inside the parentheses, type an absolute or relative path in quotes. Just as in the Terminal, tab completion can save typing time and help prevent incorrect spelling. When you hit tab after typing part of a path, RStudio provide a drop down menu of files and folders that fit what you have typed. You can select between them with the arrow keys or your mouse and hit enter to autocomplete. Note also that the absolute path to the current working directory is displayed in the status bar beneath the Console tab. The working directory is not automatically updated or reflected in the Files pane however. Additionally, the Console and the Terminal do **not** talk to one another. When you set your working directory in one, it does **not** change the working directory in the other. This is important to keep in mind when you're working. In fact, the working directory in the Terminal, Console, and Files tab *can* all be different.
 
 ![setwd()](images/07_nav_R/07_fileorganization_nav_R-7.png)
 
@@ -72,7 +72,7 @@ In this lesson, you learned about R functions that are analogous to Terminal com
 
 ### Slides and Video
 
-![Managing Files in R](https://www.youtube.com/watch?v=_2PCT_I5vf4)
+![Managing Files in R](https://www.youtube.com/watch?v=sAtZTkbRev0)
 
 * [Slides](https://docs.google.com/presentation/d/1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc/edit?usp=sharing)
 
