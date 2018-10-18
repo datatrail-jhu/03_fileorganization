@@ -236,23 +236,23 @@ o) `####H4 My header`
 {choose-answers: 4}
 ?3 Which of the following is a correctly formatted hyperlink?
 
-C) [Google](www.google.com)
-m) ![Google](www.google.com)
-o) ###www.google.com
-o) *www.google.com*
-o) **www.google.com**
-o) _www.google.com
-o) __www.google.com__
+C) `[Google](www.google.com)`
+m) `![Google](www.google.com)`
+o) `###www.google.com`
+o) `*www.google.com*`
+o) `**www.google.com**`
+o) `_www.google.com`
+o) `__www.google.com__`
 
 {choose-answers: 4}
-?3 Which of the following demonstrates how you would include the image `impage.png` in your Markdown document?
+?3 Which of the following demonstrates how you would include the image `image.png` in your Markdown document?
 
-C) ![Google](image.png)
-m) [Google](image.png)
-o) ###image.png
-o) *image.png*
-o) **image.png**
-o) _image.png_
-o) __image.png__
+C) `![Google](image.png)`
+m) `[Google](image.png)`
+o) `###image.png`
+o) `*image.png*`
+o) `**image.png**`
+o) `_image.png_`
+o) `__image.png__`
 
 {/quiz}
