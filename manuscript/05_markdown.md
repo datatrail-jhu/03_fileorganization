@@ -118,7 +118,7 @@ This becomes:
    * Sub-item
    * Sub-item
 
-If you want to cross off items on your list (as you do them, perhaps) you can create a strike-through using double tildas (`~~`).
+If you want to cross off items on your list (as you do them, perhaps) you can create a strike-through using double tildes (`~~`).
 
 ```r
 1. ~~First item~~

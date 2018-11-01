@@ -38,7 +38,7 @@ If dates are not relevant for your file naming, put something numeric first. For
 
 ![Using numbers for ordering files](images/03_file_naming/03_fileorganization_file_naming-6.png)
 
-In addition to making sure your files can be nicely ordered, always left-pad numbers bu zeros. That is first set a max number of digits for your numbers determined by how many files you will potentially have. So if you may not have more than 1000 files you can choose three digits. If not more than a hundred you can choose two digits and so on. Once you know the number of digits, left-pad numbers with zeros to satisfy the number of digits you determined in the first step. In other words, if you're using three digits, instead of writing 1 write 001 and instead of writing 17 write 017.
+In addition to making sure your files can be nicely ordered, always left-pad numbers with zeros. That is first set a max number of digits for your numbers determined by how many files you will potentially have. So if you may not have more than 1000 files you can choose three digits. If not more than a hundred you can choose two digits and so on. Once you know the number of digits, left-pad numbers with zeros to satisfy the number of digits you determined in the first step. In other words, if you're using three digits, instead of writing 1 write 001 and instead of writing 17 write 017.
 
 
 ![Left padding numbers with zeros](images/03_file_naming/03_fileorganization_file_naming-7.png)
