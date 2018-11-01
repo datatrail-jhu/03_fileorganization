@@ -5,7 +5,7 @@ Once you have created a new project the next step is to organize and name the fo
 
 ### A project organization framework
 
-We will set up data science projects on RStudio Cloud. This is how you should set up every new data science project before you start doing any work. It will be much harder to set up after the project has started and files are scattered everywhere.  Open your web browser and navigate to the website [https://RStudio Cloud/](https://RStudio Cloud/).
+We will set up data science projects on RStudio Cloud. This is how you should set up every new data science project before you start doing any work. It will be much harder to set up after the project has started and files are scattered everywhere.  Open your web browser and navigate to the website [https://rstudio.cloud/](https://rstudio.cloud/).
 
 ![Go to RStudio Cloud](images/02_organizing_projects/02_fileorganization_organizing_projects-4.png)
 

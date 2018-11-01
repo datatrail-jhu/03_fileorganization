@@ -15,7 +15,7 @@ To use this software, open your web browser and navigate to the website [https:/
 You should see a screen that looks like this. You can click the button in the top right to log in. 
 
 
-![Log in to rstudio cloud](images/01_rstudio_projects/01_fileorganization_rstudio_projects-2.png)
+![Log in to RStudio Cloud](images/01_rstudio_projects/01_fileorganization_rstudio_projects-2.png)
 
 When you click _Log In_ you will be offered options for Logging in, for our class you will log in with your Google Account so click on that option. 
 
