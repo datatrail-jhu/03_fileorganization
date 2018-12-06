@@ -23,7 +23,7 @@ The machine we are talking about when we say "machine readable" is a computer. T
 
 So to wrap up, spaces, punctuations, and periods should be avoided but underscores and dashes are recommended. You should always use lowercase since you don't have to later remember if the name of the file contained lowercase or uppercase letters. Another suggestion is the use of delimiters (hyphens or underscores) instead of combining all the words together. The use of delimiters makes it easier to look for files on your computer or in R and to extract information from the file names like the image below.
 
-![Extracting information from properly named files](images/03_file_naming/03_fileorganization_file_naming-3.png)
+![Extracting information from properly named files](https://docs.google.com/presentation/d/1vQEUA7UqgEWrCUZv25t6qpwbLwrZo9oC0y0zUjLRUT4/export/png?id=1vQEUA7UqgEWrCUZv25t6qpwbLwrZo9oC0y0zUjLRUT4&pageid=g397b53245b_0_19)
 
 ### Human readable files
 
@@ -36,12 +36,12 @@ By using dates, you can sort your files based on chronological order. Dates are 
 
 If dates are not relevant for your file naming, put something numeric first. For instance if you're dealing with multiple reports, you can add a reportxxx to the beginning of the file name so you can easily sort files by the report number.
 
-![Using numbers for ordering files](images/03_file_naming/03_fileorganization_file_naming-6.png)
+![Using numbers for ordering files](https://docs.google.com/presentation/d/1vQEUA7UqgEWrCUZv25t6qpwbLwrZo9oC0y0zUjLRUT4/export/png?id=1vQEUA7UqgEWrCUZv25t6qpwbLwrZo9oC0y0zUjLRUT4&pageid=g397b53245b_0_40)
 
 In addition to making sure your files can be nicely ordered, always left-pad numbers with zeros. That is first set a max number of digits for your numbers determined by how many files you will potentially have. So if you may not have more than 1000 files you can choose three digits. If not more than a hundred you can choose two digits and so on. Once you know the number of digits, left-pad numbers with zeros to satisfy the number of digits you determined in the first step. In other words, if you're using three digits, instead of writing 1 write 001 and instead of writing 17 write 017.
 
 
-![Left padding numbers with zeros](images/03_file_naming/03_fileorganization_file_naming-7.png)
+![Left padding numbers with zeros](https://docs.google.com/presentation/d/1vQEUA7UqgEWrCUZv25t6qpwbLwrZo9oC0y0zUjLRUT4/export/png?id=1vQEUA7UqgEWrCUZv25t6qpwbLwrZo9oC0y0zUjLRUT4&pageid=g397b53245b_0_45)
 
   
 ### Slides and Video

@@ -13,11 +13,11 @@ If you know how to type you know how to use Markdown! Writing with Markdown is t
 
 Here's a small example of what Markdown can do! You can see everything in this document is written as plain text, with just letters and basic symbols.
 
-![An example markdown file](images/05_markdown/05_fileorganization_markdown-1.png)
+![An example markdown file](https://docs.google.com/presentation/d/1eHhYKegVodplOm9MajA3OaWReEMo7YRER-IRWBivWJM/export/png?id=1eHhYKegVodplOm9MajA3OaWReEMo7YRER-IRWBivWJM&pageid=g2bfdb07292_0_151)
 
 Now you can see how that text appears when it is rendered in Markdown.  Even though it was created with plain text, it appears with italics, bolding, different sized text, and even an image!
 
-![A rendered markdown file](images/05_markdown/05_fileorganization_markdown-2.png)
+![A rendered markdown file](https://docs.google.com/presentation/d/1eHhYKegVodplOm9MajA3OaWReEMo7YRER-IRWBivWJM/export/png?id=1eHhYKegVodplOm9MajA3OaWReEMo7YRER-IRWBivWJM&pageid=g313ea6f894_1_1)
 
 ### Main commands
 
@@ -38,7 +38,7 @@ Headers are straightforward. To create a header, you simply add a # sign right b
 
 The reason why this did not register as a header is because it is formatted it as a comment. By inserting three tick marks before and after the block of text you wish to comment, it will not execute any formatting. Without the tick marks here is what we get! 
 
-![A rendered markdown file](images/05_markdown/05_fileorganization_markdown-3.png)
+![A rendered markdown file](https://docs.google.com/presentation/d/1eHhYKegVodplOm9MajA3OaWReEMo7YRER-IRWBivWJM/export/png?id=1eHhYKegVodplOm9MajA3OaWReEMo7YRER-IRWBivWJM&pageid=g313ef8f59a_0_0)
 
 The headers look as we wanted them too.  Thus headers should *not* be included in code chunks. If pound signs (#) are within a code chunk, Markdown will consider them to be comments, rather than headers.
 
@@ -170,7 +170,7 @@ You can insert images in a Markdown document as well. This is done in a similar 
 
 For instance, if you type `![Yosemite National Park](https://commons.wikimedia.org/wiki/Yosemite_National_Park#/media/File:Half_Dome_from_Glacier_Point,_Yosemite_NP_-_Diliff.jpg)` will show this.
 
-![Yosemite National Park](images/05_markdown/05_fileorganization_markdown-12.png)
+![Yosemite National Park](https://docs.google.com/presentation/d/1eHhYKegVodplOm9MajA3OaWReEMo7YRER-IRWBivWJM/export/png?id=1eHhYKegVodplOm9MajA3OaWReEMo7YRER-IRWBivWJM&pageid=g3ac0479b1f_0_0)
 
 
 
