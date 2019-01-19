@@ -136,7 +136,7 @@ Refer to this diagram to answer the quiz questions below. Assume "cloud" is the 
 ?1  `/cloud/project/data/tidy_data` is an example of a(n):
 
 C) absolute path that directs you to the folder tidy_data
-C) absolute path that leads you to the tidy_data directory
+C) absolute path that directs you to the tidy_data directory
 m) relative path that directs you to the folder tidy_data
 o) absolute path that directs you to the folder raw_data
 o) relative path that directs you to the folder raw_data
@@ -149,12 +149,11 @@ o) suggestive path that directs you to the folder tidy_data
 ?1  `/cloud/project/data/raw_data` is an example of a(n):
 
 C) absolute path that directs you to the folder raw_data
-C) absolute path that leads you to the raw_data directory
+C) absolute path that directs you to the raw_data directory
 o) absolute path that directs you to the folder tidy_data
-o) absolute path that leads you to the tidy_data directory
+o) relative path that directs you to the folder tidy_data
+o) absolute path that directs you to the tidy_data directory
 m) relative path that directs you to the folder raw_data
-o) absolute path that directs you to the folder raw_data
-o) relative path that directs you to the folder raw_data
 o) absolute path that directs you to the folder data
 o) relative path that directs you to the folder data
 o) distinct path that directs you to the folder raw_data
