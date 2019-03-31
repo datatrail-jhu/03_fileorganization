@@ -188,50 +188,48 @@ For instance, if you type `![Yosemite National Park](https://commons.wikimedia.o
 {choose-answers: 4}
 ?1 How would you produce bolded text like **some text**? 
 
-C) `**some text**`
-C) `__some text__`
-o) `*some text*`
-o) `_some text_`
-o) `~~some text~~`
-o) `--some text--`
-o) `~some text~`
-o) `* some text`
-o) `_bold_some text_\bold`
+C) 'some text' with two asterisks on either side
+m) 'some text' with one asterisk on either side
+o) 'some text' with one underscore on either side
+o) 'some text' with two tildes (~) on either side
+o) 'some text' with two hyphens (--) on either side
+o) 'some text' with one tidle (~) on either side
+o) asterisk followed by 'some text'
+o) the word bold surrounded by underscores followed by 'some text' 
 
 {choose-answers:4}
 ?1 How would you produce italicized text like *some text*? 
 
-C) `*some text*`
-C) `_some text_`
-o) `**some text**`
-o) `__some text__`
-o) `~~some text~~`
-o) `--some text--`
-o) `~some text~`
-o) `* some text`
-o) `_bold_some text_\bold`
+C) 'some text' with one asterisk on either side
+m) 'some text' with two asterisks on either side
+o) 'some text' with one underscore on either side
+o) 'some text' with two tildes (~) on either side
+o) 'some text' with two hyphens (--) on either side
+o) 'some text' with one tidle (~) on either side
+o) asterisk followed by 'some text'
+o) the word bold surrounded by underscores followed by 'some text' 
 
 {choose-answers: 4}
 ?2 Which of the following would give you the smallest header (an H4 header)? 
 
-C) `#### My header`
-o) `## My header`
-o) `### My header`
-o) `# My header`
-o) `_H4_My header_\H4`
-o) `#H4 My header`
-o) `####H4 My header`
+C) Four pound signs (#) followed by the text in your header
+o) Three pound signs (#) followed by the text in your header
+o) Two pound signs (#) followed by the text in your header
+o) One pound sign (#) followed by the text in your header
+o) An underscore followed by H4, then the text of your header, followed by an undersore
+o) A pound sign (#), followed by H4, and then the text of your header
+o) Four pound signs (#), followed by H4, and the text in your header
 
 {choose-answers: 4}
 ?2 Which of the following would give you the largest header (an H1 header)? 
 
-C) `# My header`
-o) `#### My header`
-o) `## My header`
-o) `### My header`
-o) `_H4_My header_\H4`
-o) `#H4 My header`
-o) `####H4 My header`
+C) One pound sign (#) followed by the text in your header
+o) Four pound signs (#) followed by the text in your header
+o) Three pound signs (#) followed by the text in your header
+o) Two pound signs (#) followed by the text in your header
+o) An underscore followed by H1, then the text of your header, followed by an undersore
+o) A pound sign (#), followed by H1, and then the text of your header
+o) Four pound signs (#), followed by H1, and the text in your header
 
 {choose-answers: 4}
 ?3 Which of the following describes how to specify you want to use a hyperlink?
