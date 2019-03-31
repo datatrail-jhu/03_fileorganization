@@ -234,25 +234,26 @@ o) `#H4 My header`
 o) `####H4 My header`
 
 {choose-answers: 4}
-?3 Which of the following is a correctly formatted hyperlink?
+?3 Which of the following describes how to specify you want to use a hyperlink?
 
-C) "[Google](www.google.com)"
-m) "![Google](www.google.com)"
-o) `###www.google.com`
-o) `*www.google.com*`
-o) `**www.google.com**`
-o) `_www.google.com`
-o) `__www.google.com__`
+C) square brackets with text to display with parenthesis including URL
+m) exclamation point followed by square brackets with text to display with parenthesis including URL
+o) three pound signs follwed by the URL to display
+o) URL surrounded with one asterisk on either side of the URL
+o) URL with two asterisks on either side of the URL
+o) URL surrounded with one underscore on either side of the URL
+o) URL surrounded with two underscores on either side of the URL
 
 {choose-answers: 4}
 ?3 Which of the following demonstrates how you would include the image `image.png` in your Markdown document?
 
-C) "![Google](image.png)"
-m) "[Google](image.png)"
-o) `###image.png`
-o) `*image.png*`
-o) `**image.png**`
-o) `_image.png_`
-o) `__image.png__`
+m) square brackets with text to display with parenthesis including 'image.png'
+C) exclamation point followed by square brackets with text to display with parenthesis including 'image.png'
+o) three pound signs follwed by the 'image.png' to display
+o) 'image.png' surrounded with one asterisk on either side 
+o) 'image.png' with two asterisks on either side 
+o) 'image.png' surrounded with one underscore on either side 
+o) 'image.png' surrounded with two underscores on either side
+
 
 {/quiz}
