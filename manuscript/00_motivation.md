@@ -62,7 +62,7 @@ But it turns out there were some choices the authors made that were questionable
 ![The errors in the analysis were discussed on the Colbert Report](https://docs.google.com/presentation/d/1DJ7dlj8HEWdX9EL0dbNpl-gwAhI01JXSL8REAzmuQjw/export/png?id=1DJ7dlj8HEWdX9EL0dbNpl-gwAhI01JXSL8REAzmuQjw&pageid=g313d649b28_0_205)
 
 
-It isn't just because of errors that you'd want to have organized files and projects. Whether its helping your future self, communicating a data science idea, or simply reducing your cognitive load, organizing projects from the start can save you a huge amount of time and hassle.
+It isn't just because of errors that you'd want to have organized files and projects. Whether it's helping your future self, communicating a data science idea, or simply reducing your cognitive load, organizing projects from the start can save you a huge amount of time and hassle.
 
 As Jenny Bryan, one of the most famous data scientists in the world, [says](https://github.com/kbroman/datasciquotes)
 
