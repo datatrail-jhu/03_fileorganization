@@ -4,7 +4,7 @@ As was discussed in the first lesson of this course, one of the most important a
 
 ### What is the Terminal?
 
-The Terminal is an interface to the operating system of a computer. That is, it provides a way for you to type commands in order to perform actions on a computer. For example, there are commands to create new files and folders and to open files and folders. On your Chromebook, you are familiar with using your mouse to perform such actions. When you are working with data on RStudio Cloud, however, you will not be able to use your mouse for everything that you'll want to do. It will be important for you to become comfortable with using the Terminal as a place for purely text-based commands. In RStudio Cloud, the Terminal is located in the tab next to the Console.
+The Terminal is an interface to the operating system of a computer. That is, it provides a way for you to type commands in order to perform actions on a computer. For example, there are commands to create new files and folders and to open files and folders. On your computer, you are familiar with using your mouse to perform such actions. When you are working with data on RStudio Cloud, however, you will not be able to use your mouse for everything that you'll want to do. It will be important for you to become comfortable with using the Terminal as a place for purely text-based commands. In RStudio Cloud, the Terminal is located in the tab next to the Console.
 
 ![Locating the Terminal in RStudio Cloud](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g39e98c7b77_0_0)
 
