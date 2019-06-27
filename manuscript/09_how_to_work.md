@@ -129,5 +129,5 @@ o) It is informative.
 o) It follows the pound key.
 o) It helps explain what the code is doing
 
-{/quiz}}
+{/quiz}
 
