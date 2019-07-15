@@ -18,7 +18,7 @@ Next is using the *raw_code* folder for keeping your preliminary code. Let's see
 
 ### The README File
 
-Once you have a file structure in place, write a README file that explains how code and data are organized and how they are related. In other words, what is what. For each filename, we recommend to have a short description of what the file is for. You can also have a description of how the data were obtained or collected including links or references to publication or other documentation. Mention people involved with the project, and provide contact information of at least one of the collaborators.
+Once you have a file structure in place, it's best to write a README file. This file should explain how the code and data are organized as well as how they are related. In other words, explain what is what. For each filename, we recommend to have a short description of what the file is for. You can also have a description of how the data were obtained or collected including links or references to publication or other documentation. Mention people involved with the project, and provide contact information of at least one of the collaborators.
 
 A good idea is to update the README file as you work. As you create new files and folders, add their descriptions to the README file so you can keep track of what you are working on. 
 
