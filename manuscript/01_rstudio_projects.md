@@ -2,7 +2,7 @@
 
 You've seen RStudio in the first class in the sequence. Remember [R](https://www.r-project.org/) is the main software that we are going to use to analyze data in this class. R is one of the two most popular languages for data science. We will learn a lot more about it throughout the courses, but here we are just going to use it to take a peak at the data you have created. R is a piece of software that is used for running computer code. [RStudio](https://www.rstudio.com/) is a company that makes a piece of software that works with R. RStudio makes it easier to create, save, share, and work with R code and data sets. RStudio is also useful for organizing projects and writing, organizing, and sharing your data science work.  
 
-If you have a more traditional laptop you can download and install R and RStudio on your laptop. But this class is part of our Cloud-based Data Science program where we will be teaching you how to do everything through a web browser. Fortunately RStudio also offers a web-based version of their software called RStudio Cloud.
+If you have a more traditional laptop you can download and install R and RStudio on your laptop. But this class is part of our Cloud-Based Data Science program where we will be teaching you how to do everything through a web browser. Fortunately RStudio also offers a web-based version of their software called RStudio Cloud.
 
 
 ### Logging in to RStudio Cloud
@@ -67,7 +67,7 @@ You will have more than one project you may want to organize. Projects are organ
 ![Click a project name to return to your project.](https://docs.google.com/presentation/d/1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig/export/png?id=1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig&pageid=g313ea4ce38_0_19)
 
 
-If you have done the first course in the sequence then you belong at least to the _Introduction to Cloud-based Data Science_ Space. You can click on the name of this space in the upper left to see your projects in that space. 
+If you have done the first course in the sequence then you belong at least to the _Introduction to Cloud-Based Data Science_ Space. You can click on the name of this space in the upper left to see your projects in that space. 
 
 
 {format: png}
@@ -79,7 +79,7 @@ Now that you know how to create and navigate projects in the next lecture we wil
 
 ### Slides and Video
 
-![RStudio and Projects](https://www.youtube.com/watch?v=a6AtpTcmT90)
+![RStudio and Projects](https://youtu.be/grfF9ODSbxQ)
 
 * [Slides](https://docs.google.com/presentation/d/1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig/edit?usp=sharing)
 
