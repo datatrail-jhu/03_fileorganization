@@ -9,6 +9,7 @@ BIPOC
 BigDaddy
 blockchain
 bolded
+bolding
 Bloomberg
 Broman
 Broman's
