@@ -1,3 +1,11 @@
+---
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
 # Introduction to Markdown
 
 We learned briefly about Markdown and R Markdown documents in the previous lesson. Markdown is a basic markup language designed to be displayed on the web.  With a few basic commands, you can create polished documents that can be used to:

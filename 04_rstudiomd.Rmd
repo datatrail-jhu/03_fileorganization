@@ -1,3 +1,11 @@
+---
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
 # Creating and Previewing Markdown Files in RStudio
 
 Because we'll be working a lot in RStudio, it will be useful to learn how to work with Markdown and R Markdown files in RStudio.
