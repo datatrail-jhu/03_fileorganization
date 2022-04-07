@@ -115,7 +115,7 @@ o) `ls()`
 o) `dir.create()`
 
 {choose-answers: 4}
-?2 Which of the following R function and Terminal command pairs perform the same function? (Note: The R fucntion is represented by `function()`, where the Terminal command does not have the parentheses `function`.)
+?2 Which of the following R function and Terminal command pairs perform the same function? (Note: The R function is represented by `function()`, where the Terminal command does not have the parentheses `function`.)
 
 C) `getwd()` and `pwd`
 C) `setwd()` and `cd`

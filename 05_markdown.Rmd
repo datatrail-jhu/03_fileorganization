@@ -47,7 +47,7 @@ Headers are straightforward. To create a header, you simply add a # sign right b
 ###### Smallest shown here (but you can go smaller!)
 ```
 
-The reason why this did not register as a header is because it is formatted it as a comment. By inserting three tick marks before and after the block of text you wish to comment, it will not execute any formatting. Without the tick marks here is what we get! 
+The reason why this did not register as a header is because it is formatted it as a comment. By inserting three tick marks before and after the block of text you wish to comment, it will not execute any formatting. Without the tick marks here is what we get!
 
 {format: png}
 ![A rendered markdown file](https://docs.google.com/presentation/d/1eHhYKegVodplOm9MajA3OaWReEMo7YRER-IRWBivWJM/export/png?id=1eHhYKegVodplOm9MajA3OaWReEMo7YRER-IRWBivWJM&pageid=g313ef8f59a_0_0)
@@ -89,7 +89,7 @@ For non-numbered lists, you can use your choice of asterisks (`*`), pluses (`+`)
 ```
 
  OR
- 
+
  ```r
 + First item
 + Second item
@@ -154,7 +154,7 @@ You will see some more of these commands later in this module, but you might wan
 
 ### Links
 
-Links to content on the internet can be included in a Markdown document as well.  The format for a link is to put what you want your link to say in square brackets followed immediately by the web address where the link should go inside of parentheses, like this: 
+Links to content on the internet can be included in a Markdown document as well.  The format for a link is to put what you want your link to say in square brackets followed immediately by the web address where the link should go inside of parentheses, like this:
 
 ```r
 [What you want your link to say](Web address where the link should go)
@@ -165,7 +165,7 @@ For example if you want the link to go to www.google.com when clicked, then you'
 ```r
 [What you want your link to say](www.google.com)
 ```
-This is what it would look like in your rendered Markdown file: 
+This is what it would look like in your rendered Markdown file:
 
 [What you want your link to say](www.google.com)
 
@@ -199,48 +199,48 @@ For instance, if you type `![Yosemite National Park](https://commons.wikimedia.o
 ### Introduction to Markdown quiz
 
 {choose-answers: 4}
-?1 How would you produce bolded text like **some text**? 
+?1 How would you produce bolded text like **some text**?
 
 C) 'some text' with two asterisks on either side
 m) 'some text' with one asterisk on either side
 o) 'some text' with one underscore on either side
 o) 'some text' with two tildes (~) on either side
 o) 'some text' with two hyphens (--) on either side
-o) 'some text' with one tidle (~) on either side
+o) 'some text' with one tilde (~) on either side
 o) asterisk followed by 'some text'
-o) the word bold surrounded by underscores followed by 'some text' 
+o) the word bold surrounded by underscores followed by 'some text'
 
 {choose-answers:4}
-?1 How would you produce italicized text like *some text*? 
+?1 How would you produce italicized text like *some text*?
 
 C) 'some text' with one asterisk on either side
 m) 'some text' with two asterisks on either side
 o) 'some text' with one underscore on either side
 o) 'some text' with two tildes (~) on either side
 o) 'some text' with two hyphens (--) on either side
-o) 'some text' with one tidle (~) on either side
+o) 'some text' with one tilde (~) on either side
 o) asterisk followed by 'some text'
-o) the word bold surrounded by underscores followed by 'some text' 
+o) the word bold surrounded by underscores followed by 'some text'
 
 {choose-answers: 4}
-?2 Which of the following would give you the smallest header (an H4 header)? 
+?2 Which of the following would give you the smallest header (an H4 header)?
 
 C) Four pound signs (#) followed by the text in your header
 o) Three pound signs (#) followed by the text in your header
 o) Two pound signs (#) followed by the text in your header
 o) One pound sign (#) followed by the text in your header
-o) An underscore followed by H4, then the text of your header, followed by an undersore
+o) An underscore followed by H4, then the text of your header, followed by an underscore
 o) A pound sign (#), followed by H4, and then the text of your header
 o) Four pound signs (#), followed by H4, and the text in your header
 
 {choose-answers: 4}
-?2 Which of the following would give you the largest header (an H1 header)? 
+?2 Which of the following would give you the largest header (an H1 header)?
 
 C) One pound sign (#) followed by the text in your header
 o) Four pound signs (#) followed by the text in your header
 o) Three pound signs (#) followed by the text in your header
 o) Two pound signs (#) followed by the text in your header
-o) An underscore followed by H1, then the text of your header, followed by an undersore
+o) An underscore followed by H1, then the text of your header, followed by an underscore
 o) A pound sign (#), followed by H1, and then the text of your header
 o) Four pound signs (#), followed by H1, and the text in your header
 
@@ -249,7 +249,7 @@ o) Four pound signs (#), followed by H1, and the text in your header
 
 C) square brackets with text to display with parenthesis including URL
 m) exclamation point followed by square brackets with text to display with parenthesis including URL
-o) three pound signs follwed by the URL to display
+o) three pound signs followed by the URL to display
 o) URL surrounded with one asterisk on either side of the URL
 o) URL with two asterisks on either side of the URL
 o) URL surrounded with one underscore on either side of the URL
@@ -260,10 +260,10 @@ o) URL surrounded with two underscores on either side of the URL
 
 m) square brackets with text to display with parenthesis including 'image.png'
 C) exclamation point followed by square brackets with text to display with parenthesis including 'image.png'
-o) three pound signs follwed by the 'image.png' to display
-o) 'image.png' surrounded with one asterisk on either side 
-o) 'image.png' with two asterisks on either side 
-o) 'image.png' surrounded with one underscore on either side 
+o) three pound signs followed by the 'image.png' to display
+o) 'image.png' surrounded with one asterisk on either side
+o) 'image.png' with two asterisks on either side
+o) 'image.png' surrounded with one underscore on either side
 o) 'image.png' surrounded with two underscores on either side
 
 
