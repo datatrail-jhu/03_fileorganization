@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 8 Using Paths in Code | DataTrail</title>
+  <meta name="description" content="Description about Course/Book." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 8 Using Paths in Code | DataTrail" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Description about Course/Book." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 8 Using Paths in Code | DataTrail" />
+  
+  <meta name="twitter:description" content="Description about Course/Book." />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/DataTrail_favicon.ico" type="image/x-icon" />
+<link rel="prev" href="managing-files-in-r.html"/>
+<link rel="next" href="how-to-work.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="assets/style_DataTrail.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<a href="https://www.datatrail.org/"><img src="https://github.com/datatrail-jhu/DataTrail_Template/raw/main/assets/DataTrail_logo.jpg" style="padding-left: 0px; padding-top: 8px;"</a>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a></li>
+<li class="chapter" data-level="1" data-path="motivation.html"><a href="motivation.html"><i class="fa fa-check"></i><b>1</b> Motivation</a>
+<ul>
+<li class="chapter" data-level="1.0.1" data-path="motivation.html"><a href="motivation.html#slides-and-video"><i class="fa fa-check"></i><b>1.0.1</b> Slides and Video</a></li>
+<li class="chapter" data-level="1.0.2" data-path="motivation.html"><a href="motivation.html#motivation-quiz"><i class="fa fa-check"></i><b>1.0.2</b> Motivation quiz</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html"><i class="fa fa-check"></i><b>2</b> RStudio and Projects</a>
+<ul>
+<li class="chapter" data-level="2.0.1" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html#logging-in-to-rstudio-cloud"><i class="fa fa-check"></i><b>2.0.1</b> Logging in to RStudio Cloud</a></li>
+<li class="chapter" data-level="2.0.2" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html#slides-and-video-1"><i class="fa fa-check"></i><b>2.0.2</b> Slides and Video</a></li>
+<li class="chapter" data-level="2.0.3" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html#rstudio-and-projects-quiz"><i class="fa fa-check"></i><b>2.0.3</b> RStudio and Projects quiz</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html"><i class="fa fa-check"></i><b>3</b> Setting Up Data Science Project Folders</a>
+<ul>
+<li class="chapter" data-level="3.0.1" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html#a-project-organization-framework"><i class="fa fa-check"></i><b>3.0.1</b> A project organization framework</a></li>
+<li class="chapter" data-level="3.0.2" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html#the-next-level-of-organization"><i class="fa fa-check"></i><b>3.0.2</b> The next level of organization</a></li>
+<li class="chapter" data-level="3.0.3" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html#slides-and-video-2"><i class="fa fa-check"></i><b>3.0.3</b> Slides and Video</a></li>
+<li class="chapter" data-level="3.0.4" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html#setting-up-data-science-project-folders-quiz"><i class="fa fa-check"></i><b>3.0.4</b> Setting Up Data Science Project Folders quiz</a></li>
+<li class="chapter" data-level="3.1" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html#r-markdown"><i class="fa fa-check"></i><b>3.1</b> R Markdown</a></li>
+<li class="chapter" data-level="3.2" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html#including-plots"><i class="fa fa-check"></i><b>3.2</b> Including Plots</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="creating-and-previewing-markdown-files-in-rstudio.html"><a href="creating-and-previewing-markdown-files-in-rstudio.html"><i class="fa fa-check"></i><b>4</b> Creating and Previewing Markdown Files in RStudio</a>
+<ul>
+<li class="chapter" data-level="4.0.1" data-path="creating-and-previewing-markdown-files-in-rstudio.html"><a href="creating-and-previewing-markdown-files-in-rstudio.html#working-with-markdown-files"><i class="fa fa-check"></i><b>4.0.1</b> Working with Markdown files</a></li>
+<li class="chapter" data-level="4.0.2" data-path="creating-and-previewing-markdown-files-in-rstudio.html"><a href="creating-and-previewing-markdown-files-in-rstudio.html#working-with-r-markdown-files"><i class="fa fa-check"></i><b>4.0.2</b> Working with R Markdown files</a></li>
+<li class="chapter" data-level="4.0.3" data-path="creating-and-previewing-markdown-files-in-rstudio.html"><a href="creating-and-previewing-markdown-files-in-rstudio.html#slides-and-video-3"><i class="fa fa-check"></i><b>4.0.3</b> Slides and Video</a></li>
+<li class="chapter" data-level="4.0.4" data-path="creating-and-previewing-markdown-files-in-rstudio.html"><a href="creating-and-previewing-markdown-files-in-rstudio.html#creating-and-previewing-markdown-files-in-rstudio-quiz"><i class="fa fa-check"></i><b>4.0.4</b> Creating and Previewing Markdown Files in RStudio quiz</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html"><i class="fa fa-check"></i><b>5</b> Introduction to Markdown</a>
+<ul>
+<li class="chapter" data-level="5.0.1" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#how-to-use-markdown"><i class="fa fa-check"></i><b>5.0.1</b> How to use Markdown</a></li>
+<li class="chapter" data-level="5.0.2" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#markdown-example"><i class="fa fa-check"></i><b>5.0.2</b> Markdown Example</a></li>
+<li class="chapter" data-level="5.0.3" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#main-commands"><i class="fa fa-check"></i><b>5.0.3</b> Main commands</a></li>
+<li class="chapter" data-level="5.0.4" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#more-complicated-editing"><i class="fa fa-check"></i><b>5.0.4</b> More complicated editing</a></li>
+<li class="chapter" data-level="5.0.5" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#links"><i class="fa fa-check"></i><b>5.0.5</b> Links</a></li>
+<li class="chapter" data-level="5.0.6" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#slides-and-video-4"><i class="fa fa-check"></i><b>5.0.6</b> Slides and Video</a></li>
+<li class="chapter" data-level="5.0.7" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#introduction-to-markdown-quiz"><i class="fa fa-check"></i><b>5.0.7</b> Introduction to Markdown quiz</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html"><i class="fa fa-check"></i><b>6</b> Managing Files in the Terminal</a>
+<ul>
+<li class="chapter" data-level="6.0.1" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#what-is-the-terminal"><i class="fa fa-check"></i><b>6.0.1</b> What is the Terminal?</a></li>
+<li class="chapter" data-level="6.0.2" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#why-manage-files-in-the-terminal"><i class="fa fa-check"></i><b>6.0.2</b> Why manage files in the Terminal?</a></li>
+<li class="chapter" data-level="6.0.3" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#file-system-example-and-vocabulary"><i class="fa fa-check"></i><b>6.0.3</b> File system example and vocabulary</a></li>
+<li class="chapter" data-level="6.0.4" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#important-commands"><i class="fa fa-check"></i><b>6.0.4</b> Important commands</a></li>
+<li class="chapter" data-level="6.0.5" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#summary"><i class="fa fa-check"></i><b>6.0.5</b> Summary</a></li>
+<li class="chapter" data-level="6.0.6" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#additional-resources"><i class="fa fa-check"></i><b>6.0.6</b> Additional Resources</a></li>
+<li class="chapter" data-level="6.0.7" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#slides-and-video-5"><i class="fa fa-check"></i><b>6.0.7</b> Slides and Video</a></li>
+<li class="chapter" data-level="6.0.8" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#managing-files-in-the-terminal-quiz"><i class="fa fa-check"></i><b>6.0.8</b> Managing Files in the Terminal quiz</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html"><i class="fa fa-check"></i><b>7</b> Managing Files in R</a>
+<ul>
+<li class="chapter" data-level="7.0.1" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html#why-manage-files-in-r"><i class="fa fa-check"></i><b>7.0.1</b> Why manage files in R?</a></li>
+<li class="chapter" data-level="7.0.2" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html#navigating-to-r-in-rstudio-cloud"><i class="fa fa-check"></i><b>7.0.2</b> Navigating to R in RStudio Cloud</a></li>
+<li class="chapter" data-level="7.0.3" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html#file-system-setup"><i class="fa fa-check"></i><b>7.0.3</b> File system setup</a></li>
+<li class="chapter" data-level="7.0.4" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html#important-functions"><i class="fa fa-check"></i><b>7.0.4</b> Important functions</a></li>
+<li class="chapter" data-level="7.0.5" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html#slides-and-video-6"><i class="fa fa-check"></i><b>7.0.5</b> Slides and Video</a></li>
+<li class="chapter" data-level="7.0.6" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html#managing-files-in-r-quiz"><i class="fa fa-check"></i><b>7.0.6</b> Managing Files in R quiz</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html"><i class="fa fa-check"></i><b>8</b> Using Paths in Code</a>
+<ul>
+<li class="chapter" data-level="8.0.1" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#relative-and-absolute-paths"><i class="fa fa-check"></i><b>8.0.1</b> Relative and absolute paths</a></li>
+<li class="chapter" data-level="8.0.2" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#directions-analogy"><i class="fa fa-check"></i><b>8.0.2</b> Directions analogy</a></li>
+<li class="chapter" data-level="8.0.3" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#paths-in-projects"><i class="fa fa-check"></i><b>8.0.3</b> Paths in projects</a></li>
+<li class="chapter" data-level="8.0.4" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#the-here-package"><i class="fa fa-check"></i><b>8.0.4</b> The <code>here</code> package</a></li>
+<li class="chapter" data-level="8.0.5" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#why-to-use-here"><i class="fa fa-check"></i><b>8.0.5</b> Why to use <code>here</code></a></li>
+<li class="chapter" data-level="8.0.6" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#additional-resources-1"><i class="fa fa-check"></i><b>8.0.6</b> Additional Resources</a></li>
+<li class="chapter" data-level="8.0.7" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#slides-and-video-7"><i class="fa fa-check"></i><b>8.0.7</b> Slides and Video</a></li>
+<li class="chapter" data-level="8.0.8" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#using-paths-in-code-quiz"><i class="fa fa-check"></i><b>8.0.8</b> Using Paths in Code quiz</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="how-to-work.html"><a href="how-to-work.html"><i class="fa fa-check"></i><b>9</b> How to Work</a>
+<ul>
+<li class="chapter" data-level="9.0.1" data-path="how-to-work.html"><a href="how-to-work.html#why-organize"><i class="fa fa-check"></i><b>9.0.1</b> Why Organize?</a></li>
+<li class="chapter" data-level="9.0.2" data-path="how-to-work.html"><a href="how-to-work.html#the-readme-file"><i class="fa fa-check"></i><b>9.0.2</b> The README File</a></li>
+<li class="chapter" data-level="9.0.3" data-path="how-to-work.html"><a href="how-to-work.html#using-comments"><i class="fa fa-check"></i><b>9.0.3</b> Using Comments</a></li>
+<li class="chapter" data-level="9.0.4" data-path="how-to-work.html"><a href="how-to-work.html#version-control"><i class="fa fa-check"></i><b>9.0.4</b> Version control</a></li>
+<li class="chapter" data-level="9.0.5" data-path="how-to-work.html"><a href="how-to-work.html#write-in-a-modular-way"><i class="fa fa-check"></i><b>9.0.5</b> Write in a Modular Way</a></li>
+<li class="chapter" data-level="9.0.6" data-path="how-to-work.html"><a href="how-to-work.html#draft-and-final-versions"><i class="fa fa-check"></i><b>9.0.6</b> Draft and Final Versions</a></li>
+<li class="chapter" data-level="9.0.7" data-path="how-to-work.html"><a href="how-to-work.html#slides-and-video-8"><i class="fa fa-check"></i><b>9.0.7</b> Slides and Video</a></li>
+<li class="chapter" data-level="9.0.8" data-path="how-to-work.html"><a href="how-to-work.html#how-to-work-quiz"><i class="fa fa-check"></i><b>9.0.8</b> How to Work quiz</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="10" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>10</b> References</a></li>
+<li class="divider"></li>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by: </a> </p>
+<p style="text-align:center;"> <a href="https://www.datatrail.org/"> Data Trail </a></p>
+<a href="https://www.datatrail.org/"><img src="https://github.com/datatrail-jhu/DataTrail_Template/raw/main/assets/DataTrail_logo.jpg" style=" width: 80%; filter: grayscale(100%); padding-left: 40px; padding-top: 8px; vertical-align: top "</a>
+<p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
+<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span>  <a href="https://forms.gle/VWaJYc3zATe3qxYC9"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">DataTrail</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <!--<script src="assets/hideOutput.js"></script>-->
+  <link href="assets/style_DataTrail.css" rel="stylesheet">
+</head>
+        
+
+
+<div class="hero-image-container"> 
+  <img class= "hero-image" src="assets/DataTrail.jpg">
+</div>
+<div id="using-paths-in-code" class="section level1" number="8">
+<h1><span class="header-section-number">Chapter 8</span> Using Paths in Code</h1>
+<p>Now that you know what a file path is and how to navigate to different directories using both the Terminal and the R Console, we’ll discuss how to include file paths when coding.</p>
+<div id="relative-and-absolute-paths" class="section level3" number="8.0.1">
+<h3><span class="header-section-number">8.0.1</span> Relative and absolute paths</h3>
+<p>Relative and absolute paths were discussed in an earlier lesson in this course. This is a <em>very</em> brief review:</p>
+<div id="relative-paths" class="section level4" number="8.0.1.1">
+<h4><span class="header-section-number">8.0.1.1</span> Relative paths</h4>
+<p><strong>Relative paths</strong> give a path to the destination folder based on where you are right now (your current working directory).</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18hkG4zMtlD5c6RUC2yzKG90sl1_zMT3b6D84qGvR1mQ/export/png?id=18hkG4zMtlD5c6RUC2yzKG90sl1_zMT3b6D84qGvR1mQ&amp;pageid=g3aa9ae33ea_0_0" alt="Relative paths" /></p>
+</div>
+<div id="absolute-paths" class="section level4" number="8.0.1.2">
+<h4><span class="header-section-number">8.0.1.2</span> Absolute paths</h4>
+<p><strong>Absolute paths</strong> give a path to the destination folder based on the root directory of a file system.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18hkG4zMtlD5c6RUC2yzKG90sl1_zMT3b6D84qGvR1mQ/export/png?id=18hkG4zMtlD5c6RUC2yzKG90sl1_zMT3b6D84qGvR1mQ&amp;pageid=g3aa9ae33ea_0_39" alt="Absolute paths" /></p>
+</div>
+</div>
+<div id="directions-analogy" class="section level3" number="8.0.2">
+<h3><span class="header-section-number">8.0.2</span> Directions analogy</h3>
+<p>So, to return to analogy of giving someone directions. Imagine that your friend plans to go from the town square, then to the library, and finally to the bakery. In this analogy, the town square represents the root directory, a universal starting location. If your friend is currently at the library and asks you for directions, you would likely tell them how to go from the library (where they are) to the bakery (where they want to go). This represents a <strong>relative path</strong> – taking you from where you are currently to where you want to be. Alternatively, you could give them directions from the Town square, to the library, and then to the bakery. This represents an <strong>absolute path</strong>, directions that will always work in this town, no matter where you are currently, but that contain extra information given where your friend is currently.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18hkG4zMtlD5c6RUC2yzKG90sl1_zMT3b6D84qGvR1mQ/export/png?id=18hkG4zMtlD5c6RUC2yzKG90sl1_zMT3b6D84qGvR1mQ&amp;pageid=g3aa9ae33ea_0_151" alt="Directions and paths analogy" /></p>
+</div>
+<div id="paths-in-projects" class="section level3" number="8.0.3">
+<h3><span class="header-section-number">8.0.3</span> Paths in projects</h3>
+<p>In this course, you’ve learned how to organize your project folders and name your files for every data science project you complete. Setting up projects in this way not only helps keep you organized and your file naming consistent, but it also sets you up to easily refer to many different files while you’re writing code.</p>
+<p>Often you’ll find yourself writing some code in your <code>raw_code</code> folder, but you’ll want to read in some data that are in your <code>raw_data</code> folder. The good thing is that since everything for this project is together in a subfolders within a single project folder, you can accomplish this easily.</p>
+<div id="use-relative-paths-in-projects" class="section level4" number="8.0.3.1">
+<h4><span class="header-section-number">8.0.3.1</span> Use relative paths in projects</h4>
+<p>To easily reference back to a dataset in your <code>raw_data</code> folder where you have a file called <code>dataset.csv</code>, you’ll want to use a relative path. You’ll set your path relative to the project folder. In this example, you will have set your project directory as <code>/cloud/directory</code> and you would reference your <strong>relative path</strong> <code>data/dataset.csv</code>.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18hkG4zMtlD5c6RUC2yzKG90sl1_zMT3b6D84qGvR1mQ/export/png?id=18hkG4zMtlD5c6RUC2yzKG90sl1_zMT3b6D84qGvR1mQ&amp;pageid=g3aa9ae33ea_0_227" alt="relative path to dataset.csv" /></p>
+<p>Since you’ve already defined where your starting point is for this project (<code>/cloud/directory</code>), you’ll be able to and should refer to every folder and every file easily with relative paths.</p>
+</div>
+<div id="relative-paths-make-sharing-projects-easier" class="section level4" number="8.0.3.2">
+<h4><span class="header-section-number">8.0.3.2</span> Relative paths make sharing projects easier</h4>
+<p>The reason relative paths for each project are the correct approach is because if you share this project with someone else with a different computer, you would likely share the project file and all the subdirectories. If you were to share this with someone else and relative paths were used throughout all the code in your project, that new person would be able to follow along and run all your code without any problems.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18hkG4zMtlD5c6RUC2yzKG90sl1_zMT3b6D84qGvR1mQ/export/png?id=18hkG4zMtlD5c6RUC2yzKG90sl1_zMT3b6D84qGvR1mQ&amp;pageid=g3aa9ae33ea_0_268" alt="Using relative paths enables sharing" /></p>
+<p>However, you are <em>not</em> likely to (and shouldn’t!) share all the contents of your entire computer with another person. If you had used absolute paths that work for your computer, rather than relative paths, none of the paths will make any sense on the person’s computer whom you’ve shared your content with. To enable sharing with someone else, you should always use relative paths in your code that are relative to the project folder. Thankfully, there’s an easy way in R to make that happen!</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18hkG4zMtlD5c6RUC2yzKG90sl1_zMT3b6D84qGvR1mQ/export/png?id=18hkG4zMtlD5c6RUC2yzKG90sl1_zMT3b6D84qGvR1mQ&amp;pageid=g3aa9ae33ea_0_305" alt="Absolute paths prohibit sharing" /></p>
+</div>
+</div>
+<div id="the-here-package" class="section level3" number="8.0.4">
+<h3><span class="header-section-number">8.0.4</span> The <code>here</code> package</h3>
+<p>We haven’t yet discussed what an R package is or what the basic commands in R are. However, we have covered file organization at this point <em>and</em> how to navigate within R. With that knowledge, we’re now going to discuss how to use the here package.</p>
+<p>While we’ll define in more depth what packages are, at this point, think of packages as something that allows you to accomplish something that you wouldn’t have been able to otherwise or that wouldn’t have been as easy to accomplish without the package.</p>
+<p>We’re going to discuss using a single R package now, called <a href="https://github.com/r-lib/here"><code>here</code></a>.</p>
+<p>To get started using the <code>here</code> package (or any R package!), it first has to be installed (using the <code>install.packages()</code> function) and then loaded in (using the <code>library()</code> function). Note that the package name in the <code>install.packages()</code> function has to be in quotes but for <code>library()</code> it doesn’t have to. The code to copy and paste into your R console is below:</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="using-paths-in-code.html#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;here&quot;</span>)</span>
+<span id="cb19-2"><a href="using-paths-in-code.html#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span></code></pre></div>
+</div>
+<div id="why-to-use-here" class="section level3" number="8.0.5">
+<h3><span class="header-section-number">8.0.5</span> Why to use <code>here</code></h3>
+<p>Okay, so if we’re discussing packages later, why discuss this <em>one</em> package now? Well, <code>here</code> is a package specifically designed to help you deal with file organization when you’re coding.</p>
+<p>This package allows you to define in which folder all your relative paths should begin within a project.</p>
+<div id="setting-your-project-directory" class="section level4" number="8.0.5.1">
+<h4><span class="header-section-number">8.0.5.1</span> Setting your project directory</h4>
+<p>After installing and loading the <code>here</code> package, to set your project directory using <code>here()</code>, you’ll simply type the command <code>here()</code>. You’ll notice that the output of <code>here()</code> and <code>getwd()</code> in this case is the same; however, what they’re doing behind the scenes is different.</p>
+<ul>
+<li><code>getwd()</code> - shows the directory you are in currently</li>
+<li><code>here()</code> - sets the directory to use for all future relative paths</li>
+</ul>
+<p>The <code>here()</code> function is what you want to use to set your project directory so that you can use it for future relative paths in your code. While in this case it <em>also</em> happened to be in the same directory you were in, it doesn’t have to be this way. The here() function looks to see if you have a .Rproj file in your project. If then sets your base directory to whichever directory that file is located.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18hkG4zMtlD5c6RUC2yzKG90sl1_zMT3b6D84qGvR1mQ/export/png?id=18hkG4zMtlD5c6RUC2yzKG90sl1_zMT3b6D84qGvR1mQ&amp;pageid=g3aa9ae33ea_0_427" alt="here() sets your project directory for future reference using here()" /></p>
+<p>So, if we were to change our current directory and re-type <code>here()</code> in the Console, you’ll note that the output from here() does not change because it’s still looking for the directory where .Rproj is.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18hkG4zMtlD5c6RUC2yzKG90sl1_zMT3b6D84qGvR1mQ/export/png?id=18hkG4zMtlD5c6RUC2yzKG90sl1_zMT3b6D84qGvR1mQ&amp;pageid=g3aa9ae33ea_0_494" alt="here() does not care what your current working directory is" /></p>
+<p>Note: In cases where there is no .Rproj file, <code>here()</code> will look for files other than a .Rproj file. You can read about those cases in the fine print <a href="https://github.com/jennybc/here_here#the-fine-print">here</a>. But for most of your purposes, <code>here()</code> will behave as we just discussed.</p>
+</div>
+<div id="get-files-paths-using-here" class="section level4" number="8.0.5.2">
+<h4><span class="header-section-number">8.0.5.2</span> Get files paths using <code>here()</code></h4>
+<p>After setting your project folder using <code>here()</code>, R will then know what folder to use to define any and all other paths within this project.</p>
+<p>For example, if you wanted to include a path to a file named “intro_code.R” in your <code>raw_code</code> directory, you would simply specify that in your code like this:</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="using-paths-in-code.html#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">here</span>(<span class="st">&quot;code&quot;</span>, <span class="st">&quot;raw_code&quot;</span>, <span class="st">&quot;intro_code.R&quot;</span>)</span></code></pre></div>
+<p>This code says start from where I’ve already defined the project starts (<code>here()</code>), then look in the folders <code>code</code> and then <code>raw_code</code>, for the file “intro_code.R.”</p>
+<p>The syntax is simplified when using <code>here()</code>. Each subdirectory or file in the path is in quotes and simply separated by commas within the <code>here()</code> function, and voila you have the relative path you’re looking for relative to <code>here()</code>.</p>
+<p>The output from this code includes the correct file path to this file, just as you wanted!</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18hkG4zMtlD5c6RUC2yzKG90sl1_zMT3b6D84qGvR1mQ/export/png?id=18hkG4zMtlD5c6RUC2yzKG90sl1_zMT3b6D84qGvR1mQ&amp;pageid=g3aa9ae33ea_0_0" alt="using here to get a file path" /></p>
+</div>
+<div id="where-you-should-use-this" class="section level4" number="8.0.5.3">
+<h4><span class="header-section-number">8.0.5.3</span> Where you should use this</h4>
+<p>You should use <code>here()</code> to set the base project directory for each data science project you do. And, you should use relative paths using <code>here()</code> throughout your code any time you want to refer to a different directory or sub-directory within your project using the syntax we just discussed.</p>
+</div>
+</div>
+<div id="additional-resources-1" class="section level3" number="8.0.6">
+<h3><span class="header-section-number">8.0.6</span> Additional Resources</h3>
+<p><a href="https://github.com/jennybc/here_here">here, here</a>, by <a href="https://www.stat.ubc.ca/~jenny/">Jenny Bryan</a>
+<a href="https://github.com/r-lib/here">here documentation</a>, by <a href="https://github.com/krlmlr">Kirill Müller</a></p>
+</div>
+<div id="slides-and-video-7" class="section level3" number="8.0.7">
+<h3><span class="header-section-number">8.0.7</span> Slides and Video</h3>
+<div class="figure">
+<img src="https://www.youtube.com/watch?v=Z5DvS7TLuEg" alt="" />
+<p class="caption">Using Paths in Code</p>
+</div>
+<ul>
+<li><a href="https://docs.google.com/presentation/d/18hkG4zMtlD5c6RUC2yzKG90sl1_zMT3b6D84qGvR1mQ/edit?usp=sharing">Slides</a></li>
+</ul>
+<p>{quiz, id: quiz_08_paths_in_code}</p>
+</div>
+<div id="using-paths-in-code-quiz" class="section level3" number="8.0.8">
+<h3><span class="header-section-number">8.0.8</span> Using Paths in Code quiz</h3>
+<p>Refer to this diagram to answer the quiz questions below. Assume “cloud” is the root directory for your computer.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18hkG4zMtlD5c6RUC2yzKG90sl1_zMT3b6D84qGvR1mQ/export/png?id=18hkG4zMtlD5c6RUC2yzKG90sl1_zMT3b6D84qGvR1mQ&amp;pageid=g3aa9ae33ea_0_452" alt="Directory structure" /></p>
+<p>{choose-answers: 4}
+?1 <code>/cloud/project/data/tidy_data</code> is an example of a(n):</p>
+<ol start="3" style="list-style-type: upper-alpha">
+<li>absolute path that directs you to the folder tidy_data</li>
+<li>absolute path that directs you to the tidy_data directory</li>
+</ol>
+<ol start="13" style="list-style-type: lower-alpha">
+<li>relative path that directs you to the folder tidy_data</li>
+<li>absolute path that directs you to the folder raw_data</li>
+<li>relative path that directs you to the folder raw_data</li>
+<li>absolute path that directs you to the folder data</li>
+<li>relative path that directs you to the folder data</li>
+<li>distinct path that directs you to the folder tidy_data</li>
+<li>suggestive path that directs you to the folder tidy_data</li>
+</ol>
+<p>{choose-answers: 4}
+?1 <code>/cloud/project/data/raw_data</code> is an example of a(n):</p>
+<ol start="3" style="list-style-type: upper-alpha">
+<li>absolute path that directs you to the folder raw_data</li>
+<li>absolute path that directs you to the raw_data directory</li>
+</ol>
+<ol start="15" style="list-style-type: lower-alpha">
+<li>absolute path that directs you to the folder tidy_data</li>
+<li>relative path that directs you to the folder tidy_data</li>
+<li>absolute path that directs you to the tidy_data directory</li>
+<li>relative path that directs you to the folder raw_data</li>
+<li>absolute path that directs you to the folder data</li>
+<li>relative path that directs you to the folder data</li>
+<li>distinct path that directs you to the folder raw_data</li>
+<li>suggestive path that directs you to the folder raw_data</li>
+</ol>
+<p>{choose-answers: 4}
+?2 How would you use the <code>here()</code> function to specify the path to a script called <code>script.R</code> in the <code>final_code</code> folder that is itself in a folder called code?</p>
+<ol start="3" style="list-style-type: upper-alpha">
+<li>here(“code”, “final_code”, “script.R”)</li>
+</ol>
+<ol start="13" style="list-style-type: lower-alpha">
+<li>here(“code”, “raw_code”, “script.R”)</li>
+<li>here(“code”, “/” , “final_code”, “/”, “script.R”)</li>
+<li>here(“code”, “/” , “final_code”, “/”)</li>
+<li>here(“code”, “final_code”)</li>
+<li>“code/final_code/script.R”</li>
+<li>here(“code”, “code”, “script.R”)</li>
+<li>here(“code”, “/” , “code”, “/”, “script.R”)</li>
+<li>here(“code”, “/” , “code”, “/”)</li>
+<li>here(“code”, “code”)</li>
+<li>“code/code/script.R”</li>
+</ol>
+<p>{choose-answers: 4}
+?2 How would you use the <code>here()</code> function to specify the path to a script called <code>script.R</code> in the <code>raw_code</code> folder that is itself in a folder called code?</p>
+<ol start="3" style="list-style-type: upper-alpha">
+<li>here(“code”, “raw_code”, “script.R”)</li>
+</ol>
+<ol start="13" style="list-style-type: lower-alpha">
+<li>here(“code”, “final_code”, “script.R”)</li>
+<li>here(“code”, “/” , “raw_code”, “/”, “script.R”)</li>
+<li>here(“code”, “/” , “raw_code”, “/”)</li>
+<li>here(“code”, “raw_code”)</li>
+<li>“code/raw_code/script.R”</li>
+<li>here(“code”, “code”, “script.R”)</li>
+<li>here(“code”, “/” , “code”, “/”, “script.R”)</li>
+<li>here(“code”, “/” , “code”, “/”)</li>
+<li>here(“code”, “code”)</li>
+<li>“code/code/script.R”</li>
+</ol>
+<p>{choose-answers: 4}
+?3 Assuming your current working directory is <code>cloud/project</code>, which of the following is an example of a relative path directing you to the folder <code>data/tidy_data</code>?</p>
+<ol start="3" style="list-style-type: upper-alpha">
+<li>data/tidy_data</li>
+</ol>
+<ol start="13" style="list-style-type: lower-alpha">
+<li>/cloud/project/data/tidy_data</li>
+<li>data/raw_data</li>
+<li>here(tidy_data)</li>
+<li>here(“tidy_data”)</li>
+<li>tidy_data</li>
+<li>/cloud/data/tidy_data</li>
+</ol>
+<p>{choose-answers: 4}
+?3 Assuming your current working directory is <code>/cloud/project</code>, which of the following is an example of a relative path directing you to the folder <code>data/raw_data</code>?</p>
+<ol start="3" style="list-style-type: upper-alpha">
+<li>data/raw_data</li>
+</ol>
+<ol start="13" style="list-style-type: lower-alpha">
+<li>/cloud/project/data/raw_data</li>
+<li>data/tidy_data</li>
+<li>here(raw_data)</li>
+<li>here(“raw_data”)</li>
+<li>raw_data</li>
+<li>/cloud/data/raw_data</li>
+</ol>
+<p>{choose-answers: 4}
+?3 Assuming your current working directory is <code>cloud/project</code>, which of the following is an example of a relative path directing you to the folder <code>figures/exploratory</code>?</p>
+<ol start="3" style="list-style-type: upper-alpha">
+<li>figures/exploratory</li>
+</ol>
+<ol start="15" style="list-style-type: lower-alpha">
+<li>/cloud/project/figures/exploratory</li>
+<li>data/raw_data</li>
+<li>data/tidy_data</li>
+<li>here(exploratory)</li>
+<li>here(“exploratory”)</li>
+<li>exploratory</li>
+<li>/cloud/figures/exploratory</li>
+</ol>
+<p>{/quiz}</p>
+
+</div>
+</div>
+<hr>
+<center> 
+  <div class="footer">
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      <br>
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="managing-files-in-r.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="how-to-work.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

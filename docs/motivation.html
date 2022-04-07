@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 1 Motivation | DataTrail</title>
+  <meta name="description" content="Description about Course/Book." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 1 Motivation | DataTrail" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Description about Course/Book." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 1 Motivation | DataTrail" />
+  
+  <meta name="twitter:description" content="Description about Course/Book." />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/DataTrail_favicon.ico" type="image/x-icon" />
+<link rel="prev" href="index.html"/>
+<link rel="next" href="rstudio-and-projects.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="assets/style_DataTrail.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<a href="https://www.datatrail.org/"><img src="https://github.com/datatrail-jhu/DataTrail_Template/raw/main/assets/DataTrail_logo.jpg" style="padding-left: 0px; padding-top: 8px;"</a>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a></li>
+<li class="chapter" data-level="1" data-path="motivation.html"><a href="motivation.html"><i class="fa fa-check"></i><b>1</b> Motivation</a>
+<ul>
+<li class="chapter" data-level="1.0.1" data-path="motivation.html"><a href="motivation.html#slides-and-video"><i class="fa fa-check"></i><b>1.0.1</b> Slides and Video</a></li>
+<li class="chapter" data-level="1.0.2" data-path="motivation.html"><a href="motivation.html#motivation-quiz"><i class="fa fa-check"></i><b>1.0.2</b> Motivation quiz</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html"><i class="fa fa-check"></i><b>2</b> RStudio and Projects</a>
+<ul>
+<li class="chapter" data-level="2.0.1" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html#logging-in-to-rstudio-cloud"><i class="fa fa-check"></i><b>2.0.1</b> Logging in to RStudio Cloud</a></li>
+<li class="chapter" data-level="2.0.2" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html#slides-and-video-1"><i class="fa fa-check"></i><b>2.0.2</b> Slides and Video</a></li>
+<li class="chapter" data-level="2.0.3" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html#rstudio-and-projects-quiz"><i class="fa fa-check"></i><b>2.0.3</b> RStudio and Projects quiz</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html"><i class="fa fa-check"></i><b>3</b> Setting Up Data Science Project Folders</a>
+<ul>
+<li class="chapter" data-level="3.0.1" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html#a-project-organization-framework"><i class="fa fa-check"></i><b>3.0.1</b> A project organization framework</a></li>
+<li class="chapter" data-level="3.0.2" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html#the-next-level-of-organization"><i class="fa fa-check"></i><b>3.0.2</b> The next level of organization</a></li>
+<li class="chapter" data-level="3.0.3" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html#slides-and-video-2"><i class="fa fa-check"></i><b>3.0.3</b> Slides and Video</a></li>
+<li class="chapter" data-level="3.0.4" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html#setting-up-data-science-project-folders-quiz"><i class="fa fa-check"></i><b>3.0.4</b> Setting Up Data Science Project Folders quiz</a></li>
+<li class="chapter" data-level="3.1" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html#r-markdown"><i class="fa fa-check"></i><b>3.1</b> R Markdown</a></li>
+<li class="chapter" data-level="3.2" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html#including-plots"><i class="fa fa-check"></i><b>3.2</b> Including Plots</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="creating-and-previewing-markdown-files-in-rstudio.html"><a href="creating-and-previewing-markdown-files-in-rstudio.html"><i class="fa fa-check"></i><b>4</b> Creating and Previewing Markdown Files in RStudio</a>
+<ul>
+<li class="chapter" data-level="4.0.1" data-path="creating-and-previewing-markdown-files-in-rstudio.html"><a href="creating-and-previewing-markdown-files-in-rstudio.html#working-with-markdown-files"><i class="fa fa-check"></i><b>4.0.1</b> Working with Markdown files</a></li>
+<li class="chapter" data-level="4.0.2" data-path="creating-and-previewing-markdown-files-in-rstudio.html"><a href="creating-and-previewing-markdown-files-in-rstudio.html#working-with-r-markdown-files"><i class="fa fa-check"></i><b>4.0.2</b> Working with R Markdown files</a></li>
+<li class="chapter" data-level="4.0.3" data-path="creating-and-previewing-markdown-files-in-rstudio.html"><a href="creating-and-previewing-markdown-files-in-rstudio.html#slides-and-video-3"><i class="fa fa-check"></i><b>4.0.3</b> Slides and Video</a></li>
+<li class="chapter" data-level="4.0.4" data-path="creating-and-previewing-markdown-files-in-rstudio.html"><a href="creating-and-previewing-markdown-files-in-rstudio.html#creating-and-previewing-markdown-files-in-rstudio-quiz"><i class="fa fa-check"></i><b>4.0.4</b> Creating and Previewing Markdown Files in RStudio quiz</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html"><i class="fa fa-check"></i><b>5</b> Introduction to Markdown</a>
+<ul>
+<li class="chapter" data-level="5.0.1" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#how-to-use-markdown"><i class="fa fa-check"></i><b>5.0.1</b> How to use Markdown</a></li>
+<li class="chapter" data-level="5.0.2" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#markdown-example"><i class="fa fa-check"></i><b>5.0.2</b> Markdown Example</a></li>
+<li class="chapter" data-level="5.0.3" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#main-commands"><i class="fa fa-check"></i><b>5.0.3</b> Main commands</a></li>
+<li class="chapter" data-level="5.0.4" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#more-complicated-editing"><i class="fa fa-check"></i><b>5.0.4</b> More complicated editing</a></li>
+<li class="chapter" data-level="5.0.5" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#links"><i class="fa fa-check"></i><b>5.0.5</b> Links</a></li>
+<li class="chapter" data-level="5.0.6" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#slides-and-video-4"><i class="fa fa-check"></i><b>5.0.6</b> Slides and Video</a></li>
+<li class="chapter" data-level="5.0.7" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#introduction-to-markdown-quiz"><i class="fa fa-check"></i><b>5.0.7</b> Introduction to Markdown quiz</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html"><i class="fa fa-check"></i><b>6</b> Managing Files in the Terminal</a>
+<ul>
+<li class="chapter" data-level="6.0.1" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#what-is-the-terminal"><i class="fa fa-check"></i><b>6.0.1</b> What is the Terminal?</a></li>
+<li class="chapter" data-level="6.0.2" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#why-manage-files-in-the-terminal"><i class="fa fa-check"></i><b>6.0.2</b> Why manage files in the Terminal?</a></li>
+<li class="chapter" data-level="6.0.3" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#file-system-example-and-vocabulary"><i class="fa fa-check"></i><b>6.0.3</b> File system example and vocabulary</a></li>
+<li class="chapter" data-level="6.0.4" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#important-commands"><i class="fa fa-check"></i><b>6.0.4</b> Important commands</a></li>
+<li class="chapter" data-level="6.0.5" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#summary"><i class="fa fa-check"></i><b>6.0.5</b> Summary</a></li>
+<li class="chapter" data-level="6.0.6" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#additional-resources"><i class="fa fa-check"></i><b>6.0.6</b> Additional Resources</a></li>
+<li class="chapter" data-level="6.0.7" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#slides-and-video-5"><i class="fa fa-check"></i><b>6.0.7</b> Slides and Video</a></li>
+<li class="chapter" data-level="6.0.8" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#managing-files-in-the-terminal-quiz"><i class="fa fa-check"></i><b>6.0.8</b> Managing Files in the Terminal quiz</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html"><i class="fa fa-check"></i><b>7</b> Managing Files in R</a>
+<ul>
+<li class="chapter" data-level="7.0.1" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html#why-manage-files-in-r"><i class="fa fa-check"></i><b>7.0.1</b> Why manage files in R?</a></li>
+<li class="chapter" data-level="7.0.2" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html#navigating-to-r-in-rstudio-cloud"><i class="fa fa-check"></i><b>7.0.2</b> Navigating to R in RStudio Cloud</a></li>
+<li class="chapter" data-level="7.0.3" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html#file-system-setup"><i class="fa fa-check"></i><b>7.0.3</b> File system setup</a></li>
+<li class="chapter" data-level="7.0.4" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html#important-functions"><i class="fa fa-check"></i><b>7.0.4</b> Important functions</a></li>
+<li class="chapter" data-level="7.0.5" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html#slides-and-video-6"><i class="fa fa-check"></i><b>7.0.5</b> Slides and Video</a></li>
+<li class="chapter" data-level="7.0.6" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html#managing-files-in-r-quiz"><i class="fa fa-check"></i><b>7.0.6</b> Managing Files in R quiz</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html"><i class="fa fa-check"></i><b>8</b> Using Paths in Code</a>
+<ul>
+<li class="chapter" data-level="8.0.1" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#relative-and-absolute-paths"><i class="fa fa-check"></i><b>8.0.1</b> Relative and absolute paths</a></li>
+<li class="chapter" data-level="8.0.2" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#directions-analogy"><i class="fa fa-check"></i><b>8.0.2</b> Directions analogy</a></li>
+<li class="chapter" data-level="8.0.3" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#paths-in-projects"><i class="fa fa-check"></i><b>8.0.3</b> Paths in projects</a></li>
+<li class="chapter" data-level="8.0.4" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#the-here-package"><i class="fa fa-check"></i><b>8.0.4</b> The <code>here</code> package</a></li>
+<li class="chapter" data-level="8.0.5" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#why-to-use-here"><i class="fa fa-check"></i><b>8.0.5</b> Why to use <code>here</code></a></li>
+<li class="chapter" data-level="8.0.6" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#additional-resources-1"><i class="fa fa-check"></i><b>8.0.6</b> Additional Resources</a></li>
+<li class="chapter" data-level="8.0.7" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#slides-and-video-7"><i class="fa fa-check"></i><b>8.0.7</b> Slides and Video</a></li>
+<li class="chapter" data-level="8.0.8" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#using-paths-in-code-quiz"><i class="fa fa-check"></i><b>8.0.8</b> Using Paths in Code quiz</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="how-to-work.html"><a href="how-to-work.html"><i class="fa fa-check"></i><b>9</b> How to Work</a>
+<ul>
+<li class="chapter" data-level="9.0.1" data-path="how-to-work.html"><a href="how-to-work.html#why-organize"><i class="fa fa-check"></i><b>9.0.1</b> Why Organize?</a></li>
+<li class="chapter" data-level="9.0.2" data-path="how-to-work.html"><a href="how-to-work.html#the-readme-file"><i class="fa fa-check"></i><b>9.0.2</b> The README File</a></li>
+<li class="chapter" data-level="9.0.3" data-path="how-to-work.html"><a href="how-to-work.html#using-comments"><i class="fa fa-check"></i><b>9.0.3</b> Using Comments</a></li>
+<li class="chapter" data-level="9.0.4" data-path="how-to-work.html"><a href="how-to-work.html#version-control"><i class="fa fa-check"></i><b>9.0.4</b> Version control</a></li>
+<li class="chapter" data-level="9.0.5" data-path="how-to-work.html"><a href="how-to-work.html#write-in-a-modular-way"><i class="fa fa-check"></i><b>9.0.5</b> Write in a Modular Way</a></li>
+<li class="chapter" data-level="9.0.6" data-path="how-to-work.html"><a href="how-to-work.html#draft-and-final-versions"><i class="fa fa-check"></i><b>9.0.6</b> Draft and Final Versions</a></li>
+<li class="chapter" data-level="9.0.7" data-path="how-to-work.html"><a href="how-to-work.html#slides-and-video-8"><i class="fa fa-check"></i><b>9.0.7</b> Slides and Video</a></li>
+<li class="chapter" data-level="9.0.8" data-path="how-to-work.html"><a href="how-to-work.html#how-to-work-quiz"><i class="fa fa-check"></i><b>9.0.8</b> How to Work quiz</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="10" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>10</b> References</a></li>
+<li class="divider"></li>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by: </a> </p>
+<p style="text-align:center;"> <a href="https://www.datatrail.org/"> Data Trail </a></p>
+<a href="https://www.datatrail.org/"><img src="https://github.com/datatrail-jhu/DataTrail_Template/raw/main/assets/DataTrail_logo.jpg" style=" width: 80%; filter: grayscale(100%); padding-left: 40px; padding-top: 8px; vertical-align: top "</a>
+<p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
+<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span>  <a href="https://forms.gle/VWaJYc3zATe3qxYC9"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">DataTrail</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <!--<script src="assets/hideOutput.js"></script>-->
+  <link href="assets/style_DataTrail.css" rel="stylesheet">
+</head>
+        
+
+
+<div class="hero-image-container"> 
+  <img class= "hero-image" src="assets/DataTrail.jpg">
+</div>
+<div id="motivation" class="section level1" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Motivation</h1>
+<p>Data science projects involve lots of files. There are files of data, files for code, files for documentation, figures, documents to communicate with other people. A surprising amount of doing data science really well is just being good at managing and organizing all of these files so that they are:</p>
+<ul>
+<li>Easy to find</li>
+<li>Easy to share</li>
+<li>Easy to understand</li>
+<li>Easy to update</li>
+</ul>
+<p>The reason that you need to make it easy to find and work with the files in your analysis is because data science is really closely related to communication. We use data is to understand the world and communicate that understanding. So when you are building a data science project, you should be thinking about who will be on the receiving end of your data analysis.</p>
+<p>While you are actively working on a project it is often easy to find any file you need off the top of your head. But the audience of your data analysis is not you, right now. One audience is other people who you will share your work with. They don’t know about all the different places you have stored data, or which piece of code to run first. You need to make it easy on them to be able to understand what you did.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/1DJ7dlj8HEWdX9EL0dbNpl-gwAhI01JXSL8REAzmuQjw/export/png?id=1DJ7dlj8HEWdX9EL0dbNpl-gwAhI01JXSL8REAzmuQjw&amp;pageid=g37d0e66653_0_13" alt="Two of your most common audiences in a data science project." /></p>
+<p>Another audience that may surprise you when you are just starting, but will be familiar to any experienced data analyst is you. A twist on a <a href="http://kbroman.org/Tools4RR/assets/lectures/01_intro.pdf">famous saying about data science</a> is:</p>
+<blockquote>
+<p>Your closest co-worker is you six months ago, but you don’t reply to emails.</p>
+</blockquote>
+<p>This is because it is really common for you to work on a data science project, present the results, and then move on to another project. But someone else is studying your results and might have questions and want you to make a change. So a few months later, when you’ve forgotten where everything is, they come back and ask you to make a minor change and you have to dive back in and figure out which files you need to look at.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/1DJ7dlj8HEWdX9EL0dbNpl-gwAhI01JXSL8REAzmuQjw/export/png?id=1DJ7dlj8HEWdX9EL0dbNpl-gwAhI01JXSL8REAzmuQjw&amp;pageid=g37d0e66653_0_29" alt="The reason you 6 months from now is one of your audience members." /></p>
+<p>Whenever I teach this topic people are surprised I spend so much time on how to organize the setup of your projects or how to name your files. While this all seems like something very simple and common sense, this is where the biggest problems in data science often happen. Let me give you two quick examples.</p>
+<p>The first happened a few years ago. A research group from Duke university analyzed data about human genomes to try to develop a way to predict what chemotherapy each person should get based on their genetic code. They came up with what they thought was a good predictor and published it, then proceeded to start testing it in clinical studies.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/1DJ7dlj8HEWdX9EL0dbNpl-gwAhI01JXSL8REAzmuQjw/export/png?id=1DJ7dlj8HEWdX9EL0dbNpl-gwAhI01JXSL8REAzmuQjw&amp;pageid=g37d0e66653_0_46" alt="The exciting result, predicting chemotherapy success from genomic data." /></p>
+<p>Researchers at MD Anderson got so excited about the result that they tried to find the data and code and do the same analysis as a first step to trying the predictor on their patients. But there was a problem, they couldn’t find the data or code. They tried getting it from the researchers at Duke, but it took months of back and forth getting a data set here, a file there, none of it too organized. Once they actually managed to get all of the files together and organized, they realized there were some major problems with the predictors that would probably put patients at risk!</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/1DJ7dlj8HEWdX9EL0dbNpl-gwAhI01JXSL8REAzmuQjw/export/png?id=1DJ7dlj8HEWdX9EL0dbNpl-gwAhI01JXSL8REAzmuQjw&amp;pageid=g37d0e66653_0_52" alt="Two statisticians helped organize all the data and code from the project" /></p>
+<p>Ultimately this discovery shut down the clinical studies and led to a major lawsuit. While there were a lot of problems with the original analysis, the reason there was so much trouble was that the files and code weren’t organized so it took a <em>long</em> time to figure out the problems that would put patients at risk.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/1DJ7dlj8HEWdX9EL0dbNpl-gwAhI01JXSL8REAzmuQjw/export/png?id=1DJ7dlj8HEWdX9EL0dbNpl-gwAhI01JXSL8REAzmuQjw&amp;pageid=g37d0e66653_0_57" alt="It took a long time to do this organization and the delay meant erroneous clinical studies were carried out." /></p>
+<p>Another famous example where file organization caused problems was with the scientific paper “Growth in a time of debt”. This paper was written by two Harvard economists and suggested that countries with a high level of debt have slow economic growth.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/1DJ7dlj8HEWdX9EL0dbNpl-gwAhI01JXSL8REAzmuQjw/export/png?id=1DJ7dlj8HEWdX9EL0dbNpl-gwAhI01JXSL8REAzmuQjw&amp;pageid=g313d649b28_0_214" alt="Growth in the time of debt scientific paper." /></p>
+<p>Unlike most academic papers this paper had a big impact! Many countries used this research to justify austerity measures that impacted social and healthcare programs around the world.</p>
+<p>But it turns out there were some choices the authors made that were questionable or changed their results. This mistake was so important that it was covered by popular shows like The Colbert Show on Comedy Central. The error was actually discovered by a student, but not until much much later. One reason it took so long is the data and analysis files weren’t easily available to everyone and organized in a way that the error could be easily identified.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/1DJ7dlj8HEWdX9EL0dbNpl-gwAhI01JXSL8REAzmuQjw/export/png?id=1DJ7dlj8HEWdX9EL0dbNpl-gwAhI01JXSL8REAzmuQjw&amp;pageid=g313d649b28_0_205" alt="The errors in the analysis were discussed on the Colbert Report" /></p>
+<p>It isn’t just because of errors that you’d want to have organized files and projects. Whether it’s helping your future self, communicating a data science idea, or simply reducing your cognitive load, organizing projects from the start can save you a huge amount of time and hassle.</p>
+<p>As Jenny Bryan, one of the most famous data scientists in the world, <a href="https://github.com/kbroman/datasciquotes">says</a></p>
+<blockquote>
+<p>File organization and naming are powerful weapons against chaos.</p>
+</blockquote>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/1DJ7dlj8HEWdX9EL0dbNpl-gwAhI01JXSL8REAzmuQjw/export/png?id=1DJ7dlj8HEWdX9EL0dbNpl-gwAhI01JXSL8REAzmuQjw&amp;pageid=g313d649b28_0_197" alt="Jenny Byran says “File organization and naming are powerful weapons against chaos.”" /></p>
+<p>Another famous data scientist, Karl Broman, <a href="http://kbroman.org/Tools4RR/assets/lectures/06_org_eda.pdf">suggests</a> that the best way to end up with a good file organization system has three steps.</p>
+<ul>
+<li><em>Step 1</em> slow down and make lots of notes for yourself.</li>
+<li><em>Step 2</em> have sympathy for your future self.</li>
+<li><em>Step 3</em> have a standard system that you understand</li>
+</ul>
+<p>A key challenge is that its sometimes hard to feel like file organization is “real work”. It isn’t coding, or making plots, or writing final documents. Sometimes, when working under a deadline, you will feel pressure to skip file organization in favor of quickly producing results and handing them off. But this never pays off in the long run, the results of poorly organized work almost always fail at some point further down the line. As a general rule of thumb it makes sense to budget 10-20% of the time you will be working on a data science project just to organizing and documenting your work.</p>
+<p>In the rest of this course we will cover one standard system for how to set up, organize, and navigate projects. Once you learn this system you can adapt it to work better for you, or try other ways of organizing your projects.</p>
+<div id="slides-and-video" class="section level3" number="1.0.1">
+<h3><span class="header-section-number">1.0.1</span> Slides and Video</h3>
+<div class="figure">
+<img src="https://www.youtube.com/watch?v=JxoKkjRJFeI" alt="" />
+<p class="caption">Motivation</p>
+</div>
+<ul>
+<li><a href="https://docs.google.com/presentation/d/1DJ7dlj8HEWdX9EL0dbNpl-gwAhI01JXSL8REAzmuQjw/edit?usp=sharing">Slides</a></li>
+</ul>
+<p>{quiz, id: quiz_00_motivation}</p>
+</div>
+<div id="motivation-quiz" class="section level3" number="1.0.2">
+<h3><span class="header-section-number">1.0.2</span> Motivation quiz</h3>
+<p>{choose-answers:4}
+? What is the reason file organization caused a problem in the Duke scandal?</p>
+<ol start="3" style="list-style-type: upper-alpha">
+<li>It took a long time to discover the problems in the data analysis</li>
+<li>The problems in the data analysis took a long time to find</li>
+<li>Lack of organization led to a delay in discovering the problems in the analysis</li>
+</ol>
+<ol start="15" style="list-style-type: lower-alpha">
+<li>The disorganized files led to a wrong analysis</li>
+<li>The files were organized but the researchers wouldn’t share them</li>
+<li>The disorganized files led to people using the wrong data</li>
+<li>The files were altered to deceive others before being shared</li>
+</ol>
+<p>{choose-answers:4}
+? What of the following is <em>not</em> a step in Karl Broman’s suggestions for project organization?</p>
+<ol start="3" style="list-style-type: upper-alpha">
+<li>Create a set of folders at the beginning of every project</li>
+<li>Put all files for each project in a single folder</li>
+<li>Minimize the number of directories on your computer</li>
+</ol>
+<ol start="15" style="list-style-type: lower-alpha">
+<li>Slow down and make lots of notes for yourself</li>
+<li>Have sympathy for your future self</li>
+<li>Have a standard system that you understand</li>
+</ol>
+<p>{choose-answers:4}
+? Which of the following is NOT a target audience of a data science project?</p>
+<ol start="3" style="list-style-type: upper-alpha">
+<li>You right now</li>
+<li>You at this moment</li>
+<li>You at the start of your project</li>
+</ol>
+<ol start="15" style="list-style-type: lower-alpha">
+<li>Your co-workers in six months</li>
+<li>You in six months</li>
+<li>Your boss in six months</li>
+</ol>
+<p>{/quiz}</p>
+
+</div>
+</div>
+<hr>
+<center> 
+  <div class="footer">
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      <br>
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="rstudio-and-projects.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

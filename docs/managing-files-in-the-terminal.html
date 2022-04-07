@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 6 Managing Files in the Terminal | DataTrail</title>
+  <meta name="description" content="Description about Course/Book." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 6 Managing Files in the Terminal | DataTrail" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Description about Course/Book." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 6 Managing Files in the Terminal | DataTrail" />
+  
+  <meta name="twitter:description" content="Description about Course/Book." />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/DataTrail_favicon.ico" type="image/x-icon" />
+<link rel="prev" href="introduction-to-markdown.html"/>
+<link rel="next" href="managing-files-in-r.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="assets/style_DataTrail.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<a href="https://www.datatrail.org/"><img src="https://github.com/datatrail-jhu/DataTrail_Template/raw/main/assets/DataTrail_logo.jpg" style="padding-left: 0px; padding-top: 8px;"</a>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a></li>
+<li class="chapter" data-level="1" data-path="motivation.html"><a href="motivation.html"><i class="fa fa-check"></i><b>1</b> Motivation</a>
+<ul>
+<li class="chapter" data-level="1.0.1" data-path="motivation.html"><a href="motivation.html#slides-and-video"><i class="fa fa-check"></i><b>1.0.1</b> Slides and Video</a></li>
+<li class="chapter" data-level="1.0.2" data-path="motivation.html"><a href="motivation.html#motivation-quiz"><i class="fa fa-check"></i><b>1.0.2</b> Motivation quiz</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html"><i class="fa fa-check"></i><b>2</b> RStudio and Projects</a>
+<ul>
+<li class="chapter" data-level="2.0.1" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html#logging-in-to-rstudio-cloud"><i class="fa fa-check"></i><b>2.0.1</b> Logging in to RStudio Cloud</a></li>
+<li class="chapter" data-level="2.0.2" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html#slides-and-video-1"><i class="fa fa-check"></i><b>2.0.2</b> Slides and Video</a></li>
+<li class="chapter" data-level="2.0.3" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html#rstudio-and-projects-quiz"><i class="fa fa-check"></i><b>2.0.3</b> RStudio and Projects quiz</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html"><i class="fa fa-check"></i><b>3</b> Setting Up Data Science Project Folders</a>
+<ul>
+<li class="chapter" data-level="3.0.1" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html#a-project-organization-framework"><i class="fa fa-check"></i><b>3.0.1</b> A project organization framework</a></li>
+<li class="chapter" data-level="3.0.2" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html#the-next-level-of-organization"><i class="fa fa-check"></i><b>3.0.2</b> The next level of organization</a></li>
+<li class="chapter" data-level="3.0.3" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html#slides-and-video-2"><i class="fa fa-check"></i><b>3.0.3</b> Slides and Video</a></li>
+<li class="chapter" data-level="3.0.4" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html#setting-up-data-science-project-folders-quiz"><i class="fa fa-check"></i><b>3.0.4</b> Setting Up Data Science Project Folders quiz</a></li>
+<li class="chapter" data-level="3.1" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html#r-markdown"><i class="fa fa-check"></i><b>3.1</b> R Markdown</a></li>
+<li class="chapter" data-level="3.2" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html#including-plots"><i class="fa fa-check"></i><b>3.2</b> Including Plots</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="creating-and-previewing-markdown-files-in-rstudio.html"><a href="creating-and-previewing-markdown-files-in-rstudio.html"><i class="fa fa-check"></i><b>4</b> Creating and Previewing Markdown Files in RStudio</a>
+<ul>
+<li class="chapter" data-level="4.0.1" data-path="creating-and-previewing-markdown-files-in-rstudio.html"><a href="creating-and-previewing-markdown-files-in-rstudio.html#working-with-markdown-files"><i class="fa fa-check"></i><b>4.0.1</b> Working with Markdown files</a></li>
+<li class="chapter" data-level="4.0.2" data-path="creating-and-previewing-markdown-files-in-rstudio.html"><a href="creating-and-previewing-markdown-files-in-rstudio.html#working-with-r-markdown-files"><i class="fa fa-check"></i><b>4.0.2</b> Working with R Markdown files</a></li>
+<li class="chapter" data-level="4.0.3" data-path="creating-and-previewing-markdown-files-in-rstudio.html"><a href="creating-and-previewing-markdown-files-in-rstudio.html#slides-and-video-3"><i class="fa fa-check"></i><b>4.0.3</b> Slides and Video</a></li>
+<li class="chapter" data-level="4.0.4" data-path="creating-and-previewing-markdown-files-in-rstudio.html"><a href="creating-and-previewing-markdown-files-in-rstudio.html#creating-and-previewing-markdown-files-in-rstudio-quiz"><i class="fa fa-check"></i><b>4.0.4</b> Creating and Previewing Markdown Files in RStudio quiz</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html"><i class="fa fa-check"></i><b>5</b> Introduction to Markdown</a>
+<ul>
+<li class="chapter" data-level="5.0.1" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#how-to-use-markdown"><i class="fa fa-check"></i><b>5.0.1</b> How to use Markdown</a></li>
+<li class="chapter" data-level="5.0.2" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#markdown-example"><i class="fa fa-check"></i><b>5.0.2</b> Markdown Example</a></li>
+<li class="chapter" data-level="5.0.3" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#main-commands"><i class="fa fa-check"></i><b>5.0.3</b> Main commands</a></li>
+<li class="chapter" data-level="5.0.4" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#more-complicated-editing"><i class="fa fa-check"></i><b>5.0.4</b> More complicated editing</a></li>
+<li class="chapter" data-level="5.0.5" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#links"><i class="fa fa-check"></i><b>5.0.5</b> Links</a></li>
+<li class="chapter" data-level="5.0.6" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#slides-and-video-4"><i class="fa fa-check"></i><b>5.0.6</b> Slides and Video</a></li>
+<li class="chapter" data-level="5.0.7" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#introduction-to-markdown-quiz"><i class="fa fa-check"></i><b>5.0.7</b> Introduction to Markdown quiz</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html"><i class="fa fa-check"></i><b>6</b> Managing Files in the Terminal</a>
+<ul>
+<li class="chapter" data-level="6.0.1" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#what-is-the-terminal"><i class="fa fa-check"></i><b>6.0.1</b> What is the Terminal?</a></li>
+<li class="chapter" data-level="6.0.2" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#why-manage-files-in-the-terminal"><i class="fa fa-check"></i><b>6.0.2</b> Why manage files in the Terminal?</a></li>
+<li class="chapter" data-level="6.0.3" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#file-system-example-and-vocabulary"><i class="fa fa-check"></i><b>6.0.3</b> File system example and vocabulary</a></li>
+<li class="chapter" data-level="6.0.4" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#important-commands"><i class="fa fa-check"></i><b>6.0.4</b> Important commands</a></li>
+<li class="chapter" data-level="6.0.5" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#summary"><i class="fa fa-check"></i><b>6.0.5</b> Summary</a></li>
+<li class="chapter" data-level="6.0.6" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#additional-resources"><i class="fa fa-check"></i><b>6.0.6</b> Additional Resources</a></li>
+<li class="chapter" data-level="6.0.7" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#slides-and-video-5"><i class="fa fa-check"></i><b>6.0.7</b> Slides and Video</a></li>
+<li class="chapter" data-level="6.0.8" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#managing-files-in-the-terminal-quiz"><i class="fa fa-check"></i><b>6.0.8</b> Managing Files in the Terminal quiz</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html"><i class="fa fa-check"></i><b>7</b> Managing Files in R</a>
+<ul>
+<li class="chapter" data-level="7.0.1" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html#why-manage-files-in-r"><i class="fa fa-check"></i><b>7.0.1</b> Why manage files in R?</a></li>
+<li class="chapter" data-level="7.0.2" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html#navigating-to-r-in-rstudio-cloud"><i class="fa fa-check"></i><b>7.0.2</b> Navigating to R in RStudio Cloud</a></li>
+<li class="chapter" data-level="7.0.3" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html#file-system-setup"><i class="fa fa-check"></i><b>7.0.3</b> File system setup</a></li>
+<li class="chapter" data-level="7.0.4" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html#important-functions"><i class="fa fa-check"></i><b>7.0.4</b> Important functions</a></li>
+<li class="chapter" data-level="7.0.5" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html#slides-and-video-6"><i class="fa fa-check"></i><b>7.0.5</b> Slides and Video</a></li>
+<li class="chapter" data-level="7.0.6" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html#managing-files-in-r-quiz"><i class="fa fa-check"></i><b>7.0.6</b> Managing Files in R quiz</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html"><i class="fa fa-check"></i><b>8</b> Using Paths in Code</a>
+<ul>
+<li class="chapter" data-level="8.0.1" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#relative-and-absolute-paths"><i class="fa fa-check"></i><b>8.0.1</b> Relative and absolute paths</a></li>
+<li class="chapter" data-level="8.0.2" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#directions-analogy"><i class="fa fa-check"></i><b>8.0.2</b> Directions analogy</a></li>
+<li class="chapter" data-level="8.0.3" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#paths-in-projects"><i class="fa fa-check"></i><b>8.0.3</b> Paths in projects</a></li>
+<li class="chapter" data-level="8.0.4" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#the-here-package"><i class="fa fa-check"></i><b>8.0.4</b> The <code>here</code> package</a></li>
+<li class="chapter" data-level="8.0.5" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#why-to-use-here"><i class="fa fa-check"></i><b>8.0.5</b> Why to use <code>here</code></a></li>
+<li class="chapter" data-level="8.0.6" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#additional-resources-1"><i class="fa fa-check"></i><b>8.0.6</b> Additional Resources</a></li>
+<li class="chapter" data-level="8.0.7" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#slides-and-video-7"><i class="fa fa-check"></i><b>8.0.7</b> Slides and Video</a></li>
+<li class="chapter" data-level="8.0.8" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#using-paths-in-code-quiz"><i class="fa fa-check"></i><b>8.0.8</b> Using Paths in Code quiz</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="how-to-work.html"><a href="how-to-work.html"><i class="fa fa-check"></i><b>9</b> How to Work</a>
+<ul>
+<li class="chapter" data-level="9.0.1" data-path="how-to-work.html"><a href="how-to-work.html#why-organize"><i class="fa fa-check"></i><b>9.0.1</b> Why Organize?</a></li>
+<li class="chapter" data-level="9.0.2" data-path="how-to-work.html"><a href="how-to-work.html#the-readme-file"><i class="fa fa-check"></i><b>9.0.2</b> The README File</a></li>
+<li class="chapter" data-level="9.0.3" data-path="how-to-work.html"><a href="how-to-work.html#using-comments"><i class="fa fa-check"></i><b>9.0.3</b> Using Comments</a></li>
+<li class="chapter" data-level="9.0.4" data-path="how-to-work.html"><a href="how-to-work.html#version-control"><i class="fa fa-check"></i><b>9.0.4</b> Version control</a></li>
+<li class="chapter" data-level="9.0.5" data-path="how-to-work.html"><a href="how-to-work.html#write-in-a-modular-way"><i class="fa fa-check"></i><b>9.0.5</b> Write in a Modular Way</a></li>
+<li class="chapter" data-level="9.0.6" data-path="how-to-work.html"><a href="how-to-work.html#draft-and-final-versions"><i class="fa fa-check"></i><b>9.0.6</b> Draft and Final Versions</a></li>
+<li class="chapter" data-level="9.0.7" data-path="how-to-work.html"><a href="how-to-work.html#slides-and-video-8"><i class="fa fa-check"></i><b>9.0.7</b> Slides and Video</a></li>
+<li class="chapter" data-level="9.0.8" data-path="how-to-work.html"><a href="how-to-work.html#how-to-work-quiz"><i class="fa fa-check"></i><b>9.0.8</b> How to Work quiz</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="10" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>10</b> References</a></li>
+<li class="divider"></li>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by: </a> </p>
+<p style="text-align:center;"> <a href="https://www.datatrail.org/"> Data Trail </a></p>
+<a href="https://www.datatrail.org/"><img src="https://github.com/datatrail-jhu/DataTrail_Template/raw/main/assets/DataTrail_logo.jpg" style=" width: 80%; filter: grayscale(100%); padding-left: 40px; padding-top: 8px; vertical-align: top "</a>
+<p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
+<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span>  <a href="https://forms.gle/VWaJYc3zATe3qxYC9"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">DataTrail</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <!--<script src="assets/hideOutput.js"></script>-->
+  <link href="assets/style_DataTrail.css" rel="stylesheet">
+</head>
+        
+
+
+<div class="hero-image-container"> 
+  <img class= "hero-image" src="assets/DataTrail.jpg">
+</div>
+<div id="managing-files-in-the-terminal" class="section level1" number="6">
+<h1><span class="header-section-number">Chapter 6</span> Managing Files in the Terminal</h1>
+<p>As was discussed in the first lesson of this course, one of the most important aspects of being a productive data scientist is staying organized. And a big part of staying organized is in managing your files: knowing where they are located and manipulating them with ease. In these next few lessons, we will be getting you fluent in orienting yourself in file systems in two areas: the Terminal and R/RStudio. In this lesson, we will focus on working with the Terminal.</p>
+<div id="what-is-the-terminal" class="section level3" number="6.0.1">
+<h3><span class="header-section-number">6.0.1</span> What is the Terminal?</h3>
+<p>The Terminal is an interface to the operating system of a computer. That is, it provides a way for you to type commands in order to perform actions on a computer. For example, there are commands to create new files and folders and to open files and folders. On your computer, you are familiar with using your mouse to perform such actions. When you are working with data on RStudio Cloud, however, you will not be able to use your mouse for everything that you’ll want to do. It will be important for you to become comfortable with using the Terminal as a place for purely text-based commands. In RStudio Cloud, the Terminal is located in the tab next to the Console.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g39e98c7b77_0_0" alt="Locating the Terminal in RStudio Cloud" /></p>
+<p>When you click on this tab, you will see a pane that looks as follows:</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g39e98c7b77_0_47" alt="The Terminal prompt" /></p>
+<p>You will always see a string of text at the beginning of the line. This is called the <strong>Terminal prompt</strong>. To the right of the dollar sign, you will be entering your commands. The Terminal is going to be extremely important for efficient management of your files. You will also use it extensively in the next course when you learn about version control systems and GitHub because it is the primary interface for working with those tools.</p>
+</div>
+<div id="why-manage-files-in-the-terminal" class="section level3" number="6.0.2">
+<h3><span class="header-section-number">6.0.2</span> Why manage files in the Terminal?</h3>
+<p>As we’ve discussed, the Terminal is a command-based interface to a computer operating system. This turns out to be a very flexible and fast way to manage your files once you become comfortable with a few commands. Let’s say that you wanted to make a copy of a folder. Whether on RStudio Cloud or on Google Drive, you would need to go through a series of clicks and typing to find that folder, copy it, and rename it. Within the Terminal, this can all be achieved with a single command.</p>
+</div>
+<div id="file-system-example-and-vocabulary" class="section level3" number="6.0.3">
+<h3><span class="header-section-number">6.0.3</span> File system example and vocabulary</h3>
+<p>To set up an example of a file system that we’ll be using throughout this lesson, let’s take a look again at the folder structure/directory structure that you created earlier in this course. Within a project folder, it is recommended that you set up the folders within as below. We will be working with this directory setup in an RStudio Cloud project.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g39e98c7b77_0_8" alt="Directory structure" /></p>
+<p>In future courses, whenever you write code and run commands within R to work with data, or whenever you use Git commands to document updates to your files, you will be working <em>in a particular location</em>. To know your location within a file system is to know exactly what folder you are in right now. The folder that you are in right now is called the <strong>working directory</strong>. Your current working directory in the Terminal may be different from your current working directory in R and may yet even be different from the folder shown in the Files pane of RStudio. The focus of this lesson is on the Terminal, so we will not discuss working directories within R until the next lesson.</p>
+<p>Knowing your working directory is important because if you want to tell Terminal to perform some actions on files in other folders, you will need to be able to tell the Terminal where that folder is. That is, you will need to be able to specify a <strong>path</strong> to that folder. A path is a string that specifies a sequence of folders to traverse in order to end up at a final destination. The end of a path string may be a file name if you are creating a path to a file. If you are creating a path to a folder, the path string will end with the destination folder. In a path, folder names are separated by forward slashes <code>/</code>. For example, let’s say that your current working directory in the Terminal is the <code>raw_code</code> directory, and you wish to navigate to the <code>exploratory</code> subfolder within the <code>figures</code> folder to see the graphics you’ve created.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g3a9f4bba8b_0_20" alt="Definitions: working directory and path" /></p>
+<p>There are two types of paths that can lead to that location. The first is called a <strong>relative path</strong> which gives a path to the destination folder based on where you are right now (in <code>raw_code</code>). A little later in this lesson you’ll learn how to construct relative paths.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g39e98c7b77_0_52" alt="Relative path" /></p>
+<p>Alternatively, you can specify an <strong>absolute path</strong>. An absolute path starts at the <strong>root directory</strong> of a file system. The root directory does not have a name like other folders do. It is specified with a single forward slash <code>/</code> and is special in that it cannot be contained within other folders. In the current file system, the root directory contains a folder called <code>cloud</code>, which contains a folder called <code>project</code>. This <code>project</code> folder contains the four main folders that you learned about in a previous lesson. A little later in this lesson you’ll learn how to construct absolute paths.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g39e98c7b77_0_89" alt="Absolute path" /></p>
+<p><strong>Analogy</strong>: The root directory is analogous to a town square, a universal starting location. The desired destination location might be the baker. An absolute path specifies how to reach the bakery starting from this universal starting location of the town square. However, if we are in the library right now, a relative path would specify how to reach the bakery from our current location in the library. This could be pretty different than the path from the town square.</p>
+</div>
+<div id="important-commands" class="section level3" number="6.0.4">
+<h3><span class="header-section-number">6.0.4</span> Important commands</h3>
+<p>Now that you have some vocabulary, we can delve into details about creating and using paths with different Terminal commands for managing files.</p>
+<div id="where-am-i-right-now" class="section level4" number="6.0.4.1">
+<h4><span class="header-section-number">6.0.4.1</span> Where am I right now?</h4>
+<p>If you want to know your current working directory with the Terminal (what folder you are in), you can use the <code>pwd</code> command by typing <code>pwd</code> at the Terminal prompt and hitting Enter. This stands for “print working directory”, and it prints the absolute path to your current location. In the example below we are in the <code>project</code> folder within the <code>cloud</code> folder. We can determine that this is an absolute path because it starts with a forward slash <code>/</code>.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g39e98c7b77_0_138" alt="pwd command" /></p>
+</div>
+<div id="what-is-in-this-folder" class="section level4" number="6.0.4.2">
+<h4><span class="header-section-number">6.0.4.2</span> What is in this folder?</h4>
+<p>If you want to know what files and folders are contained within your current directory, you can use the <code>ls</code> command. This stands for “list”, and it lists the files and folders within the current directory. If you just use the <code>ls</code> command without any options, the contents will be displayed horizontally across lines. If you add the <code>-lh</code> option with a space after the initial <code>ls</code> command, the output is displayed more nicely. The <code>l</code> part displays the results in a longer form with more information than just the file name. The <code>h</code> part displays the file sizes in a human-readable format. The most important pieces of information are in the last three columns, which display the file or folder size, the date the file or folder was last modified, and the name of the file or folder. You can also list the contents of a specific folder by specifying an absolute or relative path after the main <code>ls</code> command. In the example below, we list the contents of the <code>products</code> subfolder using a relative path.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g39e98c7b77_0_376" alt="ls command" /></p>
+<p>When you use <code>ls</code> without specifying any path, it displays the contents of the current working directory. You can get the same results by specifying a period <code>.</code> for the path, as shown below. The period stands for the current working directory.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g3a9f4bba8b_0_74" alt="ls command" /></p>
+</div>
+<div id="change-directory" class="section level4" number="6.0.4.3">
+<h4><span class="header-section-number">6.0.4.3</span> Change directory</h4>
+<p>If you would like to change your current working directory, you can use the <code>cd</code> command. This stands for “change directory” and moves you to the folder that you specify with a path after <code>cd</code>. If I want to move to the <code>raw_data</code> folder, I can specify this with a relative path <code>data/raw_data/</code> because I am currently in the <code>cloud/project/</code> folder. When you type these paths, it will be incredibly useful to use the <strong>tab completion</strong> feature of Terminal. With tab completion, you can partially type part of a folder or file name and hit tab to automatically fill in the remainder of the name. So here I can type <code>cd da</code>, and when I hit tab, this will automatically complete to <code>cd data/</code> because there are no other files or folders in this folder that start with <code>da</code>. From here I can type <code>cd data/r</code> and hit tab to automatically fill in the complete command <code>cd data/raw_data/</code>. Tab completion tries to fill in as much as possible but may not fill in completely if you have multiple folders that start with the same letters. If I had a folder called <code>dance</code> in the <code>project</code> folder, tab completion of <code>cd da</code> would not proceed further, but <code>cd dat</code> would. Try this out when you’re typing at the Terminal prompt - it will save you a lot of time! In addition, if you want to move one directory up, for instance going from the folder <code>data/raw_data</code> to <code>data</code>, you can use the command <code>cd ..</code>.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g39e98c7b77_0_158" alt="cd command" /></p>
+<p>I could also have specified an absolute path with <code>cd /cloud/project/data/raw_data/</code>. In this case, because of my initial working directory, both the relative and absolute paths take me to the same folder. Note that we have checked our updated working directory with the <code>pwd</code> command. Also note that this path matches the part of the Terminal prompt just before the dollar sign. This is a way to doubly verify where you are within the file system.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g39e98c7b77_0_182" alt="cd command" /></p>
+<p>If you try to change directory to a nonexistent folder, you will get an error message that looks as below:</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g39e98c7b77_0_202" alt="Error with the cd command" /></p>
+<div id="absolute-vs.-relative-paths" class="section level5" number="6.0.4.3.1">
+<h5><span class="header-section-number">6.0.4.3.1</span> Absolute vs. relative paths</h5>
+<p>Let’s go a little bit further with exploring the difference between absolute and relative paths. Let’s say that I have some code in the <code>raw_code</code> folder, and in that code, I want to create some exploratory graphics in the <code>exploratory</code> folder. Using our file system on RStudio Cloud, the path to the <code>exploratory</code> folder could be specified with the absolute path <code>/cloud/project/figures/exploratory/</code>. However, if someone else copies over the four main folders (<code>data</code>, <code>code</code>, <code>figures</code>, and <code>products</code>) onto their own computer and puts them inside folders with different names, this absolute path will not work. Why? Because this person happens to have the <code>root</code> and <code>work</code> folders instead of the <code>cloud</code> and <code>project</code> folders.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g39e98c7b77_0_216" alt="Absolute paths are not portable" /></p>
+<p>Rather than using an absolute path, a robust way to specify the path to the <code>exploratory</code> folder is with a relative path. In this way, our code will work on all computers, which is essential for data science work. Specifying this relative path is a little more complicated than we have seen earlier because we have to traverse up through some folders that contain our current working directory and down through another set of folders. To specify the folder containing the current working directory, we use <code>../</code>. When we are in the <code>raw_code</code> folder, the <code>../</code> specifies the <code>code</code> folder because it is the one directly containing our current directory. However, to enter the <code>figures</code> folder, we need to go up one more level to the folder that contains the <code>code</code> folder. On our RStudio Cloud, this is the <code>project</code> folder, but for this other person, it is the <code>work</code> folder. We can go up one more folder level with another <code>../</code>. So the complete relative path from <code>raw_code</code> to <code>exploratory</code> is <code>../../figures/exploratory/</code>.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g39e98c7b77_0_289" alt="Relative vs absolute paths" /></p>
+<p>Let’s look at one more example to reinforce these ideas. Our current working directory is the <code>raw_code</code> directory. We want to specify a path to the <code>final_code</code> directory. There are several ways to do achieve this, but the first listed below is the most straightforward.</p>
+<ul>
+<li><code>../final_code/</code></li>
+<li><code>../../code/final_code/</code></li>
+<li><code>../../../work/code/final_code/</code></li>
+</ul>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g39e98c7b77_0_331" alt="Additional example for relative paths" /></p>
+</div>
+</div>
+<div id="cycling-through-previous-commands" class="section level4" number="6.0.4.4">
+<h4><span class="header-section-number">6.0.4.4</span> Cycling through previous commands</h4>
+<p>Often when working in the Terminal, you will want to run the same or similar commands that you have run earlier. For example, you may want to change directories, list files, and then repeat this process as you change to other directories. You can avoid typing commands over and over by using the up and down arrow keys at the Terminal prompt. Hitting the up arrow key once pulls up the last command that you entered. Hitting the up key twice pulls up the command you entered two times ago. Now hitting down will pull up your last command again. You can keep hitting up and down to cycle through your previous commands. Try this out when you are typing at the Terminal!</p>
+</div>
+<div id="the-wildcard-operator" class="section level4" number="6.0.4.5">
+<h4><span class="header-section-number">6.0.4.5</span> The wildcard operator</h4>
+<p>In several different Terminal commands, it can be useful to specify only part of a file or folder name. For example, if we go to the <code>raw_code</code> folder and use the <code>ls</code> command, we see that there are 4 files. In larger projects, there may be many more files and we might not want to view all of them. We can specify certain patterns of files to list after the main <code>ls</code> command using part of the file name combined with the <code>*</code> wildcard operator. This operator matches any number of characters. So to list only files that start with “clean”, we can use <code>ls -lh clean*</code>. To only list files that contain “dataset1”, we can use <code>ls -lh *dataset1*</code> to match any characters on either side of the “dataset1” pattern. This will be useful when you work more with GitHub, starting in the next course.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g39e98c7b77_0_264" alt="Wildcard operator" /></p>
+</div>
+<div id="copying-files-and-folders" class="section level4" number="6.0.4.6">
+<h4><span class="header-section-number">6.0.4.6</span> Copying files and folders</h4>
+<p>Copying files and folders will come up often during your work. You may want to copy a messy code file to a new file to begin cleaning it up. It may be useful to do this for an entire folder. To copy in Terminal, we can use the <code>cp</code> command. To copy one file, the syntax is</p>
+<pre class="text"><code>cp path_to_original_file path_to_new_file</code></pre>
+<p>The path to the original file and the path to the new file can be absolute or relative paths. In the path to the new file, you can specify a different file name to rename it. In the example below, the first command <code>cp clean_dataset1.R ../final_code/</code> copies the <code>clean_dataset1.R</code> file to the <code>final_code</code> folder and keeps the same name. The second command <code>cp clean_dataset1.R ../final_code/clean_dataset1_renamed.R</code> specifies the relative path and a new file name. When we list the contents of the <code>final_code</code> folder, we see both the originally named file and the renamed file.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g3a9f4bba8b_0_88" alt="Copying a single file" /></p>
+<p>We can combine copying with the wildcard operator to copy multiple files. This does not rename the files. We can also copy multiple files into a directory by naming the files explicitly. That is <code>cp analyze* ../final_code/</code> achieves the same as <code>cp analyze_dataset1.R analyze_dataset2.R ../final_code/</code>.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g37c845e10b_0_0" alt="Copying multiple files" /></p>
+<p>To copy a folder, we must specify the recursive option <code>-r</code> in order to copy all of the files and folders inside the one being copied. In the example below, using <code>cp final_code/ publication_code</code> doesn’t work, but <code>cp -r final_code/ publication_code</code> does work. Note that a final forward slash at the end of <code>final_code</code> and <code>publication_code</code> is optional. In these examples, you will see the trailing forward slash when tab completion was used to speed up typing.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g37c845e10b_0_15" alt="Copying a folder" /></p>
+</div>
+<div id="moving-files-and-folders" class="section level4" number="6.0.4.7">
+<h4><span class="header-section-number">6.0.4.7</span> Moving files and folders</h4>
+<p>In the process of organizing your files, you will undoubtedly need to move files and folders to different locations. To move files and folders in Terminal, we can use the <code>mv</code> command. This command also renames files and folders. Similar to the copy command, the syntax for moving one file is</p>
+<pre class="text"><code>mv path_to_original_file path_to_new_file</code></pre>
+<p>Just as with copy, the path to the original file and the path to the new file can be absolute or relative paths. In the path to the new file, you can specify a different file name to rename it. In the example below, the first command <code>mv ../final_code/clean_dataset1_renamed.R .</code> moves the <code>clean_dataset1_renamed.R</code> file to the current working directory (indicated by the period at the end of the command) and keeps the same name. The next two commands <code>mv clean_dataset1.R tidy_dataset1.R</code> and <code>mv clean_dataset2.R tidy_dataset2.R</code> rename the files in the working directory to start with <code>tidy</code> instead of <code>clean</code>. When we list the contents of the working directory, we see both the moved file and the two renamed files.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g37c845e10b_0_33" alt="Moving a single file" /></p>
+<p>We can combine moving with the wildcard operator to move multiple files. This does not rename the files. We can also move multiple files into a directory by naming the files explicitly. This is achieved with <code>mv tidy_dataset1.R tidy_dataset2.R ../raw_code/</code>.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g37c845e10b_0_69" alt="Moving multiple files" /></p>
+<p>To move a folder into another folder, we use the same syntax for moving a single file:</p>
+<pre class="text"><code>mv path_to_folder_being_moved destination_path</code></pre>
+<p>In the example below, we achieve this with <code>mv raw_code/ publication_code/</code>. We can also rename a folder by specifying a new name for the destination path. In the example, we achieve this with <code>mv publication_code/ pub_code</code>.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g37c845e10b_0_91" alt="Moving and renaming a folder" /></p>
+</div>
+<div id="deleting-files-and-folders" class="section level4" number="6.0.4.8">
+<h4><span class="header-section-number">6.0.4.8</span> Deleting files and folders</h4>
+<p>To delete files and folders in the Terminal, we can use the <code>rm</code> command, which stands for remove. To remove a single file, the syntax is as follows:</p>
+<pre class="text"><code>rm path_to_file_to_delete</code></pre>
+<p>To remove multiple files, you can specify paths to multiple files separated by spaces or use the wildcard operator. Examples are shown below.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g37c845e10b_0_110" alt="Deleting files" /></p>
+<p>To delete a folder, we must specify the recursive option <code>-r</code> in order to recursively delete all of the files and folders inside the one being deleted. This is exactly as we had to do with copying a folders. In the example below, using <code>rm final_code/</code> doesn’t work, but <code>rm -r final_code/</code> does work.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g37c845e10b_0_127" alt="Deleting a folder" /></p>
+<p>Be very careful when deleting files and folders because this action is irreversible! In particular, <code>rm *</code> will delete all files in the current working directory. If you are using the wildcard operator, test your wildcard pattern with an <code>ls</code> command before deleting anything.</p>
+</div>
+<div id="creating-files-and-folders" class="section level4" number="6.0.4.9">
+<h4><span class="header-section-number">6.0.4.9</span> Creating files and folders</h4>
+<p>To create an empty file in the Terminal, we can use the <code>touch</code> command with <code>touch path_to_file</code>. The file will be empty, but it serves as a placeholder in case you decide to later open and edit the file.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g3b1e0adfae_0_0" alt="Creating a new file" /></p>
+<p>To create a new directory in the Terminal, we can use the <code>mkdir</code> command, which stands for “make directory.” After <code>mkdir</code>, type the path to the folder that we want to create.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g3b1e0adfae_0_7" alt="Creating a new directory" /></p>
+</div>
+</div>
+<div id="summary" class="section level3" number="6.0.5">
+<h3><span class="header-section-number">6.0.5</span> Summary</h3>
+<p>The Terminal is an interface to the operating system of a computer that you will be using to manage your files and to interface with GitHub, which will be covered in the next course. The essentials of navigating in the Terminal include knowing exactly what folder you are in with the <code>pwd</code> command and changing folders with the <code>cd</code> command. The essentials of managing files in the Terminal includes listing files with the <code>ls</code> command, copying them with <code>cp</code>, moving them with <code>mv</code>, and deleting them with <code>rm</code>. When you work with Git commands in the next course, you will be using the Terminal to navigate to the correct working directory and using Git commands to track changes you make in specified files. In order to specify those files, you will need to be comfortable with entering relative paths, as we covered in this lesson. Because Git commands allow use of the <code>*</code> wildcard operator, it will be useful for you to become comfortable with writing wildcard patterns to match multiple files. You can always test your patterns with an <code>ls</code> command to see that the desired files are being listed. To create new files, you can use the <code>touch</code> command, and to create new folders, you can use the <code>mkdir</code> command. Overall, managing your files in the Terminal will save you a lot of time in the long run compared to manual clicking.</p>
+</div>
+<div id="additional-resources" class="section level3" number="6.0.6">
+<h3><span class="header-section-number">6.0.6</span> Additional Resources</h3>
+<ul>
+<li><a href="https://shapeshed.com/unix-ls/">The ls command</a></li>
+<li><a href="https://shapeshed.com/unix-cp/">The cp command</a></li>
+<li><a href="https://shapeshed.com/unix-mv/">The mv command</a></li>
+<li><a href="https://shapeshed.com/unix-rm/">The rm command</a></li>
+</ul>
+</div>
+<div id="slides-and-video-5" class="section level3" number="6.0.7">
+<h3><span class="header-section-number">6.0.7</span> Slides and Video</h3>
+<div class="figure">
+<img src="https://www.youtube.com/watch?v=R7bhQW8-gHg" alt="" />
+<p class="caption">Managing Files in the Terminal</p>
+</div>
+<ul>
+<li><a href="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/edit?usp=sharing">Slides</a></li>
+</ul>
+<p>{quiz, id: quiz_06_nav_terminal}</p>
+</div>
+<div id="managing-files-in-the-terminal-quiz" class="section level3" number="6.0.8">
+<h3><span class="header-section-number">6.0.8</span> Managing Files in the Terminal quiz</h3>
+<p>The following diagram of a file system will be used for some of the quiz questions.</p>
+<p>{format: png}
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g39e98c7b77_0_8" alt="Directory structure" /></p>
+<p>{choose-answers: 4}
+?1 Refer to the above diagram of a file system for this question. The current working directory is the <code>final_code</code> directory. Which of the following is a correct relative path to the <code>explanatory</code> directory?</p>
+<ol start="3" style="list-style-type: upper-alpha">
+<li><code>../../figures/explanatory</code></li>
+<li><code>../../../project/figures/explanatory</code></li>
+</ol>
+<ol start="15" style="list-style-type: lower-alpha">
+<li><code>/cloud/project/figures/explanatory/</code></li>
+<li><code>cloud/project/figures/explanatory/</code></li>
+<li><code>../figures/explanatory</code></li>
+<li><code>figures/explanatory</code></li>
+<li><code>/figures/explanatory</code></li>
+<li><code>../project/figures/explanatory</code></li>
+<li><code>project/figures/explanatory</code></li>
+</ol>
+<p>{choose-answers: 4}
+?2 Refer to the above diagram of a file system for this question. The current working directory is the <code>final_code</code> directory. Which of the following is a correct absolute path to the <code>explanatory</code> directory?</p>
+<ol start="3" style="list-style-type: upper-alpha">
+<li><code>/cloud/project/figures/explanatory/</code></li>
+</ol>
+<ol start="15" style="list-style-type: lower-alpha">
+<li><code>../../figures/explanatory</code></li>
+<li><code>../../../project/figures/explanatory</code></li>
+<li><code>cloud/project/figures/explanatory/</code></li>
+<li><code>../figures/explanatory</code></li>
+<li><code>figures/explanatory</code></li>
+<li><code>/figures/explanatory</code></li>
+<li><code>../project/figures/explanatory</code></li>
+<li><code>project/figures/explanatory</code></li>
+</ol>
+<p>{choose-answers: 4}
+?3 How can you determine the current working directory in the Terminal in RStudio?</p>
+<ol start="3" style="list-style-type: upper-alpha">
+<li>Look at the path displayed before the dollar sign at the prompt</li>
+<li><code>pwd</code></li>
+</ol>
+<ol start="15" style="list-style-type: lower-alpha">
+<li><code>ls</code></li>
+<li><code>ls -lh</code></li>
+<li><code>cd</code></li>
+<li><code>cd /</code></li>
+</ol>
+<p>{choose-answers: 4}
+?4 In my current working directory, I have two folders called <code>explanatory</code> and <code>exploratory</code>. I want to change my working directory to the <code>exploratory</code> folder. What is the earliest point in the typing of my command where I can hit the tab key to automatically complete the file name?</p>
+<ol start="3" style="list-style-type: upper-alpha">
+<li><code>cd explo</code>, then hit tab key</li>
+</ol>
+<ol start="13" style="list-style-type: lower-alpha">
+<li><code>cd e</code>, then hit tab key</li>
+<li><code>cd ex</code>, then hit tab key</li>
+<li><code>cd exp</code>, then hit tab key</li>
+<li><code>cd expl</code>, then hit tab key</li>
+<li><code>cd explor</code>, then hit tab key</li>
+<li><code>cd explora</code>, then hit tab key</li>
+<li><code>cd explorat</code>, then hit tab key</li>
+<li><code>cd explorato</code>, then hit tab key</li>
+<li><code>cd explorator</code>, then hit tab key</li>
+<li><code>cd exploratory</code>; tab completion won’t save time here.</li>
+</ol>
+<p>{choose-answers: 4}
+?5 Which of the following commands displays only the files in the current working directory that have a <code>.txt</code> extension?</p>
+<ol start="3" style="list-style-type: upper-alpha">
+<li><code>ls *.txt</code></li>
+<li><code>ls -lh *.txt</code></li>
+</ol>
+<ol start="15" style="list-style-type: lower-alpha">
+<li><code>ls .txt</code></li>
+<li><code>ls -lh .txt</code></li>
+<li><code>ls .txt*</code></li>
+<li><code>ls -lh .txt*</code></li>
+</ol>
+<p>{choose-answers: 4}
+?6 Refer to the above diagram of a file system for this question. The current working directory is the <code>raw_data</code> directory. Which of the following commands will copy a file called <code>data.txt</code> in the <code>tidy_data</code> directory to the current working directory?</p>
+<ol start="3" style="list-style-type: upper-alpha">
+<li><code>cp ../tidy_data/data.txt .</code></li>
+</ol>
+<ol start="15" style="list-style-type: lower-alpha">
+<li><code>cp ../tidy_data/data.txt</code></li>
+<li><code>cp tidy_data/data.txt .</code></li>
+<li><code>cp tidy_data/data.txt</code></li>
+<li><code>mv ../tidy_data/data.txt .</code></li>
+<li><code>mv ../tidy_data/data.txt</code></li>
+</ol>
+<p>{choose-answers: 4}
+?7 Refer to the above diagram of a file system for this question. The current working directory is the <code>raw_data</code> directory. Which of the following commands will delete the <code>writing</code> directory?</p>
+<ol start="3" style="list-style-type: upper-alpha">
+<li><code>rm -r ../../products/writing</code></li>
+</ol>
+<ol start="15" style="list-style-type: lower-alpha">
+<li><code>rm ../products/writing</code></li>
+<li><code>rm ../../products/writing</code></li>
+<li><code>rm ../../../products/writing</code></li>
+<li><code>rm -r ../products/writing</code></li>
+<li><code>rm -r ../../../products/writing</code></li>
+</ol>
+<p>{choose-answers: 4}
+?7 Refer to the above diagram of a file system for this question. The current working directory is the <code>raw_data</code> directory. Which of the following commands will delete the <code>exploratory</code> directory?</p>
+<ol start="3" style="list-style-type: upper-alpha">
+<li><code>rm -r ../../figures/exploratory</code></li>
+</ol>
+<ol start="15" style="list-style-type: lower-alpha">
+<li><code>rm ../figures/exploratory</code></li>
+<li><code>rm ../../figures/exploratory</code></li>
+<li><code>rm ../../../figures/exploratory</code></li>
+<li><code>rm -r ../figures/exploratory</code></li>
+<li><code>rm -r ../../../figures/exploratory</code></li>
+<li><code>rm /figures/exploratory</code></li>
+</ol>
+<p>{choose-answers: 4}
+?8 Refer to the above diagram of a file system for this question. The current working directory is the <code>raw_code</code> directory. This directory contains 4 files: <code>tidy1.R</code>, <code>tidy2.R</code>, <code>trim1.R</code>, <code>trim2.R</code>. Which of the following commands will move only the <code>tidy1.R</code> and <code>tidy2.R</code> files out of this directory and into the <code>final_code</code> directory?</p>
+<ol start="3" style="list-style-type: upper-alpha">
+<li><code>mv tidy1.R tidy2.R ../final_code/</code></li>
+<li><code>mv tidy*.R ../final_code/</code></li>
+<li><code>mv tidy* ../final_code/</code></li>
+<li><code>mv tid* ../final_code/</code></li>
+<li><code>mv ti* ../final_code/</code></li>
+</ol>
+<ol start="15" style="list-style-type: lower-alpha">
+<li><code>mv t* ../final_code/</code></li>
+<li><code>cp tidy1.R tidy2.R ../final_code/</code></li>
+<li><code>cp tidy* ../final_code/</code></li>
+<li><code>mv tidy*.R ../../final_code/</code></li>
+<li><code>mv tidy* ../../final_code/</code></li>
+<li><code>mv tidy*.R final_code/</code></li>
+<li><code>mv tidy* final_code/</code></li>
+</ol>
+<p>{/quiz}</p>
+
+</div>
+</div>
+<hr>
+<center> 
+  <div class="footer">
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      <br>
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="introduction-to-markdown.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="managing-files-in-r.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
