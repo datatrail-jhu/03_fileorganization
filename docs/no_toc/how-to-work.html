@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 9 How to Work | DataTrail</title>
+  <meta name="description" content="Description about Course/Book." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 9 How to Work | DataTrail" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Description about Course/Book." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 9 How to Work | DataTrail" />
+  
+  <meta name="twitter:description" content="Description about Course/Book." />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/DataTrail_favicon.ico" type="image/x-icon" />
+<link rel="prev" href="using-paths-in-code.html"/>
+<link rel="next" href="about-the-authors.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="assets/style_DataTrail.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<a href="https://www.datatrail.org/"><img src="https://github.com/datatrail-jhu/DataTrail_Template/raw/main/assets/DataTrail_logo.jpg" style="padding-left: 0px; padding-top: 8px;"</a>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a></li>
+<li class="chapter" data-level="1" data-path="motivation.html"><a href="motivation.html"><i class="fa fa-check"></i><b>1</b> Motivation</a>
+<ul>
+<li class="chapter" data-level="1.0.1" data-path="motivation.html"><a href="motivation.html#slides-and-video"><i class="fa fa-check"></i><b>1.0.1</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html"><i class="fa fa-check"></i><b>2</b> RStudio and Projects</a>
+<ul>
+<li class="chapter" data-level="2.0.1" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html#logging-in-to-rstudio-cloud"><i class="fa fa-check"></i><b>2.0.1</b> Logging in to RStudio Cloud</a></li>
+<li class="chapter" data-level="2.0.2" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html#slides-and-video-1"><i class="fa fa-check"></i><b>2.0.2</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html"><i class="fa fa-check"></i><b>3</b> Setting Up Data Science Project Folders</a>
+<ul>
+<li class="chapter" data-level="3.0.1" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html#a-project-organization-framework"><i class="fa fa-check"></i><b>3.0.1</b> A project organization framework</a></li>
+<li class="chapter" data-level="3.0.2" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html#the-next-level-of-organization"><i class="fa fa-check"></i><b>3.0.2</b> The next level of organization</a></li>
+<li class="chapter" data-level="3.0.3" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html#slides-and-video-2"><i class="fa fa-check"></i><b>3.0.3</b> Slides and Video</a></li>
+<li class="chapter" data-level="3.1" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html#r-markdown"><i class="fa fa-check"></i><b>3.1</b> R Markdown</a></li>
+<li class="chapter" data-level="3.2" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html#including-plots"><i class="fa fa-check"></i><b>3.2</b> Including Plots</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="creating-and-previewing-markdown-files-in-rstudio.html"><a href="creating-and-previewing-markdown-files-in-rstudio.html"><i class="fa fa-check"></i><b>4</b> Creating and Previewing Markdown Files in RStudio</a>
+<ul>
+<li class="chapter" data-level="4.0.1" data-path="creating-and-previewing-markdown-files-in-rstudio.html"><a href="creating-and-previewing-markdown-files-in-rstudio.html#working-with-markdown-files"><i class="fa fa-check"></i><b>4.0.1</b> Working with Markdown files</a></li>
+<li class="chapter" data-level="4.0.2" data-path="creating-and-previewing-markdown-files-in-rstudio.html"><a href="creating-and-previewing-markdown-files-in-rstudio.html#working-with-r-markdown-files"><i class="fa fa-check"></i><b>4.0.2</b> Working with R Markdown files</a></li>
+<li class="chapter" data-level="4.0.3" data-path="creating-and-previewing-markdown-files-in-rstudio.html"><a href="creating-and-previewing-markdown-files-in-rstudio.html#slides-and-video-3"><i class="fa fa-check"></i><b>4.0.3</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html"><i class="fa fa-check"></i><b>5</b> Introduction to Markdown</a>
+<ul>
+<li class="chapter" data-level="5.0.1" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#how-to-use-markdown"><i class="fa fa-check"></i><b>5.0.1</b> How to use Markdown</a></li>
+<li class="chapter" data-level="5.0.2" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#markdown-example"><i class="fa fa-check"></i><b>5.0.2</b> Markdown Example</a></li>
+<li class="chapter" data-level="5.0.3" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#main-commands"><i class="fa fa-check"></i><b>5.0.3</b> Main commands</a></li>
+<li class="chapter" data-level="5.0.4" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#more-complicated-editing"><i class="fa fa-check"></i><b>5.0.4</b> More complicated editing</a></li>
+<li class="chapter" data-level="5.0.5" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#links"><i class="fa fa-check"></i><b>5.0.5</b> Links</a></li>
+<li class="chapter" data-level="5.0.6" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#slides-and-video-4"><i class="fa fa-check"></i><b>5.0.6</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html"><i class="fa fa-check"></i><b>6</b> Managing Files in the Terminal</a>
+<ul>
+<li class="chapter" data-level="6.0.1" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#what-is-the-terminal"><i class="fa fa-check"></i><b>6.0.1</b> What is the Terminal?</a></li>
+<li class="chapter" data-level="6.0.2" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#why-manage-files-in-the-terminal"><i class="fa fa-check"></i><b>6.0.2</b> Why manage files in the Terminal?</a></li>
+<li class="chapter" data-level="6.0.3" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#file-system-example-and-vocabulary"><i class="fa fa-check"></i><b>6.0.3</b> File system example and vocabulary</a></li>
+<li class="chapter" data-level="6.0.4" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#important-commands"><i class="fa fa-check"></i><b>6.0.4</b> Important commands</a></li>
+<li class="chapter" data-level="6.0.5" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#summary"><i class="fa fa-check"></i><b>6.0.5</b> Summary</a></li>
+<li class="chapter" data-level="6.0.6" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#additional-resources"><i class="fa fa-check"></i><b>6.0.6</b> Additional Resources</a></li>
+<li class="chapter" data-level="6.0.7" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#slides-and-video-5"><i class="fa fa-check"></i><b>6.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html"><i class="fa fa-check"></i><b>7</b> Managing Files in R</a>
+<ul>
+<li class="chapter" data-level="7.0.1" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html#why-manage-files-in-r"><i class="fa fa-check"></i><b>7.0.1</b> Why manage files in R?</a></li>
+<li class="chapter" data-level="7.0.2" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html#navigating-to-r-in-rstudio-cloud"><i class="fa fa-check"></i><b>7.0.2</b> Navigating to R in RStudio Cloud</a></li>
+<li class="chapter" data-level="7.0.3" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html#file-system-setup"><i class="fa fa-check"></i><b>7.0.3</b> File system setup</a></li>
+<li class="chapter" data-level="7.0.4" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html#important-functions"><i class="fa fa-check"></i><b>7.0.4</b> Important functions</a></li>
+<li class="chapter" data-level="7.0.5" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html#slides-and-video-6"><i class="fa fa-check"></i><b>7.0.5</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html"><i class="fa fa-check"></i><b>8</b> Using Paths in Code</a>
+<ul>
+<li class="chapter" data-level="8.0.1" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#relative-and-absolute-paths"><i class="fa fa-check"></i><b>8.0.1</b> Relative and absolute paths</a></li>
+<li class="chapter" data-level="8.0.2" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#directions-analogy"><i class="fa fa-check"></i><b>8.0.2</b> Directions analogy</a></li>
+<li class="chapter" data-level="8.0.3" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#paths-in-projects"><i class="fa fa-check"></i><b>8.0.3</b> Paths in projects</a></li>
+<li class="chapter" data-level="8.0.4" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#the-here-package"><i class="fa fa-check"></i><b>8.0.4</b> The <code>here</code> package</a></li>
+<li class="chapter" data-level="8.0.5" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#why-to-use-here"><i class="fa fa-check"></i><b>8.0.5</b> Why to use <code>here</code></a></li>
+<li class="chapter" data-level="8.0.6" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#additional-resources-1"><i class="fa fa-check"></i><b>8.0.6</b> Additional Resources</a></li>
+<li class="chapter" data-level="8.0.7" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#slides-and-video-7"><i class="fa fa-check"></i><b>8.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="how-to-work.html"><a href="how-to-work.html"><i class="fa fa-check"></i><b>9</b> How to Work</a>
+<ul>
+<li class="chapter" data-level="9.0.1" data-path="how-to-work.html"><a href="how-to-work.html#why-organize"><i class="fa fa-check"></i><b>9.0.1</b> Why Organize?</a></li>
+<li class="chapter" data-level="9.0.2" data-path="how-to-work.html"><a href="how-to-work.html#the-readme-file"><i class="fa fa-check"></i><b>9.0.2</b> The README File</a></li>
+<li class="chapter" data-level="9.0.3" data-path="how-to-work.html"><a href="how-to-work.html#using-comments"><i class="fa fa-check"></i><b>9.0.3</b> Using Comments</a></li>
+<li class="chapter" data-level="9.0.4" data-path="how-to-work.html"><a href="how-to-work.html#version-control"><i class="fa fa-check"></i><b>9.0.4</b> Version control</a></li>
+<li class="chapter" data-level="9.0.5" data-path="how-to-work.html"><a href="how-to-work.html#write-in-a-modular-way"><i class="fa fa-check"></i><b>9.0.5</b> Write in a Modular Way</a></li>
+<li class="chapter" data-level="9.0.6" data-path="how-to-work.html"><a href="how-to-work.html#draft-and-final-versions"><i class="fa fa-check"></i><b>9.0.6</b> Draft and Final Versions</a></li>
+<li class="chapter" data-level="9.0.7" data-path="how-to-work.html"><a href="how-to-work.html#slides-and-video-8"><i class="fa fa-check"></i><b>9.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="10" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>10</b> References</a></li>
+<li class="divider"></li>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by: </a> </p>
+<p style="text-align:center;"> <a href="https://www.datatrail.org/"> Data Trail </a></p>
+<a href="https://www.datatrail.org/"><img src="https://github.com/datatrail-jhu/DataTrail_Template/raw/main/assets/DataTrail_logo.jpg" style=" width: 80%; filter: grayscale(100%); padding-left: 40px; padding-top: 8px; vertical-align: top "</a>
+<p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
+<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span>  <a href="https://forms.gle/VWaJYc3zATe3qxYC9"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">DataTrail</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <!--<script src="assets/hideOutput.js"></script>-->
+  <link href="assets/style_DataTrail.css" rel="stylesheet">
+</head>
+        
+
+
+<div class="hero-image-container"> 
+  <img class= "hero-image" src="assets/DataTrail.jpg">
+</div>
+<div id="how-to-work" class="section level1" number="9">
+<h1><span class="header-section-number">Chapter 9</span> How to Work</h1>
+<div id="why-organize" class="section level3" number="9.0.1">
+<h3><span class="header-section-number">9.0.1</span> Why Organize?</h3>
+<p>In the previous lessons we learned about how to organize our files into folders and how to name our files and folders. Doing this has the following benefits:</p>
+<ul>
+<li><p>Easier collaboration: You will see that as a data scientist, you will have to work with teams of other data scientists most of the time. Organizing makes collaboration a lot easier.</p></li>
+<li><p>Lower likelihood of making mistakes: When you organize, it is easier for you and others to see where you might have made a mistake before it’s too late.</p></li>
+<li><p>Easier recall: Going back to your analysis and understanding what you have done in 6 months or a year or even later will be a lot easier. If your project is not organized, it is very likely that you go back to your analysis and do not understand what you or your collaborator have previously done.</p></li>
+<li><p>More transparency and honesty on your part: This is because you make it easier for others to go through your files and replicate your analysis.</p></li>
+</ul>
+<p>Using the <em>raw_data</em> folder for keeping the raw data untouched is important especially if you don’t have a second copy of the raw data. If you make changes to and tidy up the raw data within your analysis, make sure you do not overwrite your raw data. It is important that you keep the raw data intact and instead add the cleaned and tidy data to the <em>tidy_data</em> folder.</p>
+<p>Next is using the <em>raw_code</em> folder for keeping your preliminary code. Let’s see what we mean by that. When you are doing the preliminary part of your analysis, code without any constraint, that is do not worry much about how nice your code looks or whether it is self-explanatory. Don’t devote much of your brain power to commenting or tidying at first. Save this kind of code in the <em>raw_code</em> folder since it’s raw and most of the time no one but you understands it. Later on, when you clean your code and make it more understandable, you can save bits and pieces of it in your final code file in the <em>final_code</em> folder.</p>
+</div>
+<div id="the-readme-file" class="section level3" number="9.0.2">
+<h3><span class="header-section-number">9.0.2</span> The README File</h3>
+<p>Once you have a file structure in place, it’s best to write a README file. This file should explain how the code and data are organized as well as how they are related. In other words, explain what is what. For each filename, we recommend to have a short description of what the file is for. You can also have a description of how the data were obtained or collected including links or references to publication or other documentation. Mention people involved with the project, and provide contact information of at least one of the collaborators.</p>
+<p>A good idea is to update the README file as you work. As you create new files and folders, add their descriptions to the README file so you can keep track of what you are working on.</p>
+<p>You might also make a more detailed README file, which includes a list of variables, units of measurement of each variable, definition of code and symbols used to deal with missing data, Licenses or restrictions on the content of the project including the data, and information about how others should cite your analysis.</p>
+</div>
+<div id="using-comments" class="section level3" number="9.0.3">
+<h3><span class="header-section-number">9.0.3</span> Using Comments</h3>
+<p>Our next piece of advice is that use comments within your code. Commenting in R is done by adding the pound sign (#). If you add the pound sign at the beginning of each line, R will not read that line as code and will instead skip it. So you can add your explanations about each chunk of code using the pound sign. This is an example of commenting:</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="how-to-work.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># calculates the products of a vector and a matrix</span></span>
+<span id="cb21-2"><a href="how-to-work.html#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="co"># checks if they can be multiplied first</span></span>
+<span id="cb21-3"><a href="how-to-work.html#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="cf">function</span> (x, y){</span>
+<span id="cb21-4"><a href="how-to-work.html#cb21-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">dim</span>(x)[<span class="dv">2</span>] <span class="sc">!=</span> <span class="fu">length</span>(y)) {</span>
+<span id="cb21-5"><a href="how-to-work.html#cb21-5" aria-hidden="true" tabindex="-1"></a>        <span class="fu">stop</span>(<span class="st">&quot;Can&#39;t multiply matrix%*%vector because the dimensions are wrong&quot;</span>)</span>
+<span id="cb21-6"><a href="how-to-work.html#cb21-6" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb21-7"><a href="how-to-work.html#cb21-7" aria-hidden="true" tabindex="-1"></a>    product <span class="ot">&lt;-</span> matrix <span class="sc">%*%</span> vector</span>
+<span id="cb21-8"><a href="how-to-work.html#cb21-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(product)</span>
+<span id="cb21-9"><a href="how-to-work.html#cb21-9" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>Note that the first line describes what the function does. Commenting is helpful especially when the code is more complicated and harder to understand. Keep comments short and informative and avoid inserting comments for code that have an obvious purpose, i.e. don’t add comment for a line of code that adds two variables).</p>
+</div>
+<div id="version-control" class="section level3" number="9.0.4">
+<h3><span class="header-section-number">9.0.4</span> Version control</h3>
+<p>Always make sure your changes are saved and even more importantly that all your files are version controlled. Version control is common practice in data science. Don’t worry if you don’t know much about it. In a future course we’ll cover version control in much more detail.</p>
+</div>
+<div id="write-in-a-modular-way" class="section level3" number="9.0.5">
+<h3><span class="header-section-number">9.0.5</span> Write in a Modular Way</h3>
+<p>One mistake in writing code is to have everything in one file. This is bad practice since fixing bugs and replicating the analysis would be much harder. Therefore, it is recommended that you write code in a modular way so that each group of code that do similar things can be put in a single file and the master file calls these individual files. The result is a much cleaner and shorter master file.</p>
+</div>
+<div id="draft-and-final-versions" class="section level3" number="9.0.6">
+<h3><span class="header-section-number">9.0.6</span> Draft and Final Versions</h3>
+<p>When working on a data science project you will start with data in the <code>data/raw_data</code> folder and you will start with code in the <code>code/raw_code</code> folder. Most of your early analysis will be done within the <code>code/raw_code</code> folder. When you are first starting out on a project it makes sense to work quickly, exploring a data set or a problem and figuring out what is going on. Don’t worry about the details at this stage! The goal is to just try to figure out what is going on with the data you are working on.</p>
+<p>Within your <code>code/raw_code</code> folder you can try to have a numbering system as we described in the file naming section. You might create a file called <code>00_first_analysis.R</code> and start doing some analysis that might be messy or incomplete. You would keep track of what you working on in your README file or in a lab notebook at regular intervals.</p>
+<p>Once you have figured things out and know what analysis you want to do you will go back through and take pieces of the analysis and code you created in the <code>code/raw_code</code> folder, clean it up, and put it into final documents that go into the <code>code/final_code</code> and <code>products/writing</code> folders. That way you have a record of every messy analysis you did, but you also have a nice cleaned up version that you can share with other people.</p>
+<p>The key take home message is that you should start fast, trying out things and not being afraid to make mistakes. This is what will go in your raw folders. Then, once you have figured out what you want to do more clearly, you will make final versions that are clear and easier to communicate.</p>
+<p>Budget about 20% of your time keeping track of a bulleted list of the things that you need to do and the things that you do day to day across all your data science projects. This is to help you organize and remember what you did when for future references. There are various tools for keeping track of your projects. One of them is <a href="https://benchling.com/">Benchling</a>. Benchling can be used for workflow management and tracking your project in a collaborative way.</p>
+</div>
+<div id="slides-and-video-8" class="section level3" number="9.0.7">
+<h3><span class="header-section-number">9.0.7</span> Slides and Video</h3>
+<div class="figure">
+<img src="https://www.youtube.com/watch?v=kKXOHJRZGdE" alt="" />
+<p class="caption">How To Work</p>
+</div>
+<ul>
+<li><a href="https://docs.google.com/presentation/d/1vn8Lb8YNvo1zha7GmJMlQSBRSAryRms6xy5HUtafH2A/edit?usp=sharing">Slides</a></li>
+</ul>
+
+</div>
+</div>
+<hr>
+<center> 
+  <div class="footer">
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      <br>
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="using-paths-in-code.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="about-the-authors.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
