@@ -1,22 +1,18 @@
 motivation
 slides-and-video
-motivation-quiz
 rstudio-and-projects
 logging-in-to-rstudio-cloud
 slides-and-video-1
-rstudio-and-projects-quiz
 setting-up-data-science-project-folders
 a-project-organization-framework
 the-next-level-of-organization
 slides-and-video-2
-setting-up-data-science-project-folders-quiz
 r-markdown
 including-plots
 creating-and-previewing-markdown-files-in-rstudio
 working-with-markdown-files
 working-with-r-markdown-files
 slides-and-video-3
-creating-and-previewing-markdown-files-in-rstudio-quiz
 introduction-to-markdown
 how-to-use-markdown
 markdown-example
@@ -27,7 +23,6 @@ lists
 more-complicated-editing
 links
 slides-and-video-4
-introduction-to-markdown-quiz
 managing-files-in-the-terminal
 what-is-the-terminal
 why-manage-files-in-the-terminal
@@ -46,7 +41,6 @@ creating-files-and-folders
 summary
 additional-resources
 slides-and-video-5
-managing-files-in-the-terminal-quiz
 managing-files-in-r
 why-manage-files-in-r
 navigating-to-r-in-rstudio-cloud
@@ -61,7 +55,6 @@ copy-a-file
 remove-a-file
 does-a-file-exist
 slides-and-video-6
-managing-files-in-r-quiz
 using-paths-in-code
 relative-and-absolute-paths
 relative-paths
@@ -77,7 +70,6 @@ get-files-paths-using-here
 where-you-should-use-this
 additional-resources-1
 slides-and-video-7
-using-paths-in-code-quiz
 how-to-work
 why-organize
 the-readme-file
@@ -86,5 +78,4 @@ version-control
 write-in-a-modular-way
 draft-and-final-versions
 slides-and-video-8
-how-to-work-quiz
 references
