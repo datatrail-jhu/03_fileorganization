@@ -1,5 +1,5 @@
 ---
-title: "DataTrail"
+title: "Organizing Data Science Projects"
 date: "`r format(Sys.time(), '%B, %Y')`"
 site: bookdown::bookdown_site
 documentclass: book
