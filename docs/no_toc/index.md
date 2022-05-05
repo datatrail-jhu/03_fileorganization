@@ -1,6 +1,6 @@
 ---
-title: "DataTrail"
-date: "April, 2022"
+title: "Organizing Data Science Projects"
+date: "May, 2022"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
