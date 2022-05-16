@@ -11,12 +11,12 @@ As was discussed in the first lesson of this course, one of the most important a
 
 The Terminal is an interface to the operating system of a computer. That is, it provides a way for you to type commands in order to perform actions on a computer. For example, there are commands to create new files and folders and to open files and folders. On your computer, you are familiar with using your mouse to perform such actions. When you are working with data on RStudio Cloud, however, you will not be able to use your mouse for everything that you'll want to do. It will be important for you to become comfortable with using the Terminal as a place for purely text-based commands. In RStudio Cloud, the Terminal is located in the tab next to the Console.
 
-{format: png}
+
 ![Locating the Terminal in RStudio Cloud](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g39e98c7b77_0_0)
 
 When you click on this tab, you will see a pane that looks as follows:
 
-{format: png}
+
 ![The Terminal prompt](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g39e98c7b77_0_47)
 
 You will always see a string of text at the beginning of the line. This is called the **Terminal prompt**. To the right of the dollar sign, you will be entering your commands. The Terminal is going to be extremely important for efficient management of your files. You will also use it extensively in the next course when you learn about version control systems and GitHub because it is the primary interface for working with those tools.
@@ -29,24 +29,24 @@ As we've discussed, the Terminal is a command-based interface to a computer oper
 
 To set up an example of a file system that we'll be using throughout this lesson, let's take a look again at the folder structure/directory structure that you created earlier in this course. Within a project folder, it is recommended that you set up the folders within as below. We will be working with this directory setup in an RStudio Cloud project.
 
-{format: png}
+
 ![Directory structure](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g39e98c7b77_0_8)
 
 In future courses, whenever you write code and run commands within R to work with data, or whenever you use Git commands to document updates to your files, you will be working *in a particular location*. To know your location within a file system is to know exactly what folder you are in right now. The folder that you are in right now is called the **working directory**. Your current working directory in the Terminal may be different from your current working directory in R and may yet even be different from the folder shown in the Files pane of RStudio. The focus of this lesson is on the Terminal, so we will not discuss working directories within R until the next lesson.
 
 Knowing your working directory is important because if you want to tell Terminal to perform some actions on files in other folders, you will need to be able to tell the Terminal where that folder is. That is, you will need to be able to specify a **path** to that folder. A path is a string that specifies a sequence of folders to traverse in order to end up at a final destination. The end of a path string may be a file name if you are creating a path to a file. If you are creating a path to a folder, the path string will end with the destination folder. In a path, folder names are separated by forward slashes `/`. For example, let's say that your current working directory in the Terminal is the `raw_code` directory, and you wish to navigate to the `exploratory` subfolder within the `figures` folder to see the graphics you've created.
 
-{format: png}
+
 ![Definitions: working directory and path](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g3a9f4bba8b_0_20)
 
 There are two types of paths that can lead to that location. The first is called a **relative path** which gives a path to the destination folder based on where you are right now (in `raw_code`). A little later in this lesson you'll learn how to construct relative paths.
 
-{format: png}
+
 ![Relative path](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g39e98c7b77_0_52)
 
 Alternatively, you can specify an **absolute path**. An absolute path starts at the **root directory** of a file system. The root directory does not have a name like other folders do. It is specified with a single forward slash `/` and is special in that it cannot be contained within other folders. In the current file system, the root directory contains a folder called `cloud`, which contains a folder called `project`. This `project` folder contains the four main folders that you learned about in a previous lesson.  A little later in this lesson you'll learn how to construct absolute paths.
 
-{format: png}
+
 ![Absolute path](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g39e98c7b77_0_89)
 
 **Analogy**: The root directory is analogous to a town square, a universal starting location. The desired destination location might be the baker. An absolute path specifies how to reach the bakery starting from this universal starting location of the town square. However, if we are in the library right now, a relative path would specify how to reach the bakery from our current location in the library. This could be pretty different than the path from the town square.
@@ -59,48 +59,48 @@ Now that you have some vocabulary, we can delve into details about creating and 
 
 If you want to know your current working directory with the Terminal (what folder you are in), you can use the `pwd` command by typing `pwd` at the Terminal prompt and hitting Enter. This stands for "print working directory", and it prints the absolute path to your current location. In the example below we are in the `project` folder within the `cloud` folder. We can determine that this is an absolute path because it starts with a forward slash `/`.
 
-{format: png}
+
 ![pwd command](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g39e98c7b77_0_138)
 
 #### What is in this folder?
 
 If you want to know what files and folders are contained within your current directory, you can use the `ls` command. This stands for "list", and it lists the files and folders within the current directory. If you just use the `ls` command without any options, the contents will be displayed horizontally across lines. If you add the `-lh` option with a space after the initial `ls` command, the output is displayed more nicely. The `l` part displays the results in a longer form with more information than just the file name. The `h` part displays the file sizes in a human-readable format. The most important pieces of information are in the last three columns, which display the file or folder size, the date the file or folder was last modified, and the name of the file or folder. You can also list the contents of a specific folder by specifying an absolute or relative path after the main `ls` command. In the example below, we list the contents of the `products` subfolder using a relative path.
 
-{format: png}
+
 ![ls command](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g39e98c7b77_0_376)
 
 When you use `ls` without specifying any path, it displays the contents of the current working directory. You can get the same results by specifying a period `.` for the path, as shown below. The period stands for the current working directory.
 
-{format: png}
+
 ![ls command](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g3a9f4bba8b_0_74)
 
 #### Change directory
 
 If you would like to change your current working directory, you can use the `cd` command. This stands for "change directory" and moves you to the folder that you specify with a path after `cd`. If I want to move to the `raw_data` folder, I can specify this with a relative path `data/raw_data/` because I am currently in the `cloud/project/` folder. When you type these paths, it will be incredibly useful to use the **tab completion** feature of Terminal. With tab completion, you can partially type part of a folder or file name and hit tab to automatically fill in the remainder of the name. So here I can type `cd da`, and when I hit tab, this will automatically complete to `cd data/` because there are no other files or folders in this folder that start with `da`. From here I can type `cd data/r` and hit tab to automatically fill in the complete command `cd data/raw_data/`. Tab completion tries to fill in as much as possible but may not fill in completely if you have multiple folders that start with the same letters. If I had a folder called `dance` in the `project` folder, tab completion of `cd da` would not proceed further, but `cd dat` would. Try this out when you're typing at the Terminal prompt - it will save you a lot of time! In addition, if you want to move one directory up, for instance going from the folder `data/raw_data` to `data`, you can use the command `cd ..`.
 
-{format: png}
+
 ![cd command](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g39e98c7b77_0_158)
 
 I could also have specified an absolute path with `cd /cloud/project/data/raw_data/`. In this case, because of my initial working directory, both the relative and absolute paths take me to the same folder. Note that we have checked our updated working directory with the `pwd` command. Also note that this path matches the part of the Terminal prompt just before the dollar sign. This is a way to doubly verify where you are within the file system.
 
-{format: png}
+
 ![cd command](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g39e98c7b77_0_182)
 
 If you try to change directory to a nonexistent folder, you will get an error message that looks as below:
 
-{format: png}
+
 ![Error with the cd command](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g39e98c7b77_0_202)
 
 ##### Absolute vs. relative paths
 
 Let's go a little bit further with exploring the difference between absolute and relative paths. Let's say that I have some code in the `raw_code` folder, and in that code, I want to create some exploratory graphics in the `exploratory` folder. Using our file system on RStudio Cloud, the path to the `exploratory` folder could be specified with the absolute path `/cloud/project/figures/exploratory/`. However, if someone else copies over the four main folders (`data`, `code`, `figures`, and `products`) onto their own computer and puts them inside folders with different names, this absolute path will not work. Why? Because this person happens to have the `root` and `work` folders instead of the `cloud` and `project` folders.
 
-{format: png}
+
 ![Absolute paths are not portable](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g39e98c7b77_0_216)
 
 Rather than using an absolute path, a robust way to specify the path to the `exploratory` folder is with a relative path. In this way, our code will work on all computers, which is essential for data science work. Specifying this relative path is a little more complicated than we have seen earlier because we have to traverse up through some folders that contain our current working directory and down through another set of folders. To specify the folder containing the current working directory, we use `../`. When we are in the `raw_code` folder, the `../` specifies the `code` folder because it is the one directly containing our current directory. However, to enter the `figures` folder, we need to go up one more level to the folder that contains the `code` folder. On our RStudio Cloud, this is the `project` folder, but for this other person, it is the `work` folder. We can go up one more folder level with another `../`. So the complete relative path from `raw_code` to `exploratory` is `../../figures/exploratory/`.
 
-{format: png}
+
 ![Relative vs absolute paths](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g39e98c7b77_0_289)
 
 Let's look at one more example to reinforce these ideas. Our current working directory is the `raw_code` directory. We want to specify a path to the `final_code` directory. There are several ways to do achieve this, but the first listed below is the most straightforward.
@@ -109,7 +109,7 @@ Let's look at one more example to reinforce these ideas. Our current working dir
 - `../../code/final_code/`
 - `../../../work/code/final_code/`
 
-{format: png}
+
 ![Additional example for relative paths](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g39e98c7b77_0_331)
 
 #### Cycling through previous commands
@@ -120,7 +120,7 @@ Often when working in the Terminal, you will want to run the same or similar com
 
 In several different Terminal commands, it can be useful to specify only part of a file or folder name. For example, if we go to the `raw_code` folder and use the `ls` command, we see that there are 4 files. In larger projects, there may be many more files and we might not want to view all of them. We can specify certain patterns of files to list after the main `ls` command using part of the file name combined with the `*` wildcard operator. This operator matches any number of characters. So to list only files that start with "clean", we can use `ls -lh clean*`. To only list files that contain "dataset1", we can use `ls -lh *dataset1*` to match any characters on either side of the "dataset1" pattern. This will be useful when you work more with GitHub, starting in the next course.
 
-{format: png}
+
 ![Wildcard operator](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g39e98c7b77_0_264)
 
 #### Copying files and folders
@@ -133,17 +133,17 @@ cp path_to_original_file path_to_new_file
 
 The path to the original file and the path to the new file can be absolute or relative paths. In the path to the new file, you can specify a different file name to rename it. In the example below, the first command `cp clean_dataset1.R ../final_code/` copies the `clean_dataset1.R` file to the `final_code` folder and keeps the same name. The second command `cp clean_dataset1.R ../final_code/clean_dataset1_renamed.R` specifies the relative path and a new file name. When we list the contents of the `final_code` folder, we see both the originally named file and the renamed file.
 
-{format: png}
+
 ![Copying a single file](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g3a9f4bba8b_0_88)
 
 We can combine copying with the wildcard operator to copy multiple files. This does not rename the files. We can also copy multiple files into a directory by naming the files explicitly. That is `cp analyze* ../final_code/` achieves the same as `cp analyze_dataset1.R analyze_dataset2.R ../final_code/`.
 
-{format: png}
+
 ![Copying multiple files](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g37c845e10b_0_0)
 
 To copy a folder, we must specify the recursive option `-r` in order to copy all of the files and folders inside the one being copied. In the example below, using `cp final_code/ publication_code` doesn't work, but `cp -r final_code/ publication_code` does work. Note that a final forward slash at the end of `final_code` and `publication_code` is optional. In these examples, you will see the trailing forward slash when tab completion was used to speed up typing.
 
-{format: png}
+
 ![Copying a folder](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g37c845e10b_0_15)
 
 #### Moving files and folders
@@ -156,12 +156,12 @@ mv path_to_original_file path_to_new_file
 
 Just as with copy, the path to the original file and the path to the new file can be absolute or relative paths. In the path to the new file, you can specify a different file name to rename it. In the example below, the first command `mv ../final_code/clean_dataset1_renamed.R .` moves the `clean_dataset1_renamed.R` file to the current working directory (indicated by the period at the end of the command) and keeps the same name. The next two commands `mv clean_dataset1.R tidy_dataset1.R` and `mv clean_dataset2.R tidy_dataset2.R` rename the files in the working directory to start with `tidy` instead of `clean`. When we list the contents of the working directory, we see both the moved file and the two renamed files.
 
-{format: png}
+
 ![Moving a single file](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g37c845e10b_0_33)
 
 We can combine moving with the wildcard operator to move multiple files. This does not rename the files. We can also move multiple files into a directory by naming the files explicitly. This is achieved with `mv tidy_dataset1.R tidy_dataset2.R ../raw_code/`.
 
-{format: png}
+
 ![Moving multiple files](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g37c845e10b_0_69)
 
 To move a folder into another folder, we use the same syntax for moving a single file:
@@ -172,7 +172,7 @@ mv path_to_folder_being_moved destination_path
 
 In the example below, we achieve this with `mv raw_code/ publication_code/`. We can also rename a folder by specifying a new name for the destination path. In the example, we achieve this with `mv publication_code/ pub_code`.
 
-{format: png}
+
 ![Moving and renaming a folder](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g37c845e10b_0_91)
 
 #### Deleting files and folders
@@ -185,12 +185,12 @@ rm path_to_file_to_delete
 
 To remove multiple files, you can specify paths to multiple files separated by spaces or use the wildcard operator. Examples are shown below.
 
-{format: png}
+
 ![Deleting files](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g37c845e10b_0_110)
 
 To delete a folder, we must specify the recursive option `-r` in order to recursively delete all of the files and folders inside the one being deleted. This is exactly as we had to do with copying a folders. In the example below, using `rm final_code/` doesn't work, but `rm -r final_code/` does work.
 
-{format: png}
+
 ![Deleting a folder](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g37c845e10b_0_127)
 
 Be very careful when deleting files and folders because this action is irreversible! In particular, `rm *` will delete all files in the current working directory. If you are using the wildcard operator, test your wildcard pattern with an `ls` command before deleting anything.
@@ -199,12 +199,12 @@ Be very careful when deleting files and folders because this action is irreversi
 
 To create an empty file in the Terminal, we can use the `touch` command with `touch path_to_file`. The file will be empty, but it serves as a placeholder in case you decide to later open and edit the file.
 
-{format: png}
+
 ![Creating a new file](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g3b1e0adfae_0_0)
 
 To create a new directory in the Terminal, we can use the `mkdir` command, which stands for "make directory." After `mkdir`, type the path to the folder that we want to create.
 
-{format: png}
+
 ![Creating a new directory](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g3b1e0adfae_0_7)
 
 ### Summary
