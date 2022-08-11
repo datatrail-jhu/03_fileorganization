@@ -1,6 +1,4 @@
----
-output: html_document
----
+
 
 
 # Setting Up Data Science Project Folders
