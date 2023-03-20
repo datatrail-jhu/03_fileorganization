@@ -183,6 +183,6 @@ For instance, if you type `![Yosemite National Park](https://commons.wikimedia.o
 
 ### Slides and Video
 
-![Introduction to Markdown](https://www.youtube.com/watch?v=0mc0DfoqN5A)
+[Automated Videos](https://www.youtube.com/watch?v=0mc0DfoqN5A)
 
 * [Slides](https://docs.google.com/presentation/d/1eHhYKegVodplOm9MajA3OaWReEMo7YRER-IRWBivWJM/edit?usp=sharing)
