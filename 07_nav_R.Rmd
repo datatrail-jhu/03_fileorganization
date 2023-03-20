@@ -88,6 +88,6 @@ In this lesson, you learned about R functions that are analogous to Terminal com
 
 ### Slides and Video
 
-![Managing Files in R](https://www.youtube.com/watch?v=sAtZTkbRev0)
+[Automated Videos](https://www.youtube.com/watch?v=sAtZTkbRev0)
 
 * [Slides](https://docs.google.com/presentation/d/1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc/edit?usp=sharing)
