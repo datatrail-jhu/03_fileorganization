@@ -70,6 +70,6 @@ Budget about 20% of your time keeping track of a bulleted list of the things tha
 
 ### Slides and Video
 
-![How To Work](https://www.youtube.com/watch?v=kKXOHJRZGdE)
+[Automated Videos](https://www.youtube.com/watch?v=kKXOHJRZGdE)
 
 * [Slides](https://docs.google.com/presentation/d/1vn8Lb8YNvo1zha7GmJMlQSBRSAryRms6xy5HUtafH2A/edit?usp=sharing)  

@@ -81,6 +81,6 @@ In order to convert this document into a PDF document containing your code, plot
 
 ### Slides and Video
 
-![Markdown in RStudio](https://www.youtube.com/watch?v=XSqdL2XM4xQ)
+[Automated Videos](https://www.youtube.com/watch?v=XSqdL2XM4xQ)
 
 * [Slides](https://docs.google.com/presentation/d/1BnIEO63i6bo1ZY9HCD9dilG7FgRRzXo1zn1S-c4B8C0/edit?usp=sharing)
